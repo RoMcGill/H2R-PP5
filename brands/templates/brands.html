@@ -42,9 +42,36 @@
     </a>
   </div>
 
+
+
   <div class="all-brands">
+    {% for brand in brands %}
+    {% if brand.image %}
+    <div class="brand-card">
+    <a href="#">
+        <img class="card-img-top img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+    </a>
+    {% else %}
+    <a href="#">
+        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
+    </a>
+    {% endif %}
+            <p class="mb-0">{{ brand.name }}</p>
+
+        <!-- {% if brand.description %}
+    <a href="#">
+        <p>{{ brand.description }}</p>
+    </a>
+    {% else %}
+    <a href="#">
+        <p>No description</p>
+    </a>
+    {% endif %} -->
+
+
 
   </div>
-
+</div>
+{% endfor %}
 
 {% endblock %}

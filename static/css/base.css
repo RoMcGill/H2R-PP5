@@ -141,3 +141,14 @@ main{
 
 }
 
+.all-brands{
+    margin-left: 120px;
+}
+
+.brand-card{
+    margin-left: 120px;
+    height: 30vh;
+    width: 30vw;
+    padding-top: 50px;
+}
+
