@@ -130,7 +130,14 @@ main{
     width: fit-content;
     height: 300px;
     margin: auto;
+    float: left;
 
 
 
   }
+
+  .carousel-inner {
+    display: table-cell;
+
+}
+
