@@ -145,10 +145,14 @@ main{
     margin-left: 120px;
 }
 
-.brand-card{
+.space{
     margin-left: 120px;
     height: 30vh;
-    width: 30vw;
-    padding-top: 50px;
+
+
+}
+.brands{
+    padding-bottom: 60px;
+    margin-left: 120px;
 }
 

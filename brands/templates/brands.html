@@ -42,21 +42,29 @@
     </a>
   </div>
 
+<div class="space"></div>
+
+<div class="row">
+    <div class="product-container col-10 offset-1">
+        <div class="row mt-1 mb-2"></div>
+        <div class="row">
 
 
-  <div class="all-brands">
     {% for brand in brands %}
     {% if brand.image %}
-    <div class="brand-card">
+    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+    <div class="card h-100 border-0">
     <a href="#">
-        <img class="card-img-top img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+        <img class="card-img-top img-fluid " src="{{ brand.image.url }}" alt="{{ brand.name }}" style="height: 200px; width:200px;">
     </a>
     {% else %}
     <a href="#">
-        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
+        <img class="card-img-top img-fluid " src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
     </a>
     {% endif %}
-            <p class="mb-0">{{ brand.name }}</p>
+    <div class="card-body pb-0">
+        <p class="mb-0">{{ brand.name }}</p>
+    </div>
 
         <!-- {% if brand.description %}
     <a href="#">
@@ -67,8 +75,9 @@
         <p>No description</p>
     </a>
     {% endif %} -->
-
-
+</div>
+</div>
+</div>
 
   </div>
 </div>
