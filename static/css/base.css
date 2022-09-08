@@ -117,3 +117,20 @@ main{
     color: black!important;
     transition: 1s!important;
 }
+
+#caro{
+    width: 75%;
+    margin-left: 120px;
+
+    z-index: -1;
+}
+
+
+.carousel-inner img {
+    width: fit-content;
+    height: 300px;
+    margin: auto;
+
+
+
+  }
