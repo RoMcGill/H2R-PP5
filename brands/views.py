@@ -17,11 +17,11 @@ def brands(request):
     return render(request, 'brands.html', context)
 
 
-    def brand_detail(request, brand_id):
+def brand_detail(request, brand_id):
     """
     view to return brand details page
     """
-    brand = get_object_or_404(brand, pk=brand_id)
+    brand = get_object_or_404(Brands, pk=brand_id)
 
     context = {
         'brand': brand,

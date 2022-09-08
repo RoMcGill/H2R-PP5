@@ -52,15 +52,15 @@
     {% if brand.image %}
     <div class="card-deck" style="margin-left: 120px;">
         <div class="card">
-    <a href="#">
+    <a href="{% url 'brand_detail' brand.id %}">
         <img class="card-img-top" src="{{ brand.image.url }}" alt="{{ brand.name }}" style="height: 200px; width:200px;">
     </a>
     {% else %}
-    <a href="#">
+    <a href="{% url 'brand_detail' brand.id %}">
         <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
     </a>
     {% endif %}
-    <h5 class="card-title">{{ brand.name }}</h5>
+    <a href="{% url 'brand_detail' brand.id %}"><h5 class="card-title">{{ brand.name }}</h5></a>
 
 
 

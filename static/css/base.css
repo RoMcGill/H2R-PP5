@@ -150,9 +150,12 @@ main{
     height: 30vh;
     padding-top: 100px;
     text-align: center;
-
-
-
+}
+.space2{
+    margin-left: 120px;
+    height: 30vh;
+    padding-top: 70px;
+    text-align: center;
 }
 .brands{
     padding-bottom: 60px;
@@ -160,6 +163,10 @@ main{
 }
 
 .right{
+    margin-left: 120px;
+}
+
+.title{
     margin-left: 120px;
 }
 

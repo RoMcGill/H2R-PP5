@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="space2">
+    <h2>{{ brand.name }}</h2>
+</div>
+    {% if brand.image %}
+    <div class="card-deck" style="margin-left: 120px;">
+        <div class="card">
+    <a href="#">
+        <img class="card-img-top" src="{{ brand.image.url }}" alt="{{ brand.name }}" style="height: 200px; width:200px;">
+    </a>
+    {% else %}
+    <a href="#">
+        <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
+    </a>
+    {% endif %}
+    <h5 class="card-title">{{ brand.name }}</h5>
+
+
+
+       {% if brand.description %}
+
+        <p class="card-text">{{ brand.description }}
+
+    {% else %}
+
+       <p class="card-text">No description</p>
+
+    {% endif %}
+
+  </div>
+</div>
+</div>
+<div class="space">
+  <h2>Products</h2>
+  <p> by {{ brand.name }}</p>
+
+
+{% endblock %}
