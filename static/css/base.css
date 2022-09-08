@@ -148,11 +148,18 @@ main{
 .space{
     margin-left: 120px;
     height: 30vh;
+    padding-top: 100px;
+    text-align: center;
+
 
 
 }
 .brands{
     padding-bottom: 60px;
+    margin-left: 120px;
+}
+
+.right{
     margin-left: 120px;
 }
 
