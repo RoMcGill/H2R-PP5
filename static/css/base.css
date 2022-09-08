@@ -95,12 +95,25 @@ main{
 
 
 }
+.btn1{
+    background-color: black !important;
+    color: white!important;
+}
+
+.btn2{
+    background-color: black!important;
+    color: white!important;
+}
+
+
 .btn1:hover{
-    rotate: 360deg;
-    transition: 1s;
+    background-color: white!important;
+    color: black!important;
+    transition: 1s!important;
 }
 
 .btn2:hover{
-        rotate: 360deg;
-        transition: 1s;
+    background-color: white!important;
+    color: black!important;
+    transition: 1s!important;
 }
