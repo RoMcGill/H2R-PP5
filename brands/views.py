@@ -30,15 +30,15 @@ def brand_detail(request, brand_id):
     return render(request, 'brands-detail.html', context)
 
 
-def brand_products(request, product_id):
+def brand_products(request,):
     """
     view to return brand details page
     """
-    product = get_object_or_404(Brand_products, pk=product_id)
+    products = Brand_products.objects.all()
 
     context = {
-        'product': product,
-        'brand_products': brand_products
+        'products': products,
+
 
     }
     return render(request, 'brands-detail.html', context)
