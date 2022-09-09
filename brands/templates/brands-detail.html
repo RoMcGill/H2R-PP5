@@ -4,7 +4,7 @@
 {% block content %}
 
 <div class="space2">
-    <h2>{{ brand.name }}</h2>
+    <h2>{{ brand.brand_name }}</h2>
 </div>
     {% if brand.image %}
     <div class="card-deck" style="margin-left: 120px;">
@@ -17,7 +17,7 @@
         <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
     </a>
     {% endif %}
-    <h5 class="card-title">{{ brand.name }}</h5>
+    <h5 class="card-title">{{ brand.brand_name }}</h5>
 
 
 
@@ -36,7 +36,17 @@
 </div>
 <div class="space">
   <h2>Products</h2>
-  <p> by {{ brand.name }}</p>
+  <p> by {{ brand.brand_name }}</p>
+{% for product in brand_products %}
+<h1 style>{{brand_products.brand_name}}</h1>
+<h1>{{products.sku}}</h1>
+<h1>{{brand.Product_name}}</h1>
+<h1>{{product.description}}</h1>
+</div>
+
+{% endfor %}
+
+
 
 
 {% endblock %}
