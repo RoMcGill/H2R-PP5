@@ -38,39 +38,46 @@
   <h2>Products</h2>
   <p> by {{ brand.brand_name }}</p>
 
-</div>
 {% for product in brand_products %}
-<div style="margin-left: 140px; margin-bottom: 50px;">
-    <h1>{{brand_product.brand_name}}</h1>
+{% if product.image %}
+    <div class="card-deck" style="margin-left: 120px; max-width: 80%; padding-top: 15px;">
+        <div class="card">
 
-    <h1>{{brand_product.brand}}</h1>
-
-
-
-    {% if brand_product.description %}
-
-    <p class="card-text">{{ brand_products.description }}</p>
+        <img class="card-img-top" src="{{ product.image.url }}" alt="{{ brand.name }}" style="height: 200px; width:200px; margin: 0 auto;">
 
 {% else %}
 
-   <p class="card-text">No description</p>
+        <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
 
 {% endif %}
-{% if brand_product.brand_name %}
-<p class="card-text">{{ brand_products.brand_name }}</p>
+{% if product.Product_name %}
+   <h5 class="card-title">{{ product.Product_name }}</h5>
 {% else %}
-
    <p class="card-text">No name</p>
-   {% endif %}
-<p class="card-text">{{ brand_products.sku }}</p>
-<p class="card-text">{{ brand_products.price }}</p>
+{% endif %}
+{% if product.description %}
+        <p class="card-text">{{ product.description }}</p>
+{% else %}
+       <p class="card-text">No description</p>
+{% endif %}
 
-
-
-        {% endfor %}
-
+<ul class="list-group list-group-flush">
+{% if product.price %}
+    <li class="list-group-item">€{{ product.price }}</li>
+{% else %}
+    <li class="list-group-item">POA</li>
+{% endif %}
+{% if product.size %}
+    <li class="list-group-item">{{ product.size }}</li>
+{% else %}
+    <li class="list-group-item">One size fits all</li>
+{% endif %}
+  </ul>
 
 </div>
+</div>
+{% endfor %}
+
 
 
 
