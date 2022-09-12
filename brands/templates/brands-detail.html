@@ -39,14 +39,35 @@
   <p> by {{ brand.brand_name }}</p>
 
 </div>
-
+{% for product in brand_products %}
 <div style="margin-left: 140px; margin-bottom: 50px;">
     <h1>{{brand_product.brand_name}}</h1>
 
     <h1>{{brand_product.brand}}</h1>
 
 
-        <p></p>
+
+    {% if brand_product.description %}
+
+    <p class="card-text">{{ brand_products.description }}</p>
+
+{% else %}
+
+   <p class="card-text">No description</p>
+
+{% endif %}
+{% if brand_product.brand_name %}
+<p class="card-text">{{ brand_products.brand_name }}</p>
+{% else %}
+
+   <p class="card-text">No name</p>
+   {% endif %}
+<p class="card-text">{{ brand_products.sku }}</p>
+<p class="card-text">{{ brand_products.price }}</p>
+
+
+
+        {% endfor %}
 
 
 </div>

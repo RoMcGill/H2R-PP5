@@ -22,26 +22,14 @@ def brand_detail(request, brand_id):
     view to return brand details page
     """
     brand = get_object_or_404(Brands, pk=brand_id)
+    brand_products = Brand_products.objects.filter(brand=brand_id)
 
     context = {
         'brand': brand,
+        'brand_products': brand_products,
 
     }
     return render(request, 'brands-detail.html', context)
-
-
-def brand_products(request, brand_product_id):
-    """
-    view to return brand details page
-    """
-    brand_product = get_object_or_404(Brand_products, pk=brand_product_id)
-
-    context = {
-        'brand_product': brand_product,
-
-    }
-    return render(request, 'brands-detail.html', context)
-
 
 
 
