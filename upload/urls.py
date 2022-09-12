@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
 
-        path("upload_form/", views.brand_upload, name="upload"),
+        path("brand_upload/", views.brand_upload, name="brand_upload"),
 
 ]
