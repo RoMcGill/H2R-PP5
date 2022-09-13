@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from .forms import Brand_form, Product_form
 from django.contrib import messages
 
@@ -14,7 +14,7 @@ def brand_upload(request):
             image = form.cleaned_data.get('image')  # clean the data
             form.save()  # save the data to the model
             messages.success(request, 'Your product has been added!')
-            return redirect('upload/brand-upload.html')
+            return redirect(reverse('product-upload'))
         else:  # form not valid so display message and retain the data entered
             form = Brand_form(request.POST)
             messages.success(request, 'Error in creating your product, the form is not valid!')
@@ -38,7 +38,7 @@ def product_upload(request):
             price = form.cleaned_data.get('price')  # clean the data
             form.save()  # save the data to the model
             messages.success(request, 'Your product has been added!')
-            return redirect('upload/product-upload.html')
+            return redirect(reverse('brands'))
         else:  # form not valid so display message and retain the data entered
             form = Product_form(request.POST)
             messages.success(request, 'Error in creating your product, the form is not valid!')
