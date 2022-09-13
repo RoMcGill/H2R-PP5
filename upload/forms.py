@@ -17,7 +17,9 @@ class Brand_form(forms.ModelForm):
 
 class Product_form(forms.ModelForm):
     brand_name = forms.CharField(max_length=254, required=False)
-    brand = forms.ModelMultipleChoiceField(queryset=Brands.objects.all())
+    brand = forms.ModelChoiceField(queryset=Brands.objects.all(),
+                                    to_field_name = 'brand_name',
+                                    empty_label="Select your brand")
     sku = forms.CharField(max_length=254, required=False)
     Product_name = forms.CharField(max_length=254, required=False)
     description = forms.CharField(required=False)

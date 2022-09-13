@@ -28,7 +28,7 @@ def product_upload(request):
     if request.method == 'POST':  # this means the form has data
         form = Product_form(request.POST, request.FILES)  # get the form and it data
         if form.is_valid():  # check if it is valid
-            brand = form.cleaned_data.get_or_create('brand')  # clean the data
+            brand = form.cleaned_data.get('brand')  # clean the data
             brand_name = form.cleaned_data.get('brand_name')  # clean the data
             image = form.cleaned_data.get('image')  # clean the data
             sku = form.cleaned_data.get('sku')
