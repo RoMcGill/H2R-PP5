@@ -14,7 +14,7 @@ def brands(request):
         'brands': brands
 
     }
-    return render(request, 'brands.html', context)
+    return render(request, 'brands/brands.html', context)
 
 
 def brand_detail(request, brand_id):
@@ -29,7 +29,7 @@ def brand_detail(request, brand_id):
         'brand_products': brand_products,
 
     }
-    return render(request, 'brands-detail.html', context)
+    return render(request, 'brands/brands-detail.html', context)
 
 
 
