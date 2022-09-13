@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<h2 style="margin-left: 150px;">Create Brand page</h2>
+<h2 style="margin-left: 150px;">Add Product</h2>
 <form enctype="multipart/form-data" method="post" style="margin-left: 150px;">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Add</button>
 </form>
 
+<p style="margin-left: 150px;">hello</p>
 
 {% endblock %}
