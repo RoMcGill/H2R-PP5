@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'home',
     'brands',
     'upload',
-    'contact'
+    'contact',
+    'mission',
     # 'profiles',
 
 ]
