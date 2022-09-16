@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'upload',
     'contact',
     'mission',
+    'cart',
     # 'profiles',
 
 ]
