@@ -78,7 +78,7 @@
     <li class="list-group-item">Sku:</li>
 {% endif %}
   </ul>
-<form action="" method="POST">
+<form action="{% url 'add_to_cart' product.id %}" method="POST">
     {% csrf_token %}
     <div class="form-row">
         <div class="col-12">
