@@ -19,9 +19,7 @@
                         <div class="row text-muted">Shirt</div>
                         <div class="row">Cotton T-shirt</div>
                     </div>
-                    <div class="col">
-                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                    </div>
+
                     <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
                 </div>
             </div>
@@ -34,13 +32,14 @@
             <div><h5><b>Summary</b></h5></div>
             <hr>
             <div class="row">
-                <div class="col" style="padding-left:0;">ITEMS 3</div>
+                <div class="col" style="padding-left:0;">{{product_count}}</div>
                 <div class="col text-right">€{{ grand_total|floatformat:2 }}</div>
             </div>
             <form>
                 <p>SHIPPING</p>
                 <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
-                <p>free delivery on orders over €{{ free_delivery_threshold }}</p>
+                <p>Free delivery on orders over €{{ free_delivery_threshold }}</p>
+                <p>Spend €{{ free_delivery_delta }} More for free delivery!</p>
                 <p>GIVE CODE</p>
                 <input id="code" placeholder="Enter your code">
             </form>

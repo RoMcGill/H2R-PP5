@@ -72,8 +72,35 @@
 {% else %}
     <li class="list-group-item">One size fits all</li>
 {% endif %}
+{% if product.sku %}
+    <li class="list-group-item">SKU:{{ product.sku }}</li>
+{% else %}
+    <li class="list-group-item">Sku:</li>
+{% endif %}
   </ul>
-
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="form-row">
+        <div class="col-12">
+            <p class="mt-3">Quantity:</p>
+            <div class="form-group w-50">
+                <div class="input-group">
+                    <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item-id="{{ product.id }}">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <a href="{% url 'brands' %}" class="btn">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+            <input type="submit" class="btn" value="add to bag">
+        </div>
+        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+    </div>
+</form>
 </div>
 </div>
 {% endfor %}
