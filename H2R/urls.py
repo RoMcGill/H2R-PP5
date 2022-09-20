@@ -28,5 +28,6 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('mission/', include('mission.urls')),
     path('cart/', include('cart.urls')),
+    path('follow/', include('follow.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

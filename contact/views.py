@@ -26,6 +26,6 @@ def contact(request):
         contact.message = message
         contact.save()
         messages.success(request, 'Thank You for getting in touch with us!')
-        return redirect('index')
+        return redirect('home')
 
     return render(request, 'contact/contact.html')

@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'contact',
     'mission',
     'cart',
+    'follow',
     # 'profiles',
 
 ]
