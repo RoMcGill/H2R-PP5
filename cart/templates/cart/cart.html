@@ -1,48 +1,75 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div class="container" style="margin-left: 150px; margin-right: 20px;">
- <div class="card">
+<div class="container" style="margin-left: 120px; margin-right: 20px;">
     <div class="row">
-        <div class="col-md-8 cart">
-            <div class="title">
-                <div class="row">
-                    <div class="col"><h4><b>Shopping Cart</b></h4></div>
-                    {% if cart_items %}
-                    <div class="table-responsive">
-                   {{ cart_items }}
-                </div>
-                {% else %}
-            <div class="back-to-shop"><a href="{% url 'brands' %}">&leftarrow;</a><span class="text-muted">Yout cart is empty Back to shop</span></div>
-        </div>
-        {% endif %}
-        <div class="col-md-4 summary">
-            <div><h5><b>Summary</b></h5></div>
-            <hr>
-            <div class="row">
-                <div class="col" style="padding-left:0;">{{product_count}}</div>
-                <div class="col text-right">€{{ grand_total|floatformat:2 }}</div>
-            </div>
-            <form>
-                <p>SHIPPING</p>
-                <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
-                <p>Free delivery on orders over €{{ free_delivery_threshold }}</p>
-                <p>Spend €{{ free_delivery_delta }} More for free delivery!</p>
-                <p>GIVE CODE</p>
-                <input id="code" placeholder="Enter your code">
-            </form>
-            {% if grand_total %}
-            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                <div class="col">TOTAL PRICE</div>
-                <div class="col text-right">€{{ grand_total.delivery|floatformat:2 }}</div>
-            </div>
-            {% else %}
-            <div class="col">TOTAL PRICE</div>
-                <div class="col text-right">€0.00</div>
-            {% endif %}
-            <button class="btn">CHECKOUT</button>
+        <div class="col">
+            <h1>Shopping Cart</h1>
         </div>
     </div>
+                <div class="row">
+                    <div class="col"><h4><b></b></h4></div>
+                    <div class="col"><h4><b></b></h4></div>
+                    <div class="col"><h4><b>Sku</b></h4></div>
+                    <div class="col"><h4><b>Price</b></h4></div>
+                    <div class="col"><h4><b>Qty</b></h4></div>
+                    <div class="col"><h4><b>Total</b></h4></div>
+                    {% if cart_items %}
+                    {% for item in cart_items%}
+
+                </div>
+
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="{{ item.product.image.url }}"></div>
+
+
+                        <!-- <div class="row">{{ item.product.description }}</div> -->
+
+                    <div class="col">{{ item.product.brand_name }}
+                        <div class="row">{{ item.product.Product_name }}</div>
+                    </div>
+                    <div class="col">SKU:{{ item.product.sku }}</div>
+                    <div class="col">{{ item.product.price }}</div>
+                    <div class="col">{{ item.quantity }}</div>
+                    <div class="col">{{ item.total }}</div>
+                </div>
+            </div>
+            <div class="row">
+                {% endfor %}
+                {% else %}
+
+
+        {% endif %}
+        <div class="col">
+                <form>
+                    <h5><b>Shipping</b></h5>
+                    <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
+                    <p>Free delivery on orders over €{{ free_delivery_threshold }}</p>
+                    <p>Spend €{{ free_delivery_delta }} More for free delivery!</p>
+                    <p>GIVE CODE</p>
+                    <input id="code" placeholder="Enter your code">
+                </form>
+            </div>
+        <div class="col">
+            <h5><b>Summary</b></h5>
+            {% if grand_total %}
+                    <div>Total Qty: {{product_count}}</div>
+                    <div>Total Price: €{{ grand_total|floatformat:2 }}</div>
+                </div>
+                <div class="col">
+                    <h5><b>Go To Secure Checkout</b></h5>
+                    <button class="btn">CHECKOUT</button>
+                </div>
+        </div>
+
+            {% else %}
+
+            {% endif %}
+
+
+
+
 
  </div>
 </div>
