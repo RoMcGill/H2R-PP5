@@ -9,21 +9,9 @@
                 <div class="row">
                     <div class="col"><h4><b>Shopping Cart</b></h4></div>
                     {% if cart_items %}
-                    <div class="col align-self-center text-right text-muted">3 items</div>
+                    <div class="table-responsive">
+                   {{ cart_items }}
                 </div>
-            </div>
-            <div class="row border-top border-bottom">
-                <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
-                    <div class="col">
-                        <div class="row text-muted">Shirt</div>
-                        <div class="row">Cotton T-shirt</div>
-                    </div>
-
-                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
-                </div>
-            </div>
-            <div class="row">
                 {% else %}
             <div class="back-to-shop"><a href="{% url 'brands' %}">&leftarrow;</a><span class="text-muted">Yout cart is empty Back to shop</span></div>
         </div>
