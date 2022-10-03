@@ -91,14 +91,10 @@
                             <p>minus</p>
                         </button>
                     </div>
-                    <input class="form-control qty_input"
-                    type="number"
-                    name="quantity"
-                    value="1"
-                    min="1"
-                    max="99"
-                    data-item-id="{{ product.id }}"
-                    id="id_qty_{{product_id}}">
+                    <input class="form-control qty_input" type="number"
+                    name="quantity" value="1" min="1" max="99"
+                    data-item_id="{{ product.id }}"
+                    id="id_qty_{{product.id}}">
                     <div class="input-group-append">
                         <button class="increment-qty btn btn-black rounded-0"
                             data-item_id="{{product.id}}" id="increment-qty_{{ product_id }}">
@@ -118,4 +114,9 @@
 </div>
 {% endfor %}
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'brands/includes/qty-input-script.html' %}
 {% endblock %}
