@@ -174,3 +174,6 @@ main{
 .img-size{
     max-width: 90%;
 }
+.link-pointer{
+    cursor: pointer;
+}

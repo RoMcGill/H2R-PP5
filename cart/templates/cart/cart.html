@@ -32,10 +32,11 @@
                     </div>
                     <div class="col">SKU:{{ item.product.sku }}</div>
                     <div class="col">{{ item.product.price }}</div>
-                    <div> <form class="form update-form" method="POST" action="">
+                    <div>
+                        <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                         {% csrf_token %}
                         <div class="form-row">
-                            <div class="col-12">
+                            <div class="col-3">
                                 <p class="mt-3">Quantity:</p>
                                 <div class="form-group w-10">
                                     <div class="input-group col-12">
@@ -59,8 +60,8 @@
                                 </div>
                             </div>
                     </form>
-                    <a class="update-link-text-info" href="">update</a>
-                    <a class="remove-item-text-danger float right" id="remove_{{item.item_id}}"  href="">remove</a>
+                    <a class="update-link text-info link-pointer"><small>Update</small></a>
+                    <a class="remove-item text-danger float right link-pointer" id="remove_{{item.item_id}}">remove</a>
                 </div>
 
                     <div class="col">{{ item.total }}</div>
@@ -118,24 +119,28 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'brands/includes/qty-input-script.html' %}
-<script>
+<script >
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
+
     })
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/cart/remove/${itemId}`;
+        var url = `/cart/remove/${itemId}/`;
 
-        $.post(url,)
+
+
+        $.post(url)
          .done(function() {
              location.reload();
-         });
-    })
 
+         });
+
+    })
 </script>
 {% endblock %}
