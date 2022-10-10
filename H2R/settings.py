@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'mission',
     'cart',
     'follow',
+    'checkout',
     # 'profiles',
 
 ]
