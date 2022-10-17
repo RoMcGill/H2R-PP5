@@ -21,7 +21,7 @@ class Product_form(forms.ModelForm):
                                     to_field_name = 'brand_name',
                                     empty_label="Select your brand")
     sku = forms.CharField(max_length=254, required=False)
-    Product_name = forms.CharField(max_length=254, required=False)
+    product_name = forms.CharField(max_length=254, required=False)
     description = forms.CharField(required=False)
     has_sizes = forms.BooleanField()
     price = forms.DecimalField(max_digits=6, decimal_places=2)
@@ -30,7 +30,7 @@ class Product_form(forms.ModelForm):
 
     class Meta:
         model = Brand_products
-        fields = ['brand_name', 'brand', 'sku', 'Product_name', 'description', 'has_sizes', 'price', 'image']
+        fields = ['brand_name', 'brand', 'sku', 'product_name', 'description', 'has_sizes', 'price', 'image']
 
 
 

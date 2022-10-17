@@ -21,11 +21,11 @@ def add_to_cart(request, item_id):
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
-        messages.success(request, f'Updated {product.Product_name} quantity to {cart[item_id]}')
+        messages.success(request, f'Updated {product.product_name} quantity to {cart[item_id]}')
     else:
 
         cart[item_id] = quantity
-        messages.success(request, f'Added {product.Product_name} to your cart')
+        messages.success(request, f'Added {product.product_name} to your cart')
     request.session['cart'] = cart
 
 
@@ -39,10 +39,10 @@ def adjust_cart(request, item_id):
     print(quantity)
     if quantity > 0:
         cart[item_id] = quantity
-        messages.success(request, f'Updated {product.Product_name} quantity to {cart[item_id]}')
+        messages.success(request, f'Updated {product.product_name} quantity to {cart[item_id]}')
     else:
         cart.pop(item_id)
-        messages.success(request, f'Removed {product.Product_name} from cart')
+        messages.success(request, f'Removed {product.product_name} from cart')
         print("item pop")
 
     request.session['cart'] = cart
@@ -54,7 +54,7 @@ def remove_cart(request, item_id):
 
     cart = request.session.get('cart', {})
     cart.pop(item_id)
-    messages.success(request, f'Removed {product.Product_name} from cart')
+    messages.success(request, f'Removed {product.product_name} from cart')
     print("item pop")
 
     request.session['cart'] = cart

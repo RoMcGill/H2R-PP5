@@ -22,7 +22,7 @@ class Brand_products(models.Model):
     brand = models.ForeignKey(Brands, on_delete=models.CASCADE, null=True)
     brand_name = models.CharField(max_length=254, null=True, blank=True)
     sku = models.CharField(max_length=254, null=True, blank=True)
-    Product_name = models.CharField(max_length=254)
+    product_name = models.CharField(max_length=254)
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)

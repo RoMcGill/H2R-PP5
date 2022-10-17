@@ -32,7 +32,7 @@ def product_upload(request):
             brand_name = form.cleaned_data.get('brand_name')  # clean the data
             image = form.cleaned_data.get('image')  # clean the data
             sku = form.cleaned_data.get('sku')
-            Product_name = form.cleaned_data.get('Product_name')
+            product_name = form.cleaned_data.get('product_name')
             description = form.cleaned_data.get('description')  # clean the data
             has_sizes = form.cleaned_data.get('has_sizes')  # clean the data
             price = form.cleaned_data.get('price')  # clean the data
