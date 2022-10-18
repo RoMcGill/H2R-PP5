@@ -34,7 +34,9 @@
       <div class="col">
         <p class="my-0 small">Total: <strong></strong>{{ total|floatformat:2 }}</strong></p>
           <h5><b>Go To Secure Checkout</b></h5>
-          <button class="btn">CHECKOUT</button>
+          <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+            <span>Secure Checkout</span>
+        </a>
       </div>
     </div>
     {% endif %}
