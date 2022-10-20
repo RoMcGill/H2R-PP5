@@ -39,6 +39,8 @@ form.addEventListener('submit', function(ev) {
   ev.preventDefault();
   card.update({'disabled': true});
   $('#submit-button').attr('disabled',true);
+  $('#payment-form').fadeToggle(100);
+  $('#loading-overlay').fadeToggle(100);
   // If the client secret was rendered server-side as a data-secret attribute
   // on the <form> element, you can retrieve it here by calling `form.dataset.secret`
   console.log(clientSecret)
@@ -51,6 +53,8 @@ form.addEventListener('submit', function(ev) {
       // Show error to your customer (for example, insufficient funds)
       console.log(result.error.message);
       card.update({'disabled': false});
+      $('#payment-form').fadeToggle(100);
+      $('#loading-overlay').fadeToggle(100);
       $('#submit-button').attr('disabled',false);
     } else {
       // The payment has been processed!
