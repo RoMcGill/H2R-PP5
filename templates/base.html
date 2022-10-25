@@ -39,7 +39,6 @@
     <nav class="">
       <ul>
          <li><a class="nav-item1" href="{% url 'home' %}">Home</a></li>
-         <li><a class="nav-item2" href="#">Login</a></li>
          <li><a class="nav-item2" href="{% url 'brands' %}">Brands</a></li>
          <li><a class="nav-item2" href="{% url 'contact' %}">Contact-Us</a></li>
          <li><a class="nav-item2" href="{% url 'mission' %}">Our Mission</a></li>
@@ -53,6 +52,20 @@
          <li><a class="nav-item2" href="{% url 'view_socials' %}">Follow US!</a></li>
          <li><a class="nav-item2" href="{% url 'brand-upload' %}">Create A Brand Page</a></li>
          <li><a class="nav-item2" href="{% url 'product-upload' %}">Upload A Product</a></li>
+
+
+       {% if request.user.is_authenticated %}
+       <li><a class="nav-item2" href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
+        <li><a class="nav-item2" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+        {% else %}
+        <li><a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+          <li><a class="nav-item2" href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+        {% endif %}
+
+
+
+
+
 
       </ul>
      </nav>
