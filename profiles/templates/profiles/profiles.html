@@ -1,16 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profiles.css'%}">
+{% endblock %}
+
+
 {% block content %}
 
-
-<div class="space">
-    <h2>Profile</h2>
-    <h3>{{ profile.username }}</h3>
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">My Profile</h2>
+            <hr>
+        </div>
+    </div>
 </div>
 
-
-
-
-
 {% endblock %}
+
+
