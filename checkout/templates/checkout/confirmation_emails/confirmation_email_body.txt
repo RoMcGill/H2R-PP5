@@ -1,0 +1,18 @@
+Hi There
+Thank you for your Order!
+
+Order Number: {{order.order_number}}
+
+Placed on: {{ order.date }}
+
+The total cost of your order was ${{ order.order_total }}
+
+This Order will be shipped to {{order.street_address1 }} in {{ order.town_or_city }}.
+
+If you have any questions please reply to {{ contact_email }}
+
+
+
+Kind Regards,
+
+The H2R Team
