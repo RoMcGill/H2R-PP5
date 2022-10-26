@@ -1,7 +1,7 @@
 ---
 name: 'User Story: '
-about: Viewing and Navigation
-title: ''
+about: User Story
+title: 'User Story:'
 labels: ''
 assignees: RoMcGill
 
