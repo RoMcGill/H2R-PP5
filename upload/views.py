@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from .forms import Brand_form, Product_form
 from brands.models import Brand_products
 from django.contrib import messages
@@ -24,8 +25,11 @@ def brand_upload(request):
         form = Brand_form()  #produce a blank form
         return render(request, 'upload/brand-upload.html', {'form': form})
 
-
+@login_required
 def product_upload(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Only Store owners can add products')
+        return redirect(reverse('home'))
     if request.method == 'POST':  # this means the form has data
         form = Product_form(request.POST, request.FILES)  # get the form and it data
         if form.is_valid():  # check if it is valid
@@ -48,8 +52,11 @@ def product_upload(request):
         form = Product_form()  #produce a blank form
         return render(request, 'upload/product-upload.html', {'form': form})
 
-
+@login_required
 def edit_product(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Only Store owners can edit products')
+        return redirect(reverse('home'))
     product = get_object_or_404(Brand_products, pk=product_id)
     if request.method == 'POST':
         form = Product_form(request.POST, request.FILES, instance=product)
@@ -71,8 +78,11 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
-
+@login_required
 def delete_product(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Only Store owners can delete products')
+        return redirect(reverse('home'))
     product = get_object_or_404(Brand_products, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
