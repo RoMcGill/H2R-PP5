@@ -1,1 +1,1 @@
-web: gunicorn B2R-PP5.wsgi:application
+web: gunicorn H2R.wsgi:application
