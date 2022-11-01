@@ -1,5 +1,6 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .forms import Brand_form, Product_form
+from brands.models import Brand_products
 from django.contrib import messages
 
 
@@ -47,3 +48,25 @@ def product_upload(request):
         form = Product_form()  #produce a blank form
         return render(request, 'upload/product-upload.html', {'form': form})
 
+
+def edit_product(request, product_id):
+    product = get_object_or_404(Brand_products, pk=product_id)
+    if request.method == 'POST':
+        form = Product_form(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('brands-detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to upload product, please ensure form is valid')
+    else:
+        form = Product_form(instance=product)
+        messages.info(request, f'youare editing {product.product_name}')
+
+    template = 'upload/edit_product.html'
+    context ={
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
