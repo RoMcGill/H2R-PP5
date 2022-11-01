@@ -56,7 +56,7 @@ def edit_product(request, product_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('brands-detail', args=[product.id]))
+            return redirect(reverse('brands'))
         else:
             messages.error(request, 'Failed to upload product, please ensure form is valid')
     else:

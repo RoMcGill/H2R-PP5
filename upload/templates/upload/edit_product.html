@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <h2 style="margin-left: 150px;">Edit Product</h2>
-<form enctype="multipart/form-data" method="post" style="margin-left: 150px;">
+<form enctype="multipart/form-data" method="post" action="{% url 'edit_product' product.id %}" style="margin-left: 150px;">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">edit</button>
