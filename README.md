@@ -127,7 +127,66 @@ My Goal for this project is to create something scaleable that benifits everyone
 
 ## Design
 
-### Colours
+## Colours
+<img src="">
+The colour scheme was chosen Deliberatly It is shates of black white and grey with some hints of Opaque Pink, this is to keep the site looking clean, and staright forward, the second reason of why this coulor scheme is integral to the site is that It will not Interfear or clash with any of the brands Coulor schemes or photos, this will give every seller on our platform an equal opportumity to shine through and not force creators or artists to compromise their creativity to fit in with the format or colour scheme of our website to maximise clicks.
+
+## Fonts
+The font used is 'Courier New', Courier, monospace, this font plays the same role as the color scheme as it will be the same for everyone and not suit one brand more than another, some fonts can be too heavy or too light for their intended purpose and give off the wrong tone of a Product or brand, I think the chosen font is a happy medium to suit all brands and products
+
+
+## Structure
+Ease of use was the main goal for this site. I also wanted to have a unique user experience that is diffrent and exciting but still familiar, therfore i decided to have my Nav bar on the left hand side of the page, this does not hinder the UX in anyway but adds that little something special to the UI which I think the creative Users of the site will appreciate.
+
+### Website pages
+### The website is made up of the following pages:
+
+### Home page
+This page is your landing page once logged in and will prompt you to update your profile information and instruct you what to do next, following these instructions you will find other users and populate this page with their posts after following some users.
+
+### Register page
+This is where a new user can create an account.
+
+### Login page
+On this page users can login to their account.
+
+### brands
+This page will show users a list brands and allow users to browse through them.
+
+### Logout page
+This page will allow users to log out of the website, this page will also provide the user with an option to log back in.
+
+### Email verification page
+This is where users information is shown. this will be where users are redirected from their conformation email
+
+
+### the blog page
+This page is a site owner run blog to promote businesses and provide users with information.
+
+### Contact page
+This page displays a contact form which allows users to send an message to the site owner and provide their feedback or questions.
+
+### Our Mission Page
+This page will display our mission statement + how and why we do what we do.
+
+### Cart
+
+
+### Follow Us
+
+
+### Create a brand
+
+### Upload a product
+
+
+
+
+### 404 error page
+This page is used in place of a standard 404 page. It will be shown in the event of an error which does not allow the page to loadT
+----
+
+
 
 
 
