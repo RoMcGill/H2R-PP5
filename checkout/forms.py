@@ -1,15 +1,23 @@
+"""
+imports
+"""
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    class to create form from model
+    """
     class Meta:
+        """
+        meta to organise fields into specific order
+        """
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'country', 'postcode', 'town_or_city',
                   'street_address1', 'street_address2',
                   'county',)
-
 
     def __init__(self, *args, **kwargs):
         """

@@ -1,3 +1,6 @@
+"""
+imports
+"""
 from django.shortcuts import render, get_object_or_404
 from .models import Brands, Brand_products
 
@@ -47,12 +50,9 @@ def brand_detail(request, brand_id):
 #     return render(request, 'brands/product-detail.html', context)
 
 
-
 # def product_detail(request):
 #     """
 #     view to return brands page
 #     """
 
 #     return render(request, 'brands/product-detail.html')
-
-

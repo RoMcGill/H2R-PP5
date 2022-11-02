@@ -1,10 +1,16 @@
+"""
+imports
+"""
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from brands.models import Brand_products
 
-def cart_contents(request):
 
+def cart_contents(request):
+    """
+    context for cart contents to be used over entire site
+    """
     cart_items = []
     total = 0
     product_count = 0
