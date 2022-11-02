@@ -58,34 +58,35 @@ My Goal for this project is to create something scaleable that benifits everyone
 
 #### Navigation
 
-1. As a user,
-2. As a user,
-3. As a logged-out user,
+- [#1](https://github.com/RoMcGill/H2R-PP5/issues/1)As a customer I want to View a list of products So that I can select some to purchace
+
+- [#13](https://github.com/RoMcGill/H2R-PP5/issues/13)As a customer I want to find new goods from brands I like as soon as they are available So that I can Get them stocked in my store as soon as possible
+
+- [#2](https://github.com/RoMcGill/H2R-PP5/issues/2)As a customer I want to See a list of available brands So that I can find more products from brands i like, that sell well in my store
+
+- [#5](https://github.com/RoMcGill/H2R-PP5/issues/5)As a Seller I want My products to be on display for wholesalers to see So that I can *maximise my sales and exposure *
+
+
 
 #### Authentication
 
-4. As a new user,
-5. As a returning user,
-6. As a user,
+- [#8](https://github.com/RoMcGill/H2R-PP5/issues/8)As a customer I want to have an account So that I can save time when checking out and keep track of purchases
+- [#9](https://github.com/RoMcGill/H2R-PP5/issues/9)As a Seller I want to have an account So that I can upload products and keep track of purchases
 
 ### Second sprint
 
-#### Posts
+#### Keeping Track of Information
 
-7. As a user, I can
-8. As a user, I can
-9. As a user, I can
-10.  As a user, I can
+- [#3](https://github.com/RoMcGill/H2R-PP5/issues/3)As a customer I want to *keep track of spending * So that I can not go over my spending budget for new items
 
-#### The Post Page
+- [#7](https://github.com/RoMcGill/H2R-PP5/issues/7)As a seleler I want to *keep track of quantities sold * So that I can plan for future products
 
-12. As a user, I can
-13. As a user, I can
-14. As user, I can
-15. As a user, I can
-16. As an owner of a commcan
-17. As an owner of a comment,
-18. As a post owcan
+
+#### Site Owner goals
+
+- [#12](https://github.com/RoMcGill/H2R-PP5/issues/12)As a site owner I want to Make it simple for big retail stores to find small brands So that I can provide a needed service to both small business and retailer
+
+-
 
 ### Third sprint
 
