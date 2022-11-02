@@ -34,16 +34,22 @@
 
 
 ## About
-
-
+### Home To Retail is designed to maximise sales for small bussinesses and Provide quality products for big retailers.
+#### Why?
+DIY'rs, Crafters, Painters, Artists Always have trouble when it comes to maximising Sales and revenue due to Not taking advantage of B2B (business to businees) Sales, This could be for a number of reasons. The main two are not taking advantage of technology arround them such as shopify and wixx this is down to the High barrier to entry when creating, maintaining and running your own website on one of theese platforms. the Next reason is just not knowing where to start and who to contact. We have solved both of these Issues.
+#### How?
+We have solved these issues Firstly by making it easyer than ever to set up your online store front and start selling.We do this by giving our users a simple form and image field to fill out, Once complete our site will automatically build your store front and be available on our site for everyone to see, adding products to your store is done the same way, and will display and be available to purchase in your store. Secondly We will find your Wholesale customers ready to make big orders to stock their shelfs, We do this by giving Wholesalers an easy place to go and purchase products in bulk Hassle free.
+## (TO DO) our two way email system means that when your product gets purchased, the buyer will recieve an email to confirm and so will the seller.
 
 
 ## Project Goals
+My Goal for this project is to create something scaleable that benifits everyone involved.
 
 
 
-The key functionality aspects:
-
+## key functions of H2R:
+- effortless online storfront building
+- effortless bulk buying of unique and bespoke goods
 
 
 ## User Stories
