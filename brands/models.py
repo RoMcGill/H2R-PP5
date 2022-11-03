@@ -38,7 +38,9 @@ class Brand_products(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
-    max_quant = models.IntegerField(null=True, blank=True)
+    max_quant = models.IntegerField(null=True,
+                                    blank=True,
+                                    default=0)
 
     class Meta:
         """
