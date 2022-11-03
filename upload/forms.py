@@ -23,14 +23,14 @@ class Product_form(forms.ModelForm):
     sku = forms.CharField(max_length=254, required=False)
     product_name = forms.CharField(max_length=254, required=False)
     description = forms.CharField(required=False)
-    has_sizes = forms.BooleanField()
+    max_quant = forms.IntegerField(required=True)
     price = forms.DecimalField(max_digits=6, decimal_places=2)
     image = forms.ImageField(required=False)
 
 
     class Meta:
         model = Brand_products
-        fields = ['brand_name', 'brand', 'sku', 'product_name', 'description', 'has_sizes', 'price', 'image']
+        fields = ['brand_name', 'brand', 'sku', 'product_name', 'description', 'max_quant', 'price', 'image']
 
 
 

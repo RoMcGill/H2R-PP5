@@ -23,7 +23,8 @@ class StripeWH_Handler:
         """
         stripe conformation email
         """
-        cust_email = order.email
+        # get this working see if email sends to me and recipient then chnage to brand.email?
+        cust_email = order.email, settings.DEFAULT_FROM_EMAIL
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
             {'order': order}

@@ -45,6 +45,9 @@ def adjust_cart(request, item_id):
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
     print(quantity)
+    if quantity > product.max_quant:
+        messages.error(request, f'max quantity exceeded for {product.product_name}, {product.brand_name} can only Produce {product.max_quant} at this time.')
+
     if quantity > 0:
         cart[item_id] = quantity
         messages.success(request,

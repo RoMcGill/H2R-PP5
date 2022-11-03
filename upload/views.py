@@ -39,7 +39,7 @@ def product_upload(request):
             sku = form.cleaned_data.get('sku')
             product_name = form.cleaned_data.get('product_name')
             description = form.cleaned_data.get('description')  # clean the data
-            has_sizes = form.cleaned_data.get('has_sizes')  # clean the data
+            max_quant = form.cleaned_data.get('max_quant')  # clean the data
             price = form.cleaned_data.get('price')  # clean the data
             form.save()  # save the data to the model
             messages.success(request, 'Your product has been added!')
