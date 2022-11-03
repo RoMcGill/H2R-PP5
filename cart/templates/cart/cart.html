@@ -10,17 +10,19 @@
         </div>
     </div>
                 <div class="row">
-                    <div class="col"><h4><b></b></h4></div>
-                    <div class="col"><h4><b></b></h4></div>
-                    <div class="col"><h4><b>Sku</b></h4></div>
+
+
+                    <div class="col"><h4><b>image</b></h4></div>
+                    <div class="col"><h4><b>name</b></h4></div>
                     <div class="col"><h4><b>Price</b></h4></div>
                     <div class="col"><h4><b>Qty</b></h4></div>
                     <div class="col"><h4><b>Total</b></h4></div>
+
 {% for item in cart_items%}
 
                 </div>
 
-            <div class="row border-top border-bottom">
+            <div class=" border-top border-bottom">
                 <div class="row main align-items-center">
                     <div class="col-2"><img class="img-fluid" src="{{ item.product.image.url }}"></div>
 
@@ -30,8 +32,8 @@
                     <div class="col">{{ item.product.brand_name }}
                         <div class="row">{{ item.product.product_name }}</div>
                     </div>
-                    <div class="col">SKU:{{ item.product.sku }}</div>
                     <div class="col">{{ item.product.price }}</div>
+                    <div class="col">{{ item.quantity }}</div>
                     <div>
                         <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                             {% csrf_token %}
@@ -70,39 +72,6 @@
 
                     </td>
                 </tr>
-
-
-                        <!-- <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
-                        {% csrf_token %}
-                        <div class="form-row">
-                            <div class="col-3">
-                                <p class="mt-3">Quantity:</p>
-                                <div class="form-group w-10">
-                                    <div class="input-group col-12">
-                                        <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-black rounded-0"
-                                                data-item_id="{{item.item_id}}" id="decrement-qty_{{ item.item_id }}">
-                                                <p>minus</p>
-                                            </button>
-                                        </div>
-                                        <input class="form-control qty_input" type="number"
-                                        name="quantity" value="{{item.quantity}}" min="1" max="99"
-                                        data-item_id="{{ item.item_id }}"
-                                        id="id_qty_{{item.item_id}}">
-                                        <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black rounded-0"
-                                                data-item_id="{{item.item_id}}" id="increment-qty_{{ item.item_id }}">
-                                                <p>plus</p>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </form>
-                    <a class="update-link text-info link-pointer"><small>Update</small></a>
-                    <a class="remove-item text-danger float right link-pointer" id="remove_{{item.item_id}}">remove</a>
-                </div> -->
-
                     <div class="col">{{ item.total }}</div>
                 </div>
             </div>

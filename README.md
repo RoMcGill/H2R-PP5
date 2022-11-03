@@ -170,20 +170,28 @@ This page displays a contact form which allows users to send an message to the s
 This page will display our mission statement + how and why we do what we do.
 
 ### Cart
+This page will diplay items that you have added to your cart.
 
 
 ### Follow Us
+This page will show all of our Social media links and previews of what each site looks like.
 
 
 ### Create a brand
+this page will allow users to create their brand/ storefront on our site. It is a simple form
 
 ### Upload a product
+this page is like the create a brand page, it is a slightly longer form and allows people to create products to add to their site.
 
+### checout page
+this page is for customers to checkout their order using Stripe
 
+### checkout success page
+this page shows the users order number, and order history along with a message to tell the user that they have been sent an email to confirm their order.
 
 
 ### 404 error page
-This page is used in place of a standard 404 page. It will be shown in the event of an error which does not allow the page to loadT
+This page is used in place of a standard 404 page. It will be shown in the event of an error which does not allow the page to loadq
 ----
 
 
