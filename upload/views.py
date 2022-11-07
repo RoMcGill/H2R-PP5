@@ -11,15 +11,12 @@ def brand_upload(request):
     if request.method == 'POST':  # this means the form has data
         form = Brand_form(request.POST, request.FILES)  # get the form and it data
         if form.is_valid():  # check if it is valid
+            brand_name = form.cleaned_data.get('brand_name')  # clean the data
+            brand_email = form.cleaned_data.get('brand_email')
+            description = form.cleaned_data.get('description')  # clean the data
+            image = form.cleaned_data.get('image')  # clean the data
 
-            instance = form.save(commit=False)
-            instance.brand_email = request.user.email
-            instance.save()
-
-            # brand_name = form.cleaned_data.get('brand_name')  # clean the data
-            # description = form.cleaned_data.get('description')  # clean the data
-            # image = form.cleaned_data.get('image')  # clean the data
-            # form.save()  # save the data to the model
+            form.save()  # save the data to the model
             messages.success(request, 'Your brand has been added!')
             return redirect(reverse('product-upload'))
         else:  # form not valid so display message and retain the data entered
