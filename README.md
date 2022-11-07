@@ -482,7 +482,6 @@ Lighthouse was used to test the performance, accessibility, best practice and SE
 - Readme (1/10)
 - Payment structure (5/10)
 - store owners can only edit their store (1/10)
-- add quantity model when uploading product and do not let order exceede that ammount ( track quantity )(5/10)
 - finish social app page (8/10)
 - create facebook + insta pages + content for Both (8/10)
 - optimise SEO (keywords + liks to other sites)(5/10)

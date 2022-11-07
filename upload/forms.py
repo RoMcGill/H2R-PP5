@@ -4,6 +4,7 @@ brands = Brands.objects.all()
 
 
 class Brand_form(forms.ModelForm):
+    brand_email = forms.EmailField(max_length=254, required=True)
     brand_name = forms.CharField(max_length=254, required=False)
     description = forms.CharField(required=False)
     image = forms.ImageField(required=False)
@@ -11,7 +12,7 @@ class Brand_form(forms.ModelForm):
 
     class Meta:
         model = Brands
-        fields = ['brand_name', 'description', 'image']
+        fields = ['brand_name', 'brand_email', 'description', 'image']
 
 
 
