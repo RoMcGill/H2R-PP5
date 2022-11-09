@@ -480,7 +480,7 @@ Lighthouse was used to test the performance, accessibility, best practice and SE
 # Todo
 - 2 way email system (0/10)
 - Readme (1/10)
-- Payment structure (5/10)
+
 
 - finish social app page (8/10)
 - create facebook + insta pages + content for Both (8/10)

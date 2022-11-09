@@ -21,10 +21,10 @@ class StripeWH_Handler:
 
     def _send_confirmation_email(self, order):
         """
-        stripe conformation email
+        stripe confirmation email
         """
         # get this working see if email sends to me and recipient then chnage to brand.email?
-        cust_email = order.email, settings.DEFAULT_FROM_EMAIL
+        cust_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
             {'order': order}
@@ -113,7 +113,6 @@ class StripeWH_Handler:
 
         else:
             order = None
-
             try:
 
                 order = Order.objects.create(

@@ -85,13 +85,14 @@ main{
 }
 
 .main-btns{
+    list-style-type: none;
     max-width: 600px;
     margin-top: 20vh;
     margin-left: 30vw;
     padding-right: 10px;
     padding-bottom: 1px;
-    background-color: rgba(254, 236, 236, 0.9);
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+
 
 
 
