@@ -8,51 +8,77 @@ div {
     outline: 5px solid black;
   }
 
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
 
 
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 120px;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
 
-}
+/* .topnav{
+    width: 100%;
+    color: black;
+    float: left;
 
-.nav-item1{
-    display: flex;
-    padding-top: 150px;
-    padding-left: 30%;
-    padding-bottom: 50px;
+} */
+
+/* .nav-item1{
+
     font-size: 30px;
     text-transform: uppercase;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     text-decoration: underline;
-}
-.nav-item1:hover{
+} */
+/* .nav-item1:hover{
     color: lightpink;
-}
+} */
 
 
-.nav-item2{
-    display: inline-block;
+/* .nav-item2{
     text-decoration: none;
-    padding: 5px 15px 5px 5px;
     font-size: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
 
-
-
 }
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 .nav-item2:hover{
     color: lightpink;
-}
+} */
 
 .special-h1{
     display: flex;
@@ -66,8 +92,7 @@ nav{
 
 
 main{
-    margin-left: 120px;
-    height: 100vh;
+
 
 }
 
