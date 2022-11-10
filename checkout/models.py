@@ -15,10 +15,10 @@ class Order(models.Model):
     models for Orders
     """
     order_number = models.CharField(
-                                    max_length=32,
-                                    null=False,
-                                    editable=False
-                                    )
+        max_length=32,
+        null=False,
+        editable=False
+        )
     user_profile = models.ForeignKey(
                                     UserProfile,
                                     on_delete=models.SET_NULL,
