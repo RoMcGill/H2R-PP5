@@ -1,12 +1,62 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Mabry pro', sans-serif;
 }
 
 div {
     outline: 5px solid black;
   }
+
+.no-pad{
+    outline:5px solid white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: 70px;
+}
+
+.about{
+    padding-top: 100px;
+}
+
+
+
+
+/* CSS */
+.button-31 {
+    text-decoration: none;
+  background-color: #ff90e8;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -116,6 +166,40 @@ ul {
     border-radius: 70% 60% 20% 10% / 60% 20% 60% 70%;
     margin: 0 auto;
   }
+
+.pop-image{
+    height: 450px;
+    position: static;
+    z-index: 1;
+}
+@media only screen and (max-width: 818px) {
+  .pop-image {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .res-div{
+      height: 200px;
+    }
+  }
+
+
+
+.content{
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content{
+      padding-left: 10px;
+      font-size: 1rem;
+    }
+  }
+
+
 
 
 .special-h1{
