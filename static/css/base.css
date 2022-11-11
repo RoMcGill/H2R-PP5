@@ -199,8 +199,28 @@ ul {
     }
   }
 
+.prod{
+    height: 300px;
+    width: 300px;
+
+}
+
+.site{
+    height: 300px;
+    width: 300px;
+
+}
+
+.dream{
+    height: 300px;
+    width: 300px;
+}
 
 
+.form{
+    height: 300px;
+    width: 300px;
+}
 
 .special-h1{
     display: flex;
