@@ -74,13 +74,13 @@
        <a href="{% url 'brands' %}">Brands</a>
        <a href="{% url 'contact' %}">Contact-Us</a>
        <a href="{% url 'mission' %}">Our Mission</a>
-       <a href="{% url 'view_cart' %}">Cart</a>
+       <a href="{% url 'view_cart' %}">Cart
          {% if grand_total %}
              ${{ grand_total|floatformat:2 }}
          {% else %}
              $0.00
          {% endif %}
-
+        </a>
        <a class="nav-item2" href="{% url 'view_socials' %}">Follow US!</a>
         <a class="nav-item2" href="{% url 'brand-upload' %}">Create A Brand Page</a>
         <a class="nav-item2" href="{% url 'product-upload' %}">Upload A Product</a>

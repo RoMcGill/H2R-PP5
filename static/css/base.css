@@ -80,6 +80,44 @@ ul {
     color: lightpink;
 } */
 
+
+#burst-12 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+  }
+  #burst-12:before,
+  #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+  }
+  #burst-12:before {
+    transform: rotate(30deg);
+  }
+  #burst-12:after {
+    transform: rotate(60deg);
+  }
+
+  .egg {
+    /* Modify size here: */
+    --size: 300px;
+
+    display: block;
+    width: var(--size);
+    height: calc(var(--size) * 1.44);
+    background-color:#ffc900;
+    border-radius: 70% 60% 20% 10% / 60% 20% 60% 70%;
+    margin: 0 auto;
+  }
+
+
 .special-h1{
     display: flex;
     font-family: 'Courier New', Courier, monospace;
