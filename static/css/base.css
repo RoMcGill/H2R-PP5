@@ -20,10 +20,19 @@
   background-color: #ff90e8;
 }
 
+.card-text{
+  padding: 20px;
+}
+
 .list-group-item{
   background-color: #ff90e8 !important;
 
 
+}
+
+.contact-head{
+  background-color: #ff90e8;
+  border-radius: 10px;
 }
 
 .card{
