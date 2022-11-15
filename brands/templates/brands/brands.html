@@ -79,27 +79,22 @@
 {% endfor %} -->
 
 
-<div class="container-fluid">
+<div class="container-fluid outline-div">
   <!-- row -->
-  <div class="row">
+  <div class="row outline-div">
     <!-- col -->
-    <div class="col col-sm-6 col-md-6 text-center res-div" style="background-color: #ff90e8; padding-bottom: 600px;  z-index: 99;">
+    <div class="col col-sm-6 col-md-6 text-center res-div about outline-div" style="background-color: #ff90e8; padding-bottom: 400px;  z-index: 99;">
       <h2 class="font-weight-bold text-left">Brands That are selling on H2R</h2>
 
       <!-- col -->
-    <div class="col">
+
       <h2 style="text-align: center; justify-content: center; margin-left: 120px;"></h2>
-    <div id="caro" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div id="caro" class="carousel slide col outline-div" data-ride="carousel" data-interval="5000">
 
-    <ul class="carousel-indicators">
-      <li data-target="#caro" data-slide-to="0" class="active"></li>
-      <li data-target="#caro" data-slide-to="1"></li>
-      <li data-target="#caro" data-slide-to="2"></li>
-    </ul>
 
-    <div class="carousel-inner">
+    <article class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{% static 'images/casper-2.png' %}" alt="Slider1">
+        <!-- <img src="{% static 'images/casper-2.png' %}" alt="Slider1"> -->
         <h1>CasperCO</h1>
         <p>CasperCO
             All Natural Lip Balm
@@ -107,23 +102,23 @@
             Zero Plastic - Planting Seeds for Change</p>
       </div>
       <div class="carousel-item">
-        <img src="{% static 'images/modmo-1.png' %}" alt="Slider2" width="1100" height="500">
-        <h1>MODMO</h1>
+        <!-- <img src="{% static 'images/modmo-1.png' %}" alt="Slider2" width="1100" height="500"> -->
+        <h1>MODMO.io</h1>
         <p>MODMO was founded in March 2020 by Jack O’Sullivan, a then 23yr old Irishman with a vision to make the bike that would replace your car.
         </p>
       </div>
       <div class="carousel-item">
-        <img src="{% static 'images/rk-1.png' %}" alt="Slider3" width="1100" height="500">
-        <h1>Rebeka Kahn Art</h1>
+        <!-- <img src="{% static 'images/rk-1.png' %}" alt="Slider3" width="1100" height="500"> -->
+        <h1>RebekaKahn</h1>
         <p>Rebeka Kahn ART Bespoke Irish Art, created using a unique fusion of ceramic, glass & inspiration.
             Every work of art has a story and this one is no different..</p>
       </div>
-    </div>
-  </div>
+
+    </article>
     </div>
     </div>
     <!-- col -->
-      <div class="col col-sm-6 col-md-6 text-center res-div about" style="background-color: #ffc900; padding-bottom: 600px;">
+      <div class="col col-sm-6 col-md-6 text-center res-div about" style="background-color: #ffc900; padding-bottom: 400px;">
       <h2 class="font-weight-bold content">Start your first </h2>
       <h2 class="font-weight-bold content" >online store Toaday!</h2>
       <p class="content">Its easy To create your brand and upload your products through our simple to follow forms.</p>
@@ -140,11 +135,11 @@
   </div>
 </div>
 <div class="row">
-  <div class="col col-sm-12 col-md-12 text-center " style="background-color: rgb(255, 255, 255); padding-bottom: 50px; padding-top:50px; font-size: 2rem;">
+  <div class="col col-sm-12 col-md-12 text-center " style=" background-color: #ff90e8; padding-bottom: 50px; padding-top:50px; font-size: 2rem;">
 
     {% for brand in brands %}
     {% if brand.image %}
-    <div class="card-deck" style="margin-left: 120px; max-width: 80%; padding-top: 15px;">
+    <div class="card-deck outline-div" style="max-width: 80%; padding-top: 15px; background-color: #ffc900; margin: 0 auto;">
         <div class="card">
     <a href="{% url 'brand_detail' brand.id %}">
         <img class="card-img-top" src="{{ brand.image.url }}" alt="{{ brand.name }}" style="height: 200px; width:200px;">
@@ -175,33 +170,34 @@
   </div>
 </div>
 </div>
-<div class="container-fluid">
-  <div class="row" style="background-color: red;">
-    <div class="col col-sm-6 col-md-6 text-center" style="background-color: #000000; padding-bottom: 50px;">
-      <h2 class="font-weight-bold text-center" style="color: white; font-size: 3rem;">Create A Brand</h2>
+<div class="container-fluid outline-div">
+  <div class="row outline-div" style="background-color: red;">
+    <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #000000; padding-bottom: 50px;">
+
+      <h2 class="font-weight-bold text-center outline-div" style="color: white; font-size: 3rem;"><a href="{% url 'brand-upload' %}">Create A Brand</a></h2>
       <p class="text-right no-sm" style="color: white; font-size: 3rem;">It's That</p>
       <p style="padding-top: 30px; font-size: 3rem; color: #ffc900;">By filling out Our easy to use and easy to undestand forms!</p>
     </div>
-      <div class="col col-sm-6 col-md-6 text-center" style="background-color: #ffc900;">
-      <h2 class="font-weight-bold text-center" style="font-size: 3rem;">Create A Product</h2>
+      <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ffc900;">
+      <h2 class="font-weight-bold text-center" style="font-size: 3rem;"><a href="{% url 'brand-upload' %}">Create A Product</h2></a>
       <p class="text-left no-sm" style="font-size: 3rem;">Simple</p>
       <img class="form" src="{% static 'images/form.png' %}" alt="">
 
       </div>
-    <div class="w-100" style="background-color: rgb(30, 138, 174);"></div>
+    <div class="w-100 outline-div" style="background-color: rgb(30, 138, 174);"></div>
   </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid outline-div">
   <div class="row" style="background-color: red;">
     <div class="col col-sm-6 col-md-6 text-center" style="background-color: #ff90e8; padding-bottom: 400px;">
       <h2>Why?</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit aut soluta eum perspiciatis minima commodi tempora aliquam voluptate asperiores? Illo minima velit nulla illum ducimus ad laudantium aliquam maiores est.</p>
     </div>
-      <div class="col col-sm-6 col-md-6 text-center" style="background-color: #ffc900;">
+      <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ffc900;">
       <h2>How?</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, iure earum repellat rem laboriosam ab veritatis reprehenderit numquam nam eum totam velit nostrum! Doloremque a nam quae eos accusamus facilis!</p>
       </div>
-    <div class="w-100" style="background-color: rgb(30, 138, 174);"></div>
+    <div class="w-100 outline-div" style="background-color: rgb(30, 138, 174);"></div>
   </div>
 </div>
 

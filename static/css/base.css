@@ -4,7 +4,7 @@
     font-family: 'Mabry pro', sans-serif;
 }
 
-div {
+.outline-div {
     outline: 5px solid black;
   }
 
@@ -13,6 +13,22 @@ div {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 5px;
     font-size: 70px;
+}
+
+
+.card-deck{
+  background-color: #ff90e8;
+}
+
+.list-group-item{
+  background-color: #ff90e8 !important;
+
+
+}
+
+.card{
+  background-color:#ffc900 !important;
+  border-radius: 25px;
 }
 
 .about{
@@ -343,6 +359,10 @@ main{
     margin: 0 auto;
     height: 100px;
     width:100%;
+    block-size: fit-content;
+    background-color:#ffc900;
+
+
 
 
 }
@@ -364,32 +384,43 @@ main{
     display: table-cell;
     width: 100%;
 
+
+
+
+}
+
+.cntr{
+  margin: 0 auto;
 }
 
 .all-brands{
-    margin-left: 120px;
+  margin: 0 auto;
+
 }
 
 .space{
-    margin-left: 120px;
+
     height: 30vh;
     padding-top: 100px;
     text-align: center;
+    margin: 0 auto;
+    background-color: #ff90e8;
 }
 .space2{
-    margin-left: 120px;
+
     height: 30vh;
     padding-top: 70px;
     text-align: center;
+    margin: 0 auto;
+    background-color: #ff90e8;
 }
 .brands{
     padding-bottom: 60px;
-    margin-left: 120px;
+    margin: 0 auto;
+
 }
 
-.right{
-    margin-left: 120px;
-}
+
 
 .message-container{
     position: fixed;
@@ -457,7 +488,7 @@ main{
 }
 
 .title{
-    margin-left: 120px;
+ margin: 0 auto;
 }
 
 .img-size{
