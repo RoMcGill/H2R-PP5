@@ -40,6 +40,13 @@
   border-radius: 25px;
 }
 
+.blk-card{
+  background-color:black !important;
+  border-radius: 25px;
+  color:#ffc900 ;
+
+}
+
 .about{
     padding-top: 100px;
 }

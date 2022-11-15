@@ -9,17 +9,17 @@
 {% block content %}
 
 
-<div class="container" style="margin-left: 120px;">
-    <div class="container">
+<div class="container" style="background-color: black; padding-bottom: 100px;">
+    <div class="container ">
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">My Profile</h2>
+            <h2 class="logo-font mb-4" style="color: white;">My Profile</h2>
             <hr>
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row contact-head">
     <div class="col-12 col-lg-6">
         <p>
             Default Delivery Information
@@ -27,11 +27,11 @@
         <form action="{% url 'profile'%}" method="POST" id="profile-update-form">
             {% csrf_token %}
             {{ form|crispy }}
-            <button class="float-right">Update Information</button>
+            <button class="float-right button-32">Update Information</button>
         </form>
 
     </div>
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-lg-6 card">
         <p>Order History</p>
         <div class="order-history table-responsive">
             <table class="table table-sm table-borderless">
