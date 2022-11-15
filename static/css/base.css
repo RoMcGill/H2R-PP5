@@ -92,6 +92,45 @@ div {
     display: none;
   }
 
+.banner{
+
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+
+        -moz-animation: my-animation 15s linear infinite;
+        -webkit-animation: my-animation 15s linear infinite;
+        animation: my-animation 15s linear infinite;
+      }
+
+      /* for Firefox */
+      @-moz-keyframes my-animation {
+        from { -moz-transform: translateX(100%); }
+        to { -moz-transform: translateX(-100%); }
+      }
+
+      /* for Chrome */
+      @-webkit-keyframes my-animation {
+        from { -webkit-transform: translateX(100%); }
+        to { -webkit-transform: translateX(-100%); }
+      }
+
+      @keyframes my-animation {
+        from {
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+        to {
+          -moz-transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+
+}
 
 
 /* .topnav{
@@ -222,6 +261,12 @@ ul {
     width: 300px;
 }
 
+@media only screen and (max-width: 575px) {
+    .no-sm {
+    display: none;
+    }
+}
+
 .special-h1{
     display: flex;
     font-family: 'Courier New', Courier, monospace;
@@ -294,18 +339,22 @@ main{
 }
 
 #caro{
-    width: 75%;
-    margin-left: 120px;
 
-    z-index: -1;
+    margin: 0 auto;
+    height: 100px;
+    width:100%;
+
+
 }
 
 
 .carousel-inner img {
-    width: fit-content;
-    height: 300px;
-    margin: auto;
-    float: left;
+    max-width: 90%;
+    margin: 0 auto;
+    max-height: 400px;
+
+
+
 
 
 
@@ -313,6 +362,7 @@ main{
 
   .carousel-inner {
     display: table-cell;
+    width: 100%;
 
 }
 
