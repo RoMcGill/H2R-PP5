@@ -4,8 +4,10 @@
     font-family: 'Mabry pro', sans-serif;
 }
 
+
+
 .outline-div {
-    outline: 5px solid black;
+    outline: 3px solid black;
   }
 
 .no-pad{
@@ -130,6 +132,8 @@ opacity: .75;
 .topnav {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    top: 0;
+    position:sticky
   }
 
   /* Style the links inside the navigation bar */
@@ -163,7 +167,7 @@ opacity: .75;
 .banner{
 
         letter-spacing: 2px;
-        word-spacing: 5px;
+        word-spacing: 8px;
         /* animation properties */
         -moz-transform: translateX(100%);
         -webkit-transform: translateX(100%);
@@ -171,7 +175,7 @@ opacity: .75;
 
         -moz-animation: my-animation 15s linear infinite;
         -webkit-animation: my-animation 15s linear infinite;
-        animation: my-animation 15s linear infinite;
+        animation: my-animation 20s linear infinite;
       }
 
       /* for Firefox */
@@ -278,12 +282,31 @@ ul {
     height: 450px;
     position: static;
     z-index: 1;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes float {
+  0% {
+
+    transform: translatey(0px);
+  }
+  50% {
+
+    transform: translatey(-20px);
+  }
+  100% {
+
+    transform: translatey(0px);
+  }
+
 }
 @media only screen and (max-width: 818px) {
   .pop-image {
     height: 250px;
   }
 }
+
 
 @media only screen and (max-width: 600px) {
     .res-div{
@@ -344,6 +367,20 @@ ul {
     text-decoration: underline;
 
 }
+
+.heading{
+  width: 98%;
+  white-space: nowrap;
+  padding: 25px;
+}
+@media only screen and (max-width: 818px) {
+  .heading {
+    width: 55%;
+    height: 50%;
+    padding: 25px;
+  }
+}
+
 
 
 main{

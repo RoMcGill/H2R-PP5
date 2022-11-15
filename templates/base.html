@@ -35,11 +35,10 @@
     <title>H2R {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="no-pad">
-      <div class="jumbotron jumbotron-fluid bg-white no-pad">
-        <div class="container no-pad">
-          <h1 class="display-4 text-center no-pad" style="font-size: 50px; font-weight: 600;">Home 2 Retail</h1>
-        </div>
+
+
+          <img class="heading" src="{% static 'images/header.png'%}" alt="">
+
       </div>
     </header>
     <!-- <nav class="topnav">
@@ -68,7 +67,7 @@
       </ul>
      </nav> -->
 
-     <div class="topnav" id="myTopnav">
+     <div class="topnav outline-div" id="myTopnav">
 
        <a href="{% url 'home' %}">Home</a>
        <a href="{% url 'brands' %}">Brands</a>
