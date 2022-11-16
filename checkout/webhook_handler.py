@@ -6,7 +6,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
 from .models import Order, OrderLineItem
-from brands.models import Brand_products
+from brands.models import Brand_products, Brands
 from profiles.models import UserProfile
 import json
 import time
@@ -34,11 +34,15 @@ class StripeWH_Handler:
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order,
              'contact_email': settings.DEFAULT_FROM_EMAIL}
-             )
+        )
+
+        brand_email = Brands.brand_email
+
         send_mail(
             subject, body,
             settings.DEFAULT_FROM_EMAIL,
-            [cust_email]
+            [cust_email],
+            [brand_email]
             )
 
     def handle_event(self, event):
