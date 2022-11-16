@@ -36,12 +36,37 @@ class StripeWH_Handler:
              'contact_email': settings.DEFAULT_FROM_EMAIL}
         )
 
-        brand_email = Brands.brand_email
+
 
         send_mail(
             subject, body,
             settings.DEFAULT_FROM_EMAIL,
-            [cust_email]+[brand_email]
+            [cust_email]
+            )
+
+    def _send_vendor_email(self, order):
+        """
+        stripe confirmation email
+        """
+        # get this working see if email sends to me and recipient then chnage to brand.email?
+        brand_email = Brands.brand_email
+        subject = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            {'order': order}
+        )
+
+        body = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_body.txt',
+            {'order': order,
+             'contact_email': settings.DEFAULT_FROM_EMAIL}
+        )
+
+
+
+        send_mail(
+            subject, body,
+            settings.DEFAULT_FROM_EMAIL,
+            [brand_email]
             )
 
     def handle_event(self, event):
@@ -109,6 +134,7 @@ class StripeWH_Handler:
                 time.sleep(1)
         if order_exists:
             self._send_confirmation_email(order)
+            self._send_vendor_email(order)
             return HttpResponse(
                 content=f'Webhook recieved: {event["type"]}\
                     | SUCCESS verified order already in database',
@@ -149,6 +175,7 @@ class StripeWH_Handler:
                     content=f'Webhook recieved: {event["type"]} | ERROR: {e}',
                     status=500)
         self._send_confirmation_email(order)
+        self._send_vendor_email(order)
         return HttpResponse(
             content=f'Webhook recieved: {event["type"]} \
                 | SUCCESS: created order in webhook',
