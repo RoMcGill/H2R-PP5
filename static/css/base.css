@@ -456,22 +456,16 @@ main{
 }
 
 
-.carousel-inner img {
-    max-width: 90%;
-    margin: 0 auto;
-    max-height: 400px;
+.carousel-item{
+  background-color:#ffc900;
+  color: #000000;
 
-
-
-
-
-
-  }
+}
 
   .carousel-inner {
     display: table-cell;
     width: 100%;
-
+    background-color:#ffc900;
 
 
 
