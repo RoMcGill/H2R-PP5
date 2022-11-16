@@ -36,8 +36,6 @@ class StripeWH_Handler:
              'contact_email': settings.DEFAULT_FROM_EMAIL}
         )
 
-
-
         send_mail(
             subject, body,
             settings.DEFAULT_FROM_EMAIL,
@@ -51,17 +49,15 @@ class StripeWH_Handler:
         # get this working see if email sends to me and recipient then chnage to brand.email?
         brand_email = Brands.brand_email
         subject = render_to_string(
-            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            'checkout/confirmation_emails/vendor_email_subject.txt',
             {'order': order}
         )
 
         body = render_to_string(
-            'checkout/confirmation_emails/confirmation_email_body.txt',
+            'checkout/confirmation_emails/vendor_email_body.txt',
             {'order': order,
              'contact_email': settings.DEFAULT_FROM_EMAIL}
         )
-
-
 
         send_mail(
             subject, body,
