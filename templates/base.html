@@ -67,9 +67,22 @@
       </ul>
      </nav> -->
 
-     <div class="topnav outline-div" id="myTopnav">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-       <a href="{% url 'home' %}">Home</a>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="{% url 'home' %}"Home>Home</a>
+  {% if request.user.is_authenticated %}
+  <a class="nav-item2" href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+  <a class="nav-item2" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+   {% else %}
+   <a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+     <a class="nav-item2" href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+   {% endif %}
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+
        <a href="{% url 'brands' %}">Brands</a>
        <a href="{% url 'contact' %}">Contact-Us</a>
        <a href="{% url 'mission' %}">Our Mission</a>
@@ -90,6 +103,36 @@
        <a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
          <a class="nav-item2" href="{% url 'account_login' %}" class="dropdown-item">Login</a>
        {% endif %}
+
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="navFunc()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+       <script>
+        function navFunc() {
+  var nav = document.getElementById("myLinks");
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+  } else {
+    nav.style.display = "block";
+  }
+}
+       </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

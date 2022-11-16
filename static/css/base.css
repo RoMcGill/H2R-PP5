@@ -205,42 +205,47 @@ opacity: .75;
 }
 
 
-/* .topnav{
-    width: 100%;
-    color: black;
-    float: left;
-
-} */
-
-/* .nav-item1{
-
-    font-size: 30px;
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline;
-} */
-/* .nav-item1:hover{
-    color: lightpink;
-} */
-
-
-/* .nav-item2{
-    text-decoration: none;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-.nav-item2:hover{
-    color: lightpink;
-} */
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
 #burst-12 {
     background: red;
@@ -307,12 +312,6 @@ ul {
   }
 }
 
-
-@media only screen and (max-width: 600px) {
-    .res-div{
-      height: 200px;
-    }
-  }
 
 
 
