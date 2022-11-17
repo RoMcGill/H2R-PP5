@@ -80,7 +80,7 @@
    <a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
      <a class="nav-item2" href="{% url 'account_login' %}" class="dropdown-item">Login</a>
    {% endif %}
-   <a href="{% url 'view_cart' %}">Cart
+   <a href="{% url 'view_cart' %}" style="padding-right:50px;">Cart
     {% if grand_total %}
         ${{ grand_total|floatformat:2 }}
     {% else %}
@@ -93,18 +93,11 @@
        <a href="{% url 'brands' %}">Brands</a>
        <a href="{% url 'contact' %}">Contact-Us</a>
        <a href="{% url 'mission' %}">Our Mission</a>
-       <a href="{% url 'view_cart' %}">Cart
-         {% if grand_total %}
-             ${{ grand_total|floatformat:2 }}
-         {% else %}
-             $0.00
-         {% endif %}
-        </a>
+
        <a class="nav-item2" href="{% url 'view_socials' %}">Follow US!</a>
         <a class="nav-item2" href="{% url 'brand-upload' %}">Create A Brand Page</a>
         <a class="nav-item2" href="{% url 'product-upload' %}">Upload A Product</a>
       {% if request.user.is_authenticated %}
-      <a class="nav-item2" href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
       <a class="nav-item2" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
        {% else %}
        <a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -183,7 +176,7 @@
                       <a href="https://www.linkedin.com/in/ronan-mcgill-512b7a22a/" target="_blank"><i class="fa fa-linkedin-square fa-icon"></i></a>
                       <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-icon"></i></a>
                       <a href="https://www.skype.com/" target="_blank"><i class="fa fa-skype fa-icon"></i></a>
-                      <a href="#" target="_blank"><i class="fa fa-facebook-square fa-icon"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100087569125142" target="_blank"><i class="fa fa-facebook-square fa-icon"></i></a>
                       <a href="https://www.instagram.com/home2retail/" target="_blank"><i class="fa fa-instagram-square fa-icon"></i></a>
                       <a href="https://github.com/RoMcGill/" target="_blank"><i class="fa fa-github-square fa-icon"></i></a>
                   </div>

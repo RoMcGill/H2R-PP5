@@ -4,6 +4,14 @@
     font-family: 'Mabry pro', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+
+}
+body {
+  position: relative;
+
+}
 
 
 .outline-div {
@@ -165,7 +173,8 @@ opacity: .75;
   }
 
 .banner{
-
+        overflow: hidden;
+        width: 100%;
         letter-spacing: 2px;
         word-spacing: 8px;
         /* animation properties */
@@ -282,6 +291,12 @@ opacity: .75;
     border-radius: 70% 60% 20% 10% / 60% 20% 60% 70%;
     margin: 0 auto;
   }
+  @media only screen and (max-width: 818px) {
+    .egg {
+      height: 300px;
+    }
+  }
+
 
 .pop-image{
     height: 450px;
@@ -290,6 +305,7 @@ opacity: .75;
     transform: translatey(0px);
     animation: float 6s ease-in-out;
     animation-iteration-count: infinite;
+    height: 300px;
 }
 @keyframes float {
   0% {
@@ -312,7 +328,13 @@ opacity: .75;
   }
 }
 
+@media only screen and (max-width: 650px){
+  .col-sm-6 {
 
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
 
 
 .content{
@@ -351,7 +373,7 @@ opacity: .75;
     width: 300px;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 650px) {
     .no-sm {
     display: none;
     }

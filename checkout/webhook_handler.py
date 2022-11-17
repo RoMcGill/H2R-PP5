@@ -47,7 +47,7 @@ class StripeWH_Handler:
         stripe confirmation email
         """
         # get this working see if email sends to me and recipient then chnage to brand.email?
-        brand_email = Brands.brand_email
+        brand_email = order.lineitems.product.brand.brand_email
         subject = render_to_string(
             'checkout/confirmation_emails/vendor_emails_subject.txt',
             {'order': order}
