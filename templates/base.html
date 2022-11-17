@@ -164,12 +164,33 @@
         </div>
     {% endif %}
 
+
+
     {% block page_header %}
     {% endblock %}
 
     {% block content %}
     {% endblock %}
+    <footer>
+      <div class="container">
+          <div class="row vcenter">
+              <div class="pull-left col-lg-4 col-xs-6">
+                  <p>Copyright &copy; 2022 Ronan Mcgill</p>
+              </div>
+              <div class="col-lg-4 col-lg-offset-4 col-xs-6">
+                  <div class="pull-right">
 
+                      <a href="https://www.linkedin.com/in/ronan-mcgill-512b7a22a/" target="_blank"><i class="fa fa-linkedin-square fa-icon"></i></a>
+                      <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-icon"></i></a>
+                      <a href="https://www.skype.com/" target="_blank"><i class="fa fa-skype fa-icon"></i></a>
+                      <a href="#" target="_blank"><i class="fa fa-facebook-square fa-icon"></i></a>
+                      <a href="https://www.instagram.com/home2retail/" target="_blank"><i class="fa fa-instagram-square fa-icon"></i></a>
+                      <a href="https://github.com/RoMcGill/" target="_blank"><i class="fa fa-github-square fa-icon"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
     {% block postloadjs %}
     <script type="text/javascript">
       $('.toast').toast('show');
