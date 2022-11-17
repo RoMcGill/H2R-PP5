@@ -217,7 +217,7 @@ opacity: .75;
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -228,7 +228,7 @@ opacity: .75;
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -237,7 +237,7 @@ opacity: .75;
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  background: rgb(228, 90, 209);
   display: block;
   position: absolute;
   right: 0;
@@ -300,12 +300,13 @@ opacity: .75;
 
 .pop-image{
     height: 450px;
-    position: static;
+    position: relative;
+    padding-right: 150px;
     z-index: 1;
     transform: translatey(0px);
     animation: float 6s ease-in-out;
     animation-iteration-count: infinite;
-    height: 300px;
+
 }
 @keyframes float {
   0% {
@@ -327,6 +328,48 @@ opacity: .75;
     height: 250px;
   }
 }
+@media only screen and (max-width: 1116px) {
+  .pop-image {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 881px) {
+  .pop-image {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 763px) {
+  .pop-image {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 646px) {
+  .pop-image {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .pop-image {
+    height: 350px;
+  }
+}
+
+
+
+
+
+
+
+.pop-image-2{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out;
+  animation-iteration-count: infinite;
+
+}
+
 
 @media only screen and (max-width: 650px){
   .col-sm-6 {
