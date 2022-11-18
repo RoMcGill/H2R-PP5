@@ -1,15 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
-
+<!-- css for checkout -->
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css'%}">
 {% endblock %}
-
-
-
 {% block content %}
-
+<!-- overlay for loading -->
 <div class="overlay"></div>
+<!-- container -->
 <div class="container">
     <div class="row">
         <div class="col">
@@ -29,6 +27,7 @@
                     <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                 </div>
             </div>
+            <!-- list cart items -->
             {% for item in cart_items %}
             <div class="row">
                 <div class="col-2 mb-1">
@@ -49,20 +48,22 @@
                 </div>
             </div>
             {% endfor%}
+            <!-- cart summary -->
             <hr class="my-0">
-                <div class="row text-black text-right">
-                    <div class="col-7 offset-2">
-                        <p class="my-0">Order Total:</p>
-                        <p class="my-0">Delivery:</p>
-                        <p class="my-0">Grand Total:</p>
-                    </div>
-                    <div class="col-3">
-                        <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
-                    </div>
+            <div class="row text-black text-right">
+                <div class="col-7 offset-2">
+                    <p class="my-0">Order Total:</p>
+                    <p class="my-0">Delivery:</p>
+                    <p class="my-0">Grand Total:</p>
                 </div>
+                <div class="col-3">
+                    <p class="my-0">${{ total | floatformat:2 }}</p>
+                    <p class="my-0">${{ delivery | floatformat:2 }}</p>
+                    <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                </div>
+            </div>
         </div>
+        <!-- order form -->
         <div class="col-12 col-lg-6">
             <p class="text-muted">Plese fill out the form below to complete your order</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -83,8 +84,10 @@
                     {{ order_form.postcode | as_crispy_field }}
                     <div class="form-check form-check-inline float-right mr-0">
                         {% if user is authenticated %}
-                        <label for="id-save-info" class="form-check-label"> save this delivery information to my profile</label>
-                        <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info" checked>
+                        <label for="id-save-info" class="form-check-label"> save this delivery information to my
+                            profile</label>
+                        <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info"
+                            checked>
                         {% else %}
                         <label for="id-save-info" class="form-check-label">
                             <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
@@ -101,8 +104,7 @@
                     <div class="mb3 text-danger" id="card-errors" role="alert"></div>
                     <input type="hidden" value="{{client_secret}}" name="client_secret">
                 </fieldset>
-
-
+                <!-- button -->
                 <div class="submit-button text-right mt-5 mb-2">
                     <a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-0">
                         <span class="font-weight-bold">Make changes to your cart</span>
@@ -117,11 +119,11 @@
                         <span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
-
             </form>
         </div>
     </div>
 </div>
+<!-- load overlay -->
 <div id="loading-overlay">
     <h1 class="text-light logo-font loading-spinner">
         <span class="icon">
@@ -133,10 +135,8 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ client_secret|json_script:"id_client_secret" }}
+{{ block.super }}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
 <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
-
-
