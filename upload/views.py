@@ -6,7 +6,7 @@ from django.contrib import messages
 
 
 # Create your views here.
-
+@login_required
 def brand_upload(request):
     if request.method == 'POST':  # this means the form has data
         form = Brand_form(request.POST, request.FILES)  # get the form and it data
@@ -17,8 +17,8 @@ def brand_upload(request):
             image = form.cleaned_data.get('image')  # clean the data
 
             form.save()  # save the data to the model
-            messages.success(request, 'Your brand has been added!')
-            return redirect(reverse('product-upload'))
+            messages.success(request, 'Your brand has been added! Please wait to be approved to Upload A product Usual wait Time: 24 hours.')
+            return redirect(reverse('brands'))
         else:  # form not valid so display message and retain the data entered
             form = Brand_form(request.POST)
             messages.success(request, 'Error in creating your product, the form is not valid!')
@@ -29,7 +29,7 @@ def brand_upload(request):
 
 @login_required
 def product_upload(request):
-    if not request.user.is_superuser:
+    if not request.user.is_staff:
         messages.error(request, 'Only Store owners can add products')
         return redirect(reverse('home'))
     if request.method == 'POST':  # this means the form has data
@@ -56,7 +56,7 @@ def product_upload(request):
 
 @login_required
 def edit_product(request, product_id):
-    if not request.user.is_superuser:
+    if not request.user.is_staff:
         messages.error(request, 'Only Store owners can edit products')
         return redirect(reverse('home'))
     product = get_object_or_404(Brand_products, pk=product_id)
