@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Sitemap: /https://h2r-pp5.herokuapp.com/sitemap.xml/
