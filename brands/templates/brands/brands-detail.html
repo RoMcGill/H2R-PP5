@@ -2,12 +2,10 @@
 {% load static %}
 {% block content %}
 <!-- space for brandname  -->
-<div class="space2">
-    <h2>{{ brand.brand_name }}</h2>
-</div>
+
 <!-- brand image -->
 {% if brand.image %}
-<div class="card-deck cntr outline-div">
+<div class="card-deck cntr outline-div font-weight-bold content" style="padding: 20px;">
     <div class="card blk-card">
         <img class="card-img-top cntr" src="{{ brand.image.url }}" alt="{{ brand.name }}"
             style="height: 200px; width:200px;">
@@ -28,26 +26,23 @@
 </div>
 </div>
 <!-- space for title -->
-<div class="space outline-div">
-    <h2>Products</h2>
-    <p> by {{ brand.brand_name }}</p>
-</div>
+
 <!-- list products by brand -->
 {% for product in brand_products %}
 <!-- show product image if product has image -->
 {% if product.image %}
-<div class="card-deck cntr outline-div" style=" padding: 15px;">
-    <div class="card">
+<div class="card-deck cntr outline-div">
+    <div class="card outline-div-2">
         <img class="card-img-top cntr" src="{{ product.image.url }}" alt="{{ brand.name }}"
             style="height: 200px; width:200px;">
         {% else %}
         <img class="card-img-top cntr" src="{{ MEDIA_URL }}noimage.png" alt="{{ brand.name }}">
         {% endif %}
         <!-- display product information -->
-        {% if product.Product_name %}
-        <a href="#">
-            <h5 class="card-title cntr">{{ product.Product_name }}</h5>
-        </a>
+        {% if product.product_name %}
+
+            <h5 class="card-title cntr">{{ product.product_name }}</h5>
+
         {% else %}
         <p class="card-text cntr">No name</p>
         {% endif %}
