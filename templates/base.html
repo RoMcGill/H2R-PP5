@@ -94,8 +94,11 @@
        <a href="{% url 'brands' %}">Brands</a>
        <a href="{% url 'contact' %}">Contact-Us</a>
        <a href="{% url 'mission' %}">Our Mission</a>
-
        <a class="nav-item2" href="{% url 'view_socials' %}">Follow US!</a>
+       <a class="nav-item2" href="{% url 'newsletter' %}">Newsletter</a>
+       {% if user.is_superuser%}
+       <a class="nav-item2" href="{% url 'send-newsletter' %}">Send A Newsletter</a>
+       {% endif %}
         <a class="nav-item2" href="{% url 'brand-upload' %}">Create A Brand Page</a>
         <a class="nav-item2" href="{% url 'product-upload' %}">Upload A Product</a>
       {% if request.user.is_authenticated %}

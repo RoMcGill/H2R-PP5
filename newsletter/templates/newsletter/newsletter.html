@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content%}
+
+<div class="col-lg-6 col-md-6" style="margin: 100px auto; display: block;">
+    <form  method="POST"  style="text-align: center;">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" value="Subscribe" class="button is-success button-31" style="color: black;">
+    </form>
+
+</div>
+{% endblock %}
