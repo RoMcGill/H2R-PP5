@@ -129,20 +129,20 @@ My Goal for this project is to create something scaleable that benifits everyone
 
 ## Colours
 <img src="">
-The colour scheme was chosen Deliberatly It is shates of black white and grey with some hints of Opaque Pink, this is to keep the site looking clean, and staright forward, the second reason of why this coulor scheme is integral to the site is that It will not Interfear or clash with any of the brands Coulor schemes or photos, this will give every seller on our platform an equal opportumity to shine through and not force creators or artists to compromise their creativity to fit in with the format or colour scheme of our website to maximise clicks.
+The colour and Design of this website was heavily influenced by the controvertial Gumroad website, I personally think that this is a great Colour scheme to stand out. the UX is also good as the user scrools through the alternating rows and coloums Informatioon is displayed clearly and effectively, In this day and age of shopify stores built on templates I belive the end user will welcome this Unique UI as it is fresh new and exciting.
 
 ## Fonts
 The font used is 'Courier New', Courier, monospace, this font plays the same role as the color scheme as it will be the same for everyone and not suit one brand more than another, some fonts can be too heavy or too light for their intended purpose and give off the wrong tone of a Product or brand, I think the chosen font is a happy medium to suit all brands and products
 
 
 ## Structure
-Ease of use was the main goal for this site. I also wanted to have a unique user experience that is diffrent and exciting but still familiar, therfore i decided to have my Nav bar on the left hand side of the page, this does not hinder the UX in anyway but adds that little something special to the UI which I think the creative Users of the site will appreciate.
+Ease of use was the main goal for this site. and a clear path for both Buyers and Sellers to achieve their goals. I achieved this buy adding large text and icons to describe the use cases for the site.
 
 ### Website pages
 ### The website is made up of the following pages:
 
 ### Home page
-This page is your landing page once logged in and will prompt you to update your profile information and instruct you what to do next, following these instructions you will find other users and populate this page with their posts after following some users.
+This page is your landing page, it consists of some motivational text and an action button to get a seller started using the site. Below this we have a moving banner describing the uses of the site to catch the eye of buyers.
 
 ### Register page
 This is where a new user can create an account.
@@ -151,7 +151,7 @@ This is where a new user can create an account.
 On this page users can login to their account.
 
 ### brands
-This page will show users a list brands and allow users to browse through them.
+This page will show users a list brands that have been uploaded by other users, they will be able to click into any brand from here and browse the products belonging to that brand.
 
 ### Logout page
 This page will allow users to log out of the website, this page will also provide the user with an option to log back in.
@@ -159,26 +159,26 @@ This page will allow users to log out of the website, this page will also provid
 ### Email verification page
 This is where users information is shown. this will be where users are redirected from their conformation email
 
-
+<!--
 ### the blog page
-This page is a site owner run blog to promote businesses and provide users with information.
+This page is a site owner run blog to promote businesses and provide users with information. -->
 
 ### Contact page
-This page displays a contact form which allows users to send an message to the site owner and provide their feedback or questions.
+This page displays a contact form which allows users to send an message to the site owner and provide their feedback or questions, these messages will be stored in the admin page.
 
 ### Our Mission Page
-This page will display our mission statement + how and why we do what we do.
+This page will display our mission statement and how and why we do what we do.
 
 ### Cart
-This page will diplay items that you have added to your cart.
+This page will diplay items that you have added to your cart and give the user an option to head to a secure checkout page.
 
 
 ### Follow Us
-This page will show all of our Social media links and previews of what each site looks like.
+This page will show all of our Social media links decorated by screensots of our social media pages.
 
 
 ### Create a brand
-this page will allow users to create their brand/ storefront on our site. It is a simple form
+this page will Promt loged in users with a simple form alowing them to create their brand/ storefront on our site when the, user is Goven staff status by an admin thy will be able to add products
 
 ### Upload a product
 this page is like the create a brand page, it is a slightly longer form and allows people to create products to add to their site.

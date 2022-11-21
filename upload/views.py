@@ -30,7 +30,7 @@ def brand_upload(request):
 @login_required
 def product_upload(request):
     if not request.user.is_staff:
-        messages.error(request, 'Only Store owners can add products')
+        messages.error(request, 'Only Store owners can add products, Please wait to be Accepted by our Team, usual wait time: 24hrs')
         return redirect(reverse('home'))
     if request.method == 'POST':  # this means the form has data
         form = Product_form(request.POST, request.FILES)  # get the form and it data
