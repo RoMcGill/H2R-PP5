@@ -178,10 +178,10 @@ This page will show all of our Social media links decorated by screensots of our
 
 
 ### Create a brand
-this page will Promt loged in users with a simple form alowing them to create their brand/ storefront on our site when the, user is Goven staff status by an admin thy will be able to add products
+this page will Promt loged in users with a simple form alowing them to create their brand/ storefront on our site when the, user is Goven staff status by an admin they will be able to add products.
 
 ### Upload a product
-this page is like the create a brand page, it is a slightly longer form and allows people to create products to add to their site.
+this page  willl prompt an approved user with staff status to create products to add to their brand page, it is alos a simple form that when filled out the data provided will be displayed as a product available for purchase.
 
 ### checout page
 this page is for customers to checkout their order using Stripe
@@ -189,9 +189,26 @@ this page is for customers to checkout their order using Stripe
 ### checkout success page
 this page shows the users order number, and order history along with a message to tell the user that they have been sent an email to confirm their order.
 
+### Newsletter page
+this page will ask for users to input their email address in order to recieve updates from home2retail.
+
+### Send a newsletter
+this page will only show for users with superusser status and allows the superuser to create email content to send to everyone who subscribes to the newsletter.
+
+### My Profile
+this page will allow users to update their Delivery information and also show previous orders made by the user.
+
+### Order History
+this page will show when a ordernumber is clicked in the profile page, this page will provide all of the details about the selected order.
 
 ### 404 error page
-This page is used in place of a standard 404 page. It will be shown in the event of an error which does not allow the page to loadq
+This page is used in place of a standard 404 page. It will be shown in the event of an error where the page is not found.
+
+### 403 error page
+This page is used in place of a standard 404 page. It will be shown in the event of an error where the page is forbidden.
+
+### 500 error page
+This page is used in place of a standard 404 page. It will be shown in the event of an error where there is a server error.
 ----
 
 
