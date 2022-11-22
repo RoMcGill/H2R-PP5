@@ -5,13 +5,13 @@
 {% if cart_items %}
 <!-- container -->
 
-<div class="container" style="background-color:#ffc900; border-radius: 25px;">
+<div class="container">
     <!-- display cart headers -->
 
 
     <div class="row" style=" padding-top: 10px;">
         <div class="col">
-            <h1 style="background-color:#ff90e8 ;border-radius: 25px ;">Shopping Cart</h1>
+            <h1 class="cart-titles">Shopping Cart</h1>
         </div>
     </div>
     <div class="row">
@@ -44,7 +44,7 @@
                 <div class="col text-bold">{{ item.product.product_name }}</div>
             </div>
             <div class="col text-bold">{{ item.product.price }}</div>
-            <div class="col align-items-center "><p class="align-items-center cart-titles">Qty = {{ item.quantity }}</p>
+            <div class="col align-items-center "><p class="align-items-center cart-titles-2">Qty = {{ item.quantity }}</p>
             <div class="col">
                 <form class="form update-form small-form row main align-items-center" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                     {% csrf_token %}
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </form>
-                <a class="update-link text-info link-pointer cart-titles"><small>Update</small></a>
+                <a class="update-link text-info link-pointer button-32"><small>Update</small></a>
             </div>
             </div>
                 <div class="col">
@@ -128,7 +128,7 @@
             </div>
             <div class="col">
                 <h5 class=""><b>Checkout with Stripe</b></h5>
-                <a href="{% url 'checkout' %}" class="button-31">
+                <a href="{% url 'checkout' %}" class="button-32">
                     <span>Secure Checkout</span>
                 </a>
             </div>
