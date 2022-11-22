@@ -72,7 +72,7 @@
         <div class="card outline-div-2">
           <a href="{% url 'brand_detail' brand.id %}">
             <img class="card-img-top" src="{{ brand.image.url }}" alt="{{ brand.name }}"
-              style="height: 200px; width:200px;">
+              style="height: 200px; max-width:200px;">
           </a>
           <!-- if no brand image -->
           {% else %}
