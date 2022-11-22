@@ -1,10 +1,15 @@
-# Home 2 Retail <img src="#" style="width: 85px; height:60px;">
+# **Home 2 Retail**
 
 **Developer: Ronan McGill**
 
-💻 [Visit live website](#)
+💻 [Visit live website](https://h2r-pp5.herokuapp.com/)
 
-![Mockup image](#)
+<img src="static/images/responsive.png">
+
+## Test Account Information
+**username**:ronan
+
+**password**:ronan
 
 
 ## Table of Contents
@@ -39,20 +44,112 @@
 DIY'rs, Crafters, Painters, Artists Always have trouble when it comes to maximising Sales and revenue due to Not taking advantage of B2B (business to businees) Sales, This could be for a number of reasons. The main two are not taking advantage of technology arround them such as shopify and wixx this is down to the High barrier to entry when creating, maintaining and running your own website on one of theese platforms. the Next reason is just not knowing where to start and who to contact. We have solved both of these Issues.
 #### How?
 We have solved these issues Firstly by making it easyer than ever to set up your online store front and start selling.We do this by giving our users a simple form and image field to fill out, Once complete our site will automatically build your store front and be available on our site for everyone to see, adding products to your store is done the same way, and will display and be available to purchase in your store. Secondly We will find your Wholesale customers ready to make big orders to stock their shelfs, We do this by giving Wholesalers an easy place to go and purchase products in bulk Hassle free.
-## (TO DO) our two way email system means that when your product gets purchased, the buyer will recieve an email to confirm and so will the seller.
 
 
 ## Project Goals
-My Goal for this project is to create something scaleable that benifits everyone involved.
+My Goal for this project is to create a scaleable E-Commerce site that benifits everyone involved.
 
 
 
 ## key functions of H2R:
 - effortless online storfront building
-- effortless bulk buying of unique and bespoke goods
+- effortless bulk buying of unique and bespoke products
 
 
 ## User Stories
+- [#1](https://github.com/RoMcGill/H2R-PP5/issues/1)User Story: View a list of products #1
+As a customer I want to View a list of products So that I can select some to purchace
+
+- [#2](https://github.com/RoMcGill/H2R-PP5/issues/2)User Story:See a list of available brands #2
+As a customer I want to See a list of available brands So that I can find more products from brands i like, that sell well in my store
+
+- [#3](https://github.com/RoMcGill/H2R-PP5/issues/3)User Story:keep track of spending #3
+As a customer I want to *keep track of spending * So that I can not go over my spending budget for new items
+
+- [#4](https://github.com/RoMcGill/H2R-PP5/issues/4)User Story:detailed specifications of products #4
+As a customer I want to see detailed specifications of products So that I can figure out if the product is a good fit for my store and customers
+
+- [#5](https://github.com/RoMcGill/H2R-PP5/issues/5)User Story:display Poroducts #5
+As a Seller I want My products to be on display for wholesalers to see So that I can *maximise my sales and exposure *
+
+- [#6](https://github.com/RoMcGill/H2R-PP5/issues/6)User Story: upload new products #6
+As a seller I want to upload new products as they become available So that I can *show my newest products to wholesalers
+
+- [#7](https://github.com/RoMcGill/H2R-PP5/issues/7)User Story: keep track of quantities sold #7
+As a seleler I want to *keep track of quantities sold * So that I can plan for future products
+
+- [#8](https://github.com/RoMcGill/H2R-PP5/issues/8)User Story:have an account #8
+As a customer I want to have an account So that I can save time when checking out and keep track of purchases
+
+- [#9](https://github.com/RoMcGill/H2R-PP5/issues/9)User Story:have an account #9
+As a Seller I want to have an account So that I can upload products and keep track of purchases
+
+- [#10](https://github.com/RoMcGill/H2R-PP5/issues/10)User Story:buy goods in bulk #10
+As a customer I want to buy goods in bulk So that I can * take advantage of economies of scale and sell them in my store for a profit
+
+- [#11](https://github.com/RoMcGill/H2R-PP5/issues/11)User Story:sell in bulk to retail stores #11
+As a seller I want to sell in bulk to retail stores So that I can increase revenue through more exposure and sales
+
+- [#12](https://github.com/RoMcGill/H2R-PP5/issues/12)User Story:Make it simple for big retail stores to find small brands #12
+As a site owner I want to Make it simple for big retail stores to find small brands So that I can provide a needed service to both small business and retailer
+
+- [#13](https://github.com/RoMcGill/H2R-PP5/issues/13)User Story:find new goods from brands I like as soon as they are available #13
+As a customer I want to *find new goods from brands I like as soon as they are available * So that I can Get them stocked in my store as soon as possible
+
+- [#14](https://github.com/RoMcGill/H2R-PP5/issues/14)User Story:upload my latest products with ease and have them show instantly #14
+As a seller I want to upload my latest ptoducts with ease and have them show instantly So that I can show retailers my new stock
+
+- [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)User Story: add and remove Items from cart #15
+As a customer I want to be able to add and remove items from my cart So that I can edit the quantity of items i will buy.
+
+- [#16](https://github.com/RoMcGill/H2R-PP5/issues/16)User Story:confirmation email #16
+As a user I want to receive a confirmation email once I place an order. So that I can have peace of mind my records are on file
+
+- [#17](https://github.com/RoMcGill/H2R-PP5/issues/17)User Story: Success and error messages #17
+As a user I want to Know if my actions are achieving the expected result So that I can be sure my actions are successful.
+
+- [#18](https://github.com/RoMcGill/H2R-PP5/issues/18)User Story:Customer user profile #18
+As a customer I want to be able to have my own profile So that I can can keep track of my purchases
+
+- [#19](https://github.com/RoMcGill/H2R-PP5/issues/19)User Story: Vendor user profile #19
+As a Seller I want to have my own user profile So that I can manage my brand page and products.
+
+- [#20](https://github.com/RoMcGill/H2R-PP5/issues/20)User Story: Contact #20
+As a user I want to be able to contact the site owner So that I can inform them about an issues I may be having or ask any questions.
+
+- [#21](https://github.com/RoMcGill/H2R-PP5/issues/21) User Story: Checkout #21
+As a user I want to be able to use a secure checkout system So that I can be sure that my card details are safe
+
+- [#22](https://github.com/RoMcGill/H2R-PP5/issues/22) User Story: view and edit personal information #22
+As a user I want to be able to view and edit any personal information stored to my profile So that I can change information as time goes on.
+
+- [#23](https://github.com/RoMcGill/H2R-PP5/issues/23)User Story: login/logout #23
+As a user I want to be able to log in and logout of my accountSo that I do not run the risk of any fraudulent activities taking place if i was to loose my device.
+
+- [#24](https://github.com/RoMcGill/H2R-PP5/issues/24)User Story: edit and delete products #24
+As a seller I want to be able to delete or edit products that I upload So that I can manage demand. and update product information
+
+- [#25](https://github.com/RoMcGill/H2R-PP5/issues/25) User Story: maximum quantity #25
+As a seller I want to be able to set the maximum quantity of my products that are available to order So that I can manage supply
+
+- [#26](https://github.com/RoMcGill/H2R-PP5/issues/26)User Story: Subscribe to a newsletter #26
+As a customer I want to be able to subscribe to a newletter so that I can stay informed of any changes or sales So that I can save money and stay informed
+
+- [#27](https://github.com/RoMcGill/H2R-PP5/issues/27)User Story: send a newsletter #27
+As a site admin I want to be able to send a newsletter to all of our customers who subscribed So that I can inform them of any changes, deals or exciting new brands or products to look out for
+
+- [#28](https://github.com/RoMcGill/H2R-PP5/issues/28) User Story:CRUD #28
+As an admin I want to have the ability to create edit and delete items from the admin page So that I can keep the site running effectively and efficiently.
+
+- [#29](https://github.com/RoMcGill/H2R-PP5/issues/29) User Story: Social media #29
+As a user I want to be able to find H2R's social media information So that I can keep up to date on the business and contact the site owners on a platform I am familiar with.
+
+- [#30](https://github.com/RoMcGill/H2R-PP5/issues/30)User Story:Mission #30
+As a user I want to be able to see the sites mission statement So that I can confirm that the sites values align with mine
+
+
+
+
 
 ### First sprint
 
