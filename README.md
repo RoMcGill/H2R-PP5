@@ -223,44 +223,44 @@ This page is used in place of a standard 404 page. It will be shown in the event
 
 ### Wireframes
 
-<details><summary>wireframe</summary>
-<img src="{% static 'home-wireframe.png' %}">
+<details><summary>Home wireframe</summary>
+<img src="static/images/home-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'brands-wireframe.png' %}">
+<details><summary>Brands wireframe</summary>
+<img src="static/images/brands-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'contact-wireframe.png' %}">
+<details><summary>Contact wireframe</summary>
+<img src="static/images/contact-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'create-brand-wireframe.png' %}">
+<details><summary>Create Brand wireframe</summary>
+<img src="static/images/create-brand-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'create-product-wireframe.png' %}">
+<details><summary>Create Product wireframe</summary>
+<img src="static/images/create-product-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'follow-wireframe.png' %}">
+<details><summary>Follow wireframe</summary>
+<img src="static/images/follow-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'mission-wireframe.png' %}">
+<details><summary>Mission wireframe</summary>
+<img src="static/images/mission-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'newsletter-wireframe.png' %}">
+<details><summary>Newsletter wireframe</summary>
+<img src="static/images/newsletter-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'send-newsletter-wireframe.png' %}">
+<details><summary>Send Newsletter wireframe</summary>
+<img src="static/images/send-newsletter-wireframe.png">
 </details>
 
-<details><summary>wireframe</summary>
-<img src="{% static 'profile-wireframe.png' %}">
+<details><summary>Profile wireframe</summary>
+<img src="static/images/profile-wireframe.png">
 </details>
 
 
