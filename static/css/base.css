@@ -9,6 +9,7 @@ a { color: inherit !important; }
 html, body {
   overflow-x: hidden;
 
+
 }
 body {
   position: relative;
@@ -21,9 +22,16 @@ body {
     outline: 3px solid black;
   }
 
+
   .outline-div-2 {
     outline: 5px solid #ff90e8;
   }
+
+  .outline-div-3 {
+    outline: 3px solid black;
+    border-radius: 25px;
+  }
+
 .no-pad{
     outline:5px solid white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -655,15 +663,35 @@ main{
 .img-size{
     max-width: 90%;
 }
+
+.small-form{
+  width: 100px;
+}
+
 .link-pointer{
     cursor: pointer;
+}
+#copyright {
+text-align: center;
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+
 }
 
 @media (max-width: 400px) {
   #copyright {
      text-align: center;
+
+     min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+
   }
   #social > div{
+
      display: block;
      width: 100%;
      margin: 0 auto;
@@ -672,6 +700,18 @@ main{
   }
 }
 
+@media (max-width: 770px) {
+.res-title{
+  display: none;
+}
+}
+
 .pull-right a{
   padding-left: 30px;
+}
+
+.cart-titles{
+  background-color:#ff90e8 ;
+  border-radius: 25px;
+  padding: 15px;
 }

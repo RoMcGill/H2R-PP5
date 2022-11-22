@@ -4,42 +4,49 @@
 <!-- if cart has items in it  -->
 {% if cart_items %}
 <!-- container -->
-<div class="container" style="margin-left: 120px; margin-right: 20px;">
+
+<div class="container" style="background-color:#ffc900; border-radius: 25px;">
     <!-- display cart headers -->
-    <div class="row">
+
+
+    <div class="row" style=" padding-top: 10px;">
         <div class="col">
-            <h1>Shopping Cart</h1>
+            <h1 style="background-color:#ff90e8 ;border-radius: 25px ;">Shopping Cart</h1>
         </div>
     </div>
     <div class="row">
+        <br>
+
+
         <div class="col">
-            <h4><b>image</b></h4>
+            <h4 class="cart-titles outline-div res-title"><b>image</b></h4>
         </div>
         <div class="col">
-            <h4><b>name</b></h4>
+            <h4 class="cart-titles outline-div res-title"><b>name</b></h4>
         </div>
         <div class="col">
-            <h4><b>Price</b></h4>
+            <h4 class="cart-titles outline-div res-title"><b>Price</b></h4>
         </div>
         <div class="col">
-            <h4><b>Qty</b></h4>
+            <h4 class="cart-titles outline-div res-title"><b>Qty</b></h4>
         </div>
         <div class="col">
-            <h4><b>Total</b></h4>
+            <h4 class="cart-titles outline-div res-title"><b>Total</b></h4>
         </div>
         <!-- lsit cart items -->
         {% for item in cart_items%}
+<br>
     </div>
-    <div class=" border-top border-bottom">
+    <div class=" border-top border-bottom outline-div-3">
         <div class="row main align-items-center">
-            <div class="col-2"><img class="img-fluid" src="{{ item.product.image.url }}"></div>
-            <div class="col">{{ item.product.brand_name }}
-                <div class="row">{{ item.product.product_name }}</div>
+            <div class="col " class="cart-titles"><img class="img-fluid" src="{{ item.product.image.url }}"></div>
+            <div class="col text-bold">{{ item.product.brand_name }}
+                <div class="col text-bold">{{ item.product.product_name }}</div>
             </div>
-            <div class="col">{{ item.product.price }}</div>
-            <div class="col">{{ item.quantity }}</div>
-            <div>
-                <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
+            <div class="col text-bold">{{ item.product.price }}</div>
+            <div class="col align-items-center "><p class="align-items-center cart-titles">Qty = {{ item.quantity }}</p>
+            <div class="col">
+                <form class="form update-form small-form row main align-items-center" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                     {% csrf_token %}
                     <div class="form-group">
                         <div class="input-group">
@@ -69,16 +76,27 @@
                         </div>
                     </div>
                 </form>
-                <a class="update-link text-info link-pointer"><small>Update</small></a>
+                <a class="update-link text-info link-pointer cart-titles"><small>Update</small></a>
+            </div>
+            </div>
+                <div class="col">
+
                 </td>
                 <td class="py-3">
                 </td>
                 </tr>
-                <div class="col">{{ item.total }}</div>
+
+                <div class="align-items-center cart-titles">{{ item.total }}</div>
+
+
             </div>
+
         </div>
-        <div class="row">
+        <br>
+</div>
+        <div class="row" style="padding-bottom: 100px; padding-top: 100px;">
             {% endfor %}
+
             <!-- if cart is empty -->
             {% else %}
             <div class="container" style="margin-left: 120px; margin-right: 20px;">
@@ -93,24 +111,24 @@
             {% if grand_total %}
             <div class="col">
                 <form>
-                    <h5><b>Shipping</b></h5>
+                    <h5 class="cart-titles"><b>Shipping</b></h5>
                     <select>
                         <option class="text-muted">Standard-Delivery- &euro;5.00</option>
                     </select>
                     <p>Free delivery on orders over €{{ free_delivery_threshold }}</p>
-                    <p>Spend €{{ free_delivery_delta }} More for free delivery!</p>
-                    <p>GIVE CODE</p>
+                    <p class="cart-titles">Spend €{{ free_delivery_delta }} More for free delivery!</p>
+                    <p>Enter Your Discount Code Here!</p>
                     <input id="code" placeholder="Enter your code">
                 </form>
             </div>
             <div class="col">
-                <h5><b>Summary</b></h5>
+                <h5 class="cart-titles"><b>Summary</b></h5>
                 <div>Total Qty: {{product_count}}</div>
                 <div>Total Price: €{{ grand_total|floatformat:2 }}</div>
             </div>
             <div class="col">
-                <h5><b>Go To Secure Checkout</b></h5>
-                <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+                <h5 class=""><b>Checkout with Stripe</b></h5>
+                <a href="{% url 'checkout' %}" class="button-31">
                     <span>Secure Checkout</span>
                 </a>
             </div>
