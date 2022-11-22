@@ -82,7 +82,7 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    if not request.user.is_superuser:
+    if not request.user.is_staff:
         messages.error(request, 'Only Store owners can delete products')
         return redirect(reverse('home'))
     product = get_object_or_404(Brand_products, pk=product_id)
