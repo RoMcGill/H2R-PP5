@@ -224,16 +224,46 @@ This page is used in place of a standard 404 page. It will be shown in the event
 ### Wireframes
 
 <details><summary>wireframe</summary>
-<img src="#">
+<img src="{% static 'home-wireframe.png' %}">
 </details>
 
 <details><summary>wireframe</summary>
-<img src="#">
+<img src="{% static 'brands-wireframe.png' %}">
 </details>
 
 <details><summary>wireframe</summary>
-<img src="#">
+<img src="{% static 'contact-wireframe.png' %}">
 </details>
+
+<details><summary>wireframe</summary>
+<img src="{% static 'create-brand-wireframe.png' %}">
+</details>
+
+<details><summary>wireframe</summary>
+<img src="{% static 'create-product-wireframe.png' %}">
+</details>
+
+<details><summary>wireframe</summary>
+<img src="{% static 'follow-wireframe.png' %}">
+</details>
+
+<details><summary>wireframe</summary>
+<img src="{% static 'mission-wireframe.png' %}">
+</details>
+
+<details><summary>wireframe</summary>
+<img src="{% static 'newsletter-wireframe.png' %}">
+</details>
+
+<details><summary>wireframe</summary>
+<img src="{% static 'send-newsletter-wireframe.png' %}">
+</details>
+
+<details><summary>wireframe</summary>
+<img src="{% static 'profile-wireframe.png' %}">
+</details>
+
+
 
 
 ##### Back to [top](#table-of-contents)
