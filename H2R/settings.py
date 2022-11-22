@@ -33,6 +33,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['h2r-pp5.herokuapp.com', 'localhost', ]
 
+X_FRAME_OPTIONS = 'ALLOW-FROM <https://ui.dev/amiresponsive>'
 
 # Application definition
 
