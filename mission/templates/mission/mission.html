@@ -3,22 +3,29 @@
 {% block content%}
 
 <section>
+
     <div class="container-fluid outline-div">
         <div class="row outline-div" style="background-color: red;">
           <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ff90e8; padding-bottom: 400px;">
             <h2>Why?</h2>
-            <p>DIY'rs, Crafters, Painters, Artists Always have trouble when it comes to maximising Sales and revenue due to Not taking advantage of B2B (business to businees) Sales, This could be for a number of reasons. The main two are not taking advantage of technology arround them such as shopify and wixx this is down to the High barrier to entry when creating, maintaining and running your own website on one of theese platforms. the Next reason is just not knowing where to start and who to contact. We have solved both of these Issues.</p>
+            {% for mission in mission_list %}
+            <p>{{ mission.Why }}</p>
           </div>
-            <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ffc900;">
+          {% endfor %}
+
+
+          <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ffc900;">
             <h2>How?</h2>
-            <p>We have solved these issues Firstly by making it easyer than ever to set up your online store front and start selling.We do this by giving our users a simple form and image field to fill out, Once complete our site will automatically build your store front and be available on our site for everyone to see, adding products to your store is done the same way, and will display and be available to purchase in your store. Secondly We will find your Wholesale customers ready to make big orders to stock their shelfs, We do this by giving Wholesalers an easy place to go and purchase products in bulk Hassle free.</p>
+            {% for mission in mission_list %}
+            <p>{{ mission.How }}</p>
             </div>
+            {% endfor %}
           <div class="w-100 outline-div" style="background-color: rgb(30, 138, 174);"></div>
-        </div>
+
       </div>
-
-
-
 </section>
+
+
+
 
 {% endblock content %}
