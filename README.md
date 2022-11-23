@@ -368,15 +368,9 @@ This is a visualized interpritation of the database models and how they Interact
 #### Subscribers
 #### SendNews
 #### UserProfile
+#### Blog
 ####
-####
-####
-####
-####
-####
-####
-####
-####
+
 
 -------------
 
