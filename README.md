@@ -39,11 +39,24 @@
 
 
 ## About
-### Home To Retail is designed to maximise sales for small bussinesses and Provide quality products for big retailers.
+### Home To Retail is designed to maximise sales for small bussineses and Provide quality products for big retailers.
 #### Why?
 DIY'rs, Crafters, Painters, Artists Always have trouble when it comes to maximising Sales and revenue due to Not taking advantage of B2B (business to businees) Sales, This could be for a number of reasons. The main two are not taking advantage of technology arround them such as shopify and wixx this is down to the High barrier to entry when creating, maintaining and running your own website on one of theese platforms. the Next reason is just not knowing where to start and who to contact. We have solved both of these Issues.
 #### How?
 We have solved these issues Firstly by making it easyer than ever to set up your online store front and start selling.We do this by giving our users a simple form and image field to fill out, Once complete our site will automatically build your store front and be available on our site for everyone to see, adding products to your store is done the same way, and will display and be available to purchase in your store. Secondly We will find your Wholesale customers ready to make big orders to stock their shelfs, We do this by giving Wholesalers an easy place to go and purchase products in bulk Hassle free.
+-------
+# E-commerce
+
+### Home 2 Retail
+### 09.11.22
+
+#### Ronan McGill
+#### Home 2 Retail
+
+### Overview
+Home To Retail is designed to maximize sales for small businesses and Provide quality products for big retailers.
+Our Goal is to benifit both small and big businesses. small businesses will benfit by maximising sales and revenue by connecting with retail outlets and reciving orders of Higher quantities from Retailers that will be taking advantage of economies of scale by buying in bulk. Retailers will Benifit as they will have a reliable source of quality products and a convenient order and payment system Home2Retail will charge for this service using a commission Structure, this will be a small % of each sale made through the site.
+We make it easier than ever  for users to set up their online store front and start selling. We do this by giving our users a simple form and image field to fill out, Once complete our site will automatically build their store front and be available on our site for everyone to see, adding products to their store is done the same way, and will display and be available to purchase in their store. Secondly We will connect them with Wholesale customers ready to make big orders to stock their shelves, We do this by giving Wholesalers an easy place to go and purchase products in bulk Hassle free.
 
 
 ## Project Goals
@@ -150,9 +163,6 @@ As a user I want to be able to see the sites mission statement So that I can con
 
 
 
-
-### First sprint
-
 #### Navigation
 
 - [#1](https://github.com/RoMcGill/H2R-PP5/issues/1)As a customer I want to View a list of products So that I can select some to purchace
@@ -170,7 +180,6 @@ As a user I want to be able to see the sites mission statement So that I can con
 - [#8](https://github.com/RoMcGill/H2R-PP5/issues/8)As a customer I want to have an account So that I can save time when checking out and keep track of purchases
 - [#9](https://github.com/RoMcGill/H2R-PP5/issues/9)As a Seller I want to have an account So that I can upload products and keep track of purchases
 
-### Second sprint
 
 #### Keeping Track of Information
 
