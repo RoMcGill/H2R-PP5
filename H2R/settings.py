@@ -25,11 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
+SECRET_KEY = '!g@9phuj3y@^(&aw45%$25()mjfd-)tzgz8p9h)0)+r#)6l5o9'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['h2r-pp5.herokuapp.com', 'localhost', ]
 
@@ -60,6 +61,8 @@ INSTALLED_APPS = [
     'profiles',
     'storages',
     'newsletter',
+    'django_extensions',
+    'blog',
 
 ]
 
@@ -245,3 +248,8 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
 DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
