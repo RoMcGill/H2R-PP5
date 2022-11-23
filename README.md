@@ -529,6 +529,91 @@ This is a visualized interpritation of the database models and how they Interact
 
 ## Validation
 
+### blog
+- #### html
+
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### brands
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### cart
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### checkout
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### contact
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### follow
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### home
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### newsletter
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### mission
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### profiles
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### upload
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### templates
+- #### html
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
 ### HTML
 
 
