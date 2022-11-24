@@ -58,7 +58,7 @@ We make it easier than ever  for users to set up their online store front and st
 
 ### Marketing
 
-To market Home 2 Retail we have set up a facebook and instagram page, where we will post daily updates and create a community, by staying active and engaged on social media sites we will be more likely to be reccomended to users with the same intrests as our target audience, we plan to build an ad camplaign using facebook and instagrams built in add manager to target people involved in big retail outlets and existing small businesses along with crafters and artistic people who may have been holding back on starting an online store due to High financial and technical barriers to entry. Social media marketing is not our only marketing avenue. We also plan to have organise face to face meetings with Buyers for retail outlets all arround Ireland, The plan is to connect with such buyers through linkedinn.
+To market Home 2 Retail we have set up a facebook and instagram page, where we will post daily updates and create a community, by staying active and engaged on social media sites we will be more likely to be reccomended to users with the same intrests as our target audience. We plan to build an ad camplaign using facebook and instagrams built in add manager to target these people involved in big retail outlets and existing small businesses along with crafters and artistic people who may have been holding back on starting an online store due to High financial and technical barriers to entry. Social media marketing is not our only marketing avenue. We also plan to have organise face to face meetings with Buyers for retail outlets all arround Ireland, The plan is to connect with such buyers through linkedinn.
 
 <details><summary>FaceBook</summary>
   https://www.facebook.com/profile.php?id=100088266785754
@@ -369,6 +369,26 @@ This is a visualized interpritation of the database models and how they Interact
 ### Models
 
 #### Brands
+has a class called Brands
+fields =
+   - brand_email with a EmailField
+   - brand_name with a CharField
+   - description with a TextField
+   - image_url with a URLField
+   - image with a ImageField
+
+and a class called Brand_Products
+fields =
+   - brand with a ForeignKey to Brands to link the brands and the product by the brand.
+   - brand_name with a CharField
+   - sku with a CharField
+   - product_name with a models.CharField
+   - description with a TextField
+   - price with a DecimalField that allows a maximum amount of digits set at 6 to two decimal places
+   - image with a ImageField
+   - max_quant with a IntegerField
+
+
 #### Brand_products
 #### Order
 #### OrderLineItem
@@ -377,6 +397,15 @@ This is a visualized interpritation of the database models and how they Interact
 #### SendNews
 #### UserProfile
 #### Blog
+has a class called post
+fields =
+   - title with a CharField
+   - slug with a SlugField
+   - author with a ForeignKey to User
+   - updated_on with a DateTimeField
+   - content with a TextField
+   - created_on with a DateTimeField
+   - status with a IntegerField and a default status of 0
 #### Mission
 
 
