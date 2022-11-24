@@ -33,26 +33,3 @@ def brand_detail(request, brand_id):
 
     }
     return render(request, 'brands/brands-detail.html', context)
-
-
-# def product_detail(request, Brand_products):
-#     """
-#     view to return product  details page
-#     """
-#     products = Brand_products.objects.get(brand=brand_id)
-#     product = Brand_products.objects.filter(Brand_products, pk=product_id)
-
-#     context = {
-#         'products': products,
-#         'product': product
-#     }
-
-#     return render(request, 'brands/product-detail.html', context)
-
-
-# def product_detail(request):
-#     """
-#     view to return brands page
-#     """
-
-#     return render(request, 'brands/product-detail.html')
