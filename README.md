@@ -283,32 +283,6 @@ This page is a site owner run blog to promote businesses and provide users with 
 ### checkout success page
 - this page shows the users order number, and order history along with a message to tell the user that they have been sent an email to confirm their order.
 
-```
-    # def _send_vendor_email(self, order):
-    #     """
-    #     stripe confirmation email
-    #     """
-    #     # get this working see if email sends to me and recipient then chnage to brand.email?
-    #     brand_email = order.lineitems.product.brand.brand_email
-    #     subject = render_to_string(
-    #         'checkout/confirmation_emails/vendor_emails_subject.txt',
-    #         {'order': order}
-    #     )
-
-    #     body = render_to_string(
-    #         'checkout/confirmation_emails/vendor_emails_body.txt',
-    #         {'order': order,
-    #          'contact_email': settings.DEFAULT_FROM_EMAIL}
-    #     )
-
-    #     send_mail(
-    #         subject, body,
-    #         settings.DEFAULT_FROM_EMAIL,
-    #         [brand_email]
-    #         )
-
-
-```
 
 ### Newsletter page
 - this page will ask for users to input their email address in order to recieve updates from home2retail.
@@ -547,6 +521,34 @@ This is a visualized interpritation of the database models and how they Interact
 -----------------
 
 ## Future features / improvements
+
+the send vendor email feature, is something that I will add in future versions, this feature will send a confirmation email to the seller as well as the customer. I would do this by implementing a function like below.
+```
+    # def _send_vendor_email(self, order):
+    #     """
+    #     stripe confirmation email
+    #     """
+    #     # get this working see if email sends to me and recipient then chnage to brand.email?
+    #     brand_email = order.lineitems.product.brand.brand_email
+    #     subject = render_to_string(
+    #         'checkout/confirmation_emails/vendor_emails_subject.txt',
+    #         {'order': order}
+    #     )
+
+    #     body = render_to_string(
+    #         'checkout/confirmation_emails/vendor_emails_body.txt',
+    #         {'order': order,
+    #          'contact_email': settings.DEFAULT_FROM_EMAIL}
+    #     )
+
+    #     send_mail(
+    #         subject, body,
+    #         settings.DEFAULT_FROM_EMAIL,
+    #         [brand_email]
+    #         )
+
+
+```
 
 
 ##### Back to [top](#table-of-contents)
