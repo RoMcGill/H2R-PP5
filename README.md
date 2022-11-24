@@ -60,6 +60,13 @@ We make it easier than ever  for users to set up their online store front and st
 
 To market Home 2 Retail we have set up a facebook and instagram page, where we will post daily updates and create a community, by staying active and engaged on social media sites we will be more likely to be reccomended to users with the same intrests as our target audience, we plan to build an ad camplaign using facebook and instagrams built in add manager to target people involved in big retail outlets and existing small businesses along with crafters and artistic people who may have been holding back on starting an online store due to High financial and technical barriers to entry. Social media marketing is not our only marketing avenue. We also plan to have organise face to face meetings with Buyers for retail outlets all arround Ireland, The plan is to connect with such buyers through linkedinn.
 
+<details><summary>FaceBook</summary>
+  https://www.facebook.com/profile.php?id=100088266785754
+  <img src="static/images/fb-1.png">
+  <img src="static/images/fb-2.png">
+  </details>
+
+
 ### SEO
 
 We will be focusing our efforts on boosting our search engine optimisation on Google as it holds 92.42% market share over all search engines.
