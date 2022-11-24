@@ -42,28 +42,6 @@ class StripeWH_Handler:
             [cust_email]
             )
 
-    # def _send_vendor_email(self, order):
-    #     """
-    #     stripe confirmation email
-    #     """
-    #     # get this working see if email sends to me and recipient then chnage to brand.email?
-    #     brand_email = order.lineitems.product.brand.brand_email
-    #     subject = render_to_string(
-    #         'checkout/confirmation_emails/vendor_emails_subject.txt',
-    #         {'order': order}
-    #     )
-
-    #     body = render_to_string(
-    #         'checkout/confirmation_emails/vendor_emails_body.txt',
-    #         {'order': order,
-    #          'contact_email': settings.DEFAULT_FROM_EMAIL}
-    #     )
-
-    #     send_mail(
-    #         subject, body,
-    #         settings.DEFAULT_FROM_EMAIL,
-    #         [brand_email]
-    #         )
 
     def handle_event(self, event):
         """
