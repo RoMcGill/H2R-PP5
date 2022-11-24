@@ -40,46 +40,21 @@
 
           <img class="heading" src="{% static 'images/header.png'%}" alt="">
 
-      </div>
-    </header>
-    <!-- <nav class="topnav">
-      <ul class="topnav">
-         <li><a href="{% url 'home' %}">Home</a></li>
-         <li><a href="{% url 'brands' %}">Brands</a></li>
-         <li><a href="{% url 'contact' %}">Contact-Us</a></li>
-         <li><a href="{% url 'mission' %}">Our Mission</a></li>
-         <li><a href="{% url 'view_cart' %}">Cart</a><p style="color: rgb(0, 0, 0);">
-          {% if grand_total %}
-              ${{ grand_total|floatformat:2 }}
-          {% else %}
-              $0.00
-          {% endif %}
-      </p></li>
-         <li><a class="nav-item2" href="{% url 'view_socials' %}">Follow US!</a></li>
-         <li><a class="nav-item2" href="{% url 'brand-upload' %}">Create A Brand Page</a></li>
-         <li><a class="nav-item2" href="{% url 'product-upload' %}">Upload A Product</a></li>
-       {% if request.user.is_authenticated %}
-       <li><a class="nav-item2" href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
-        <li><a class="nav-item2" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
-        {% else %}
-        <li><a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
-          <li><a class="nav-item2" href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
-        {% endif %}
-      </ul>
-     </nav> -->
+
+
 
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Top Navigation Menu -->
 <div class="topnav outline-div">
-  <a href="{% url 'home' %}"Home>Home</a>
+  <a href="{% url 'home' %}">Home</a>
   {% if request.user.is_authenticated %}
-  <a class="nav-item2" href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-  <a class="nav-item2" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+  <a class="nav-item2 " href="{% url 'profile' %}">My Profile</a>
+  <a class="nav-item2" href="{% url 'account_logout' %}" >Logout</a>
    {% else %}
-   <a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-     <a class="nav-item2" href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+   <a class="nav-item2 " href="{% url 'account_signup' %}">Register</a>
+     <a class="nav-item2 " href="{% url 'account_login' %}">Login</a>
    {% endif %}
    <a href="{% url 'view_cart' %}" style="padding-right:50px;">Cart
     {% if grand_total %}
@@ -103,10 +78,10 @@
         <a class="nav-item2" href="{% url 'product-upload' %}">Upload A Product</a>
         <a class="nav-item2" href="{% url 'blog' %}">Blog</a>
       {% if request.user.is_authenticated %}
-      <a class="nav-item2" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+      <a class="nav-item2" href="{% url 'account_logout' %}">Logout</a>
        {% else %}
-       <a class="nav-item2" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-         <a class="nav-item2" href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+       <a class="nav-item2 " href="{% url 'account_signup' %}">Register</a>
+         <a class="nav-item2" href="{% url 'account_login' %}">Login</a>
        {% endif %}
 
       </div>
@@ -126,22 +101,6 @@
   }
 }
        </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 
 
     {% if messages %}
@@ -171,7 +130,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
       $('.toast').toast('show');
 
     </script>

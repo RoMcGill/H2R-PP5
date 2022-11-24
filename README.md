@@ -67,7 +67,7 @@ To Optimise our SEO on google
 
 1. we have Published Relevant content that is highly relevant to our sites purpose.
 2. We are also a niche business so the competition for Authoritative Content will not be strong
-3. We plan to add a blog so that any site admin can Update our Content Regularly.
+3. We have a blog so that any site admin can Update our Content Regularly, our mission statement can also be editable in the admin panel if our asperations change as we scale.
 4. we have researched and carried out a keyword plan, to find what Keywords will rank us highest
 5. We have linked our future partners websites at the bottom of the page, these sites gather thousands of clicks a day and are a well known amnd trusted brand
 6. we have added alt tags to all  nessicary atributes.
@@ -369,7 +369,7 @@ This is a visualized interpritation of the database models and how they Interact
 #### SendNews
 #### UserProfile
 #### Blog
-####
+#### Mission
 
 
 -------------
