@@ -481,30 +481,28 @@ fields=
 
 ### Libraries, frameworks and dependencies
 
-<p style="color:blue">asgiref==3.5.2</p> = <p style="color:green;">asgiref ASGI</p>
-<p style="color:blue">boto3==1.25.5</p> = <p style="color:green;">boto3</p>
-<p style="color:blue">botocore==1.28.5</p> = <p style="color:green;">boto3</p>
-<p style="color:blue">dj-database-url==0.5.0</p> = <p style="color:green;">Django</p>
-<p style="color:blue">Django==3.2</p> = <p style="color:green;">Django</p>
-<p style="color:blue">django-allauth==0.41.0</p> = <p style="color:green;">Django allauth</p>
-<p style="color:blue">django-countries==7.2.1</p> = <p style="color:green;">Django countries</p>
-<p style="color:blue">django-crispy-forms==1.14.0</p> = <p style="color:green;">Django crispy forms</p>
-<p style="color:blue">django-libs==2.0.3</p> = <p style="color:green;">Django libraries</p>
-<p style="color:blue">django-newsletter-signup==0.6.2</p> = <p style="color:green;">Django newsletter (removed from project)</p>
-<p style="color:blue">django-pandas==0.6.6</p> = <p style="color:green;">Django pandas</p>
-<p style="color:blue">gunicorn==20.1.0</p> = <p style="color:green;">gunicorn</p>
-<p style="color:blue">jmespath==1.0.1</p> = <p style="color:green;">JMESPath query language for JSON.</p>
-<p style="color:blue">numpy==1.23.5</p> = <p style="color:green;">NumPy library </p>
-<p style="color:blue">oauthlib==3.2.0</p> = <p style="color:green;">oauth library</p>
-<p style="color:blue">pandas==1.5.1</p> = <p style="color:green;"> Pandas</p>
-<p style="color:blue">Pillow==9.2.0</p> = <p style="color:green;"> Pillow</p>
-<p style="color:blue">psycopg2-binary==2.9.5</p> = <p style="color:green;">psycopg2</p>
-<p style="color:blue">python3-openid==3.2.0</p> = <p style="color:green;">openid</p>
-<p style="color:blue">pytz==2022.2.1</p> = <p style="color:green;">pytz timezones</p>
-<p style="color:blue">requests-oauthlib==1.3.1</p> = <p style="color:green;">oauth library</p>
-<p style="color:blue">s3transfer==0.6.0</p> = <p style="color:green;">S3</p>
-<p style="color:blue">sqlparse==0.4.2</p> = <p style="color:green;">sqlparse</p>
-<p style="color:blue">stripe==4.2.0</p> = <p style="color:green;">stripe</p>
+asgiref ASGI
+boto3
+Django
+Django
+Django allauth
+Django countries
+Django crispy forms
+Django libraries
+Django pandas
+gunicorn
+JMESPath query language for JSON.
+NumPy library
+oauth library
+Pandas
+Pillow
+psycopg2
+openid
+pytz timezones
+oauth library
+Amazon S3
+sqlparse
+stripe
 
 
 -------------
@@ -655,7 +653,9 @@ the send vendor email feature, is something that I will add in future versions, 
 ## Validation
 
 ### blog
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/blog.png">
+</details>
 
 - #### JS
 - #### PY
@@ -670,7 +670,9 @@ the send vendor email feature, is something that I will add in future versions, 
 - #### WAVE
 
 ### cart
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/cart.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
@@ -691,35 +693,45 @@ the send vendor email feature, is something that I will add in future versions, 
 - #### WAVE
 
 ### follow
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/follow.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
 - #### WAVE
 
 ### home
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/home.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
 - #### WAVE
 
 ### newsletter
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/follow.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
 - #### WAVE
 
 ### mission
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/mission.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
 - #### WAVE
 
 ### profiles
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/profile.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
