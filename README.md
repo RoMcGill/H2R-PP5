@@ -663,7 +663,9 @@ the send vendor email feature, is something that I will add in future versions, 
 - #### WAVE
 
 ### brands
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/brands.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
@@ -679,14 +681,18 @@ the send vendor email feature, is something that I will add in future versions, 
 - #### WAVE
 
 ### checkout
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/checkout.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
 - #### WAVE
 
 ### contact
-- #### html
+<details><summary>html</summary>
+<img src="validation-screenshots/contact.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
@@ -712,12 +718,22 @@ the send vendor email feature, is something that I will add in future versions, 
 
 ### newsletter
 <details><summary>html</summary>
-<img src="validation-screenshots/follow.png">
+<img src="validation-screenshots/newsletter.png">
 </details>
 - #### JS
 - #### PY
 - #### CSS
 - #### WAVE
+
+### send newsletter
+<details><summary>html</summary>
+<img src="validation-screenshots/sendnews.png">
+</details>
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
 
 ### mission
 <details><summary>html</summary>
@@ -737,8 +753,19 @@ the send vendor email feature, is something that I will add in future versions, 
 - #### CSS
 - #### WAVE
 
-### upload
-- #### html
+### upload brand
+<details><summary>html</summary>
+<img src="validation-screenshots/upload.png">
+</details>
+- #### JS
+- #### PY
+- #### CSS
+- #### WAVE
+
+### upload product
+<details><summary>html</summary>
+<img src="validation-screenshots/upload2.png">
+</details>
 - #### JS
 - #### PY
 - #### CSS
