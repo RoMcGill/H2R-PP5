@@ -364,7 +364,7 @@ This page is a site owner run blog to promote businesses and provide users with 
 
 This is a visualized interpritation of the database models and how they Interact with eachother.
 
-<img src="static/images/H2R-PP5_visualized.png">">
+<img src="static/images/H2R-PP5_visualized.png">
 
 ### Models
 
@@ -377,7 +377,8 @@ fields =
    - image_url with a URLField
    - image with a ImageField
 
-and a class called Brand_Products
+#### Brand_products
+has a class called Brand_Products
 fields =
    - brand with a ForeignKey to Brands to link the brands and the product by the brand.
    - brand_name with a CharField
@@ -388,14 +389,68 @@ fields =
    - image with a ImageField
    - max_quant with a IntegerField
 
-
-#### Brand_products
 #### Order
+has a class called Order
+fields =
+   - order_number with a CharField
+   - user_profile with a ForeignKey to UserProfile.
+   - full_name with a CharField
+   - email with a EmailField
+   - phone_number with a CharField
+   - country with a CountryField
+   - postcode with a CharField
+   - town_or_city with a CharField
+   - street_address1 with a CharField
+   - street_address2 with a CharField
+   - county with a CharField
+   - date with a DateTimeField
+   - delivery_cost with a DecimalField
+   - order_total with a DecimalField
+   - grand_total with a DecimalField
+   - original_cart with a TextField
+   - stripe_pid with a CharField
+
+
 #### OrderLineItem
+has a class called OrderLineItem
+fields=
+   - order with a ForeignKey to Order
+   - product with a ForeignKey to Brand_products
+   - quantity with a IntegerField
+   - lineitem_total with a DecimalField
+
 #### Contact
+has a class called Contact
+fields=
+   - name with a CharField
+   - email with a EmailField
+   - subject with a TextField
+   - message with a TextField
+
 #### Subscribers
+a class of Subscribers
+fields=
+   - email with a EmailField
+   - date with a DateTimeField
+
 #### SendNews
+a class of SendNews
+fields=
+   - title with a CharField
+   - message with a TextField
+
 #### UserProfile
+a class of UserProfile
+fields=
+   - user with a OneToOneField to the User
+   - default_phone_number with a CharField
+   - default_street_address1 with a CharField
+   - default_street_address2 with a CharField
+   - default_town_or_city with a CharField
+   - default_county with a CharField
+   - default_country with a CountryField
+   - default_postcode with a CharField
+
 #### Blog
 has a class called post
 fields =
@@ -407,6 +462,11 @@ fields =
    - created_on with a DateTimeField
    - status with a IntegerField and a default status of 0
 #### Mission
+A class of Mission
+fields=
+   - Why with a TextField
+   - How with a TextField
+   - status with a IntegerField with choces sset to Status and the default set to 0, this = draft
 
 
 -------------

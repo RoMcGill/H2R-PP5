@@ -20,87 +20,88 @@ class Order(models.Model):
         editable=False
         )
     user_profile = models.ForeignKey(
-                                    UserProfile,
-                                    on_delete=models.SET_NULL,
-                                    null=True, blank=True,
-                                    related_name='orders'
-                                    )
+
+        UserProfile,
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='orders'
+        )
     full_name = models.CharField(
-                                max_length=50,
-                                null=False,
-                                blank=False
-                                )
+        max_length=50,
+        null=False,
+        blank=False
+        )
     email = models.EmailField(
-                             max_length=254,
-                             null=False,
-                             blank=False
-                             )
+        max_length=254,
+        null=False,
+        blank=False
+        )
     phone_number = models.CharField(
-                                    max_length=20,
-                                    null=False,
-                                    blank=False
-                                    )
+        max_length=20,
+        null=False,
+        blank=False
+        )
     country = CountryField(
-                            blank_label='country *',
-                            null=False, blank=False
-                            )
+        blank_label='country *',
+        null=False, blank=False
+        )
     postcode = models.CharField(
-                                max_length=20,
-                                null=True,
-                                blank=True
-                                )
+        max_length=20,
+        null=True,
+        blank=True
+        )
     town_or_city = models.CharField(
-                                    max_length=40,
-                                    null=False,
-                                    blank=False
-                                    )
+        max_length=40,
+        null=False,
+        blank=False
+        )
     street_address1 = models.CharField(
-                                        max_length=80,
-                                        null=False,
-                                        blank=False
-                                        )
+        max_length=80,
+        null=False,
+        blank=False
+        )
     street_address2 = models.CharField(
-                                        max_length=80,
-                                        null=True,
-                                        blank=True
-                                        )
+        max_length=80,
+        null=True,
+        blank=True
+        )
     county = models.CharField(
-                                max_length=80,
-                                null=True,
-                                blank=True
-                                )
+        max_length=80,
+        null=True,
+        blank=True
+        )
     date = models.DateTimeField(
-                                auto_now_add=True
-                                )
+        auto_now_add=True
+        )
     delivery_cost = models.DecimalField(
-                                        max_digits=6,
-                                        decimal_places=2,
-                                        null=False,
-                                        default=0
-                                        )
+        max_digits=6,
+        decimal_places=2,
+        null=False,
+        default=0
+        )
     order_total = models.DecimalField(
-                                        max_digits=10,
-                                        decimal_places=2,
-                                        null=False,
-                                        default=0
-                                        )
+        max_digits=10,
+        decimal_places=2,
+        null=False,
+        default=0
+        )
     grand_total = models.DecimalField(
-                                        max_digits=10,
-                                        decimal_places=2,
-                                        null=False,
-                                        default=0
-                                        )
+        max_digits=10,
+        decimal_places=2,
+        null=False,
+        default=0
+        )
     original_cart = models.TextField(
-                                        null=False,
-                                        blank=False,
-                                        default=''
-                                        )
+        null=False,
+        blank=False,
+        default=''
+        )
     stripe_pid = models.CharField(
-                                    max_length=254,
-                                    null=False,
-                                    blank=False,
-                                    default=''
-                                    )
+        max_length=254,
+        null=False,
+        blank=False,
+        default=''
+        )
 
     def _generate_order_number(self):
         """
@@ -138,29 +139,29 @@ class OrderLineItem(models.Model):
     class to create line items
     """
     order = models.ForeignKey(
-                                Order, null=False,
-                                blank=False,
-                                on_delete=models.CASCADE,
-                                related_name='lineitems'
-                                )
+        Order, null=False,
+        blank=False,
+        on_delete=models.CASCADE,
+        related_name='lineitems'
+        )
     product = models.ForeignKey(
-                                Brand_products,
-                                null=False,
-                                blank=False,
-                                on_delete=models.CASCADE
-                                )
+        Brand_products,
+        null=False,
+        blank=False,
+        on_delete=models.CASCADE
+        )
     quantity = models.IntegerField(
-                                    null=True,
-                                    blank=True,
-                                    default=0
-                                    )
+        null=True,
+        blank=True,
+        default=0
+        )
     lineitem_total = models.DecimalField(
-                                            max_digits=6,
-                                            decimal_places=2,
-                                            null=False,
-                                            blank=False,
-                                            editable=False
-                                            )
+        max_digits=6,
+        decimal_places=2,
+        null=False,
+        blank=False,
+        editable=False
+        )
 
     def save(self, *args, **kwargs):
         """
