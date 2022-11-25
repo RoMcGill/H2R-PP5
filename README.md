@@ -657,7 +657,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/blog.png">
 </details>
 
-- #### JS
+
 - #### PY
 - #### CSS
 - #### WAVE
@@ -666,7 +666,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/brands.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -677,7 +677,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/cart.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -688,7 +688,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/checkout.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -699,7 +699,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/contact.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -710,7 +710,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/follow.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -721,7 +721,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/home.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -732,7 +732,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/newsletter.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -743,7 +743,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/sendnews.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -755,7 +755,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/mission.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -766,7 +766,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/profile.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -777,7 +777,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/upload.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
@@ -788,13 +788,24 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/upload2.png">
 </details>
-- #### JS
+
 - #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
 - #### WAVE
 
+### JS
+some functions through an error in js hint as undefined variable, i belive thius is because they were defined outside the scope of the function.
+<details><summary>js</summary>
+<img src="validation-screenshots/stripejs.png">
+</details>
+<details><summary>js</summary>
+<img src="validation-screenshots/quantjs.png">
+</details>
+<details><summary>js</summary>
+<img src="validation-screenshots/emailjs.png">
+</details>
 
 
 ### Chrome Dev Tools Lighthouse
