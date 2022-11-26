@@ -37,7 +37,7 @@
     </div>
     <div class=" border-top border-bottom outline-div-3">
         <div class="row main align-items-center">
-            <div class="col " class="cart-titles"><img class="img-fluid" src="{{ item.product.image.url }}"></div>
+            <div class="col " class="cart-titles"><img class="img-fluid" src="{{ item.product.image.url }}" alt="image of product"></div>
             <div class="col text-bold">{{ item.product.brand_name }}
                 <div class="col text-bold">{{ item.product.product_name }}</div>
             </div>
@@ -49,22 +49,22 @@
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <button class="decrement-qty btn btn-sm btn-black rounded-0"
-                                    data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                <button class="decrement-qty btn btn-sm btn-black rounded-0"aria-label="minus button"
+                                    data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}" aria-label="minus button">
                                     <span>
-                                        <i class="fas fa-minus fa-sm"></i>
+                                        <i class="fas fa-minus fa-sm" aria-label="minus button"></i>
                                     </span>
                                 </button>
                             </div>
                             <!-- quantity -->
                             <input class="form-control form-control-sm qty_input" type="number" name="quantity"
                                 value="{{ item.quantity }}" min="0" max="99" data-item_id="{{ item.item_id }}"
-                                id="id_qty_{{ item.item_id }}">
+                                id="id_qty_{{ item.item_id }}"aria-label="quantity selection">
                             <div class="input-group-append">
-                                <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                <button class="increment-qty btn btn-sm btn-black rounded-0" aria-label="plus button"
                                     data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                     <span>
-                                        <i class="fas fa-plus fa-sm"></i>
+                                        <i class="fas fa-plus fa-sm" aria-label="minus button"></i>
                                     </span>
                                 </button>
                             </div>
