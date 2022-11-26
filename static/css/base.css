@@ -83,10 +83,6 @@ body {
     padding-top: 100px;
 }
 
-
-
-
-/* CSS */
 .button-31 {
     text-decoration: none;
   background-color: #ff90e8;
@@ -235,7 +231,6 @@ opacity: .75;
 
 }
 
-
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
@@ -376,12 +371,6 @@ opacity: .75;
   }
 }
 
-
-
-
-
-
-
 .pop-image-2{
   width: 100%;
   padding-top: 50px;
@@ -468,12 +457,6 @@ opacity: .75;
 }
 
 
-
-main{
-
-
-}
-
 .h2r-title{
     color: rgb(255, 255, 255);
 
@@ -536,10 +519,6 @@ main{
     width:100%;
     block-size: fit-content;
     background-color:#ffc900;
-
-
-
-
 }
 
 
@@ -588,8 +567,6 @@ main{
     margin: 0 auto;
 
 }
-
-
 
 .message-container{
     position: fixed;

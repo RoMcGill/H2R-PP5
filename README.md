@@ -661,134 +661,100 @@ the send vendor email feature, is something that I will add in future versions, 
 <details><summary>html</summary>
 <img src="validation-screenshots/brands.png">
 </details>
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### cart
 <details><summary>html</summary>
 <img src="validation-screenshots/cart.png">
 </details>
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### checkout
 <details><summary>html</summary>
 <img src="validation-screenshots/checkout.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### contact
 <details><summary>html</summary>
 <img src="validation-screenshots/contact.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### follow
 <details><summary>html</summary>
 <img src="validation-screenshots/follow.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### home
 <details><summary>html</summary>
 <img src="validation-screenshots/home.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### newsletter
 <details><summary>html</summary>
 <img src="validation-screenshots/newsletter.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### send newsletter
 <details><summary>html</summary>
 <img src="validation-screenshots/sendnews.png">
 </details>
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
-
 
 ### mission
 <details><summary>html</summary>
 <img src="validation-screenshots/mission.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### profiles
 <details><summary>html</summary>
 <img src="validation-screenshots/profile.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### upload brand
 <details><summary>html</summary>
 <img src="validation-screenshots/upload.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### upload product
 <details><summary>html</summary>
 <img src="validation-screenshots/upload2.png">
 </details>
-
-
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
-- #### WAVE
 
 ### JS
-some functions through an error in js hint as undefined variable, i belive thius is because they were defined outside the scope of the function.
+- some functions through an error in js hint as undefined variable, i belive thius is because they were defined outside the scope of the function.
 <details><summary>js</summary>
 <img src="validation-screenshots/stripejs.png">
 </details>
@@ -800,31 +766,51 @@ some functions through an error in js hint as undefined variable, i belive thius
 </details>
 
 ### Python
-As pep8online is currently offline I used a gitpod built in extension linter called pycodestyle,
+- As pep8online is currently offline I used a gitpod built in extension linter called pycodestyle,
 every page was checked in and showed no errors.
 <details><summary>Py</summary>
 <img src="validation-screenshots/py.png">
 </details>
 
-
 ### Chrome Dev Tools Lighthouse
-
-Lighthouse was used to test the performance, accessibility, best practice and SEO of the site. The validation was done for both desktop & mobile.
-
-
-### Wave
-
-
+- Lighthouse was used to test the performance, accessibility, best practice and SEO of the site.
+<details><summary>home</summary>
+<img src="validation-screenshots/lh-home.png">
+</details>
+<details><summary>add product</summary>
+<img src="validation-screenshots/lh-add-product.png">
+</details>
+<details><summary>blog</summary>
+<img src="validation-screenshots/lh-blog.png">
+</details>
+<details><summary>Cart</summary>
+<img src="validation-screenshots/lh-cart.png">
+</details>
+<details><summary>Create brand</summary>
+<img src="validation-screenshots/lh-create-brand.png">
+</details>
+<details><summary>Follow</summary>
+<img src="validation-screenshots/lh-follow.png">
+</details>
+<details><summary>Mission</summary>
+<img src="validation-screenshots/lh-mission.png">
+</details>
+<details><summary>Newsletter</summary>
+<img src="validation-screenshots/lh-news.png">
+</details>
+<details><summary>Send newsletter</summary>
+<img src="validation-screenshots/lh-sendnews.png">
+</details>
+<details><summary>Sign in</summary>
+<img src="validation-screenshots/lh-signin.png">
+</details>
 
 ##### Back to [top](#table-of-contents)
-
 ------------------
 
 ## Testing
 
 ### Manual testing of user stories
-
-
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -834,16 +820,9 @@ Lighthouse was used to test the performance, accessibility, best practice and SE
 <img src="#">
 </details>
 
-
-
-
-
 ### Performing tests on various devices
 
-
-
 ### Browser compatibility
-
 
 ##### Back to [top](#table-of-contents)
 
@@ -854,14 +833,11 @@ Lighthouse was used to test the performance, accessibility, best practice and SE
 | **Bug** | **Fix** |
 | ------- | ------- |
 
-
 ##### Back to [top](#table-of-contents)
 
 ----------------------------
 
 ## Deployment
-
-
 
 ##### Back to [top](#table-of-contents)
 
@@ -871,25 +847,8 @@ Lighthouse was used to test the performance, accessibility, best practice and SE
 
 ### Images
 
-
-
 ### Code
-
-
 
 ### Acknowledgements
 
 
-# Todo
-
-- Readme (1/10)
-- create facebook + insta pages + content for Both (8/10)
-- optimise SEO (keywords + liks to other sites)(5/10)
-
-
- DIY'rs, Crafters, Painters, Artists Always have trouble when it comes to maximising Sales and revenue due to Not taking advantage of B2B (business to businees) Sales, This could be for a number of reasons. The main two are not taking advantage of technology arround them such as shopify and wixx this is down to the High barrier to entry when creating, maintaining and running your own website on one of theese platforms. the Next reason is just not knowing where to start and who to contact. We have solved both of these Issues.
-
-
-
-
- We have solved these issues Firstly by making it easyer than ever to set up your online store front and start selling.We do this by giving our users a simple form and image field to fill out, Once complete our site will automatically build your store front and be available on our site for everyone to see, adding products to your store is done the same way, and will display and be available to purchase in your store. Secondly We will find your Wholesale customers ready to make big orders to stock their shelfs, We do this by giving Wholesalers an easy place to go and purchase products in bulk Hassle free.
