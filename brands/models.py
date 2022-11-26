@@ -8,7 +8,9 @@ class Brands(models.Model):
     """
     brands model
     """
-    brand_email = models.EmailField(max_length=254, null=False, blank=False, default="Email")
+    brand_email = models.EmailField(
+        max_length=254, null=False,
+        blank=False, default="Email")
     brand_name = models.CharField(max_length=254)
     description = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)

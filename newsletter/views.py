@@ -11,12 +11,17 @@ def Newsletter(request):
         form = SubscribersForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Thank you for Subscribing to our email List\
-                we will never Contact you Unless We have something to say that we know you want to hear!')
+            messages.success(
+                request,
+                'Thank you for Subscribing to our email List\
+                we will never Contact you Unless We have something\
+                to say that we know you want to hear!')
             return redirect('home')
         else:
-            messages.error(request, 'There was an Issue Subscribing you to Our mailing List,\
-                 please contact us through our Contact Us page')
+            messages.error(
+                request,
+                'There was an Issue Subscribing you to Our mailing List,\
+                please contact us through our Contact Us page')
     else:
         form = SubscribersForm()
     context = {
@@ -53,6 +58,3 @@ def send_newsletter(request):
         'form': form,
     }
     return render(request, 'newsletter/send-newsletter.html', context)
-
-
-

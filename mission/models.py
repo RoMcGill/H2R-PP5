@@ -3,9 +3,10 @@ from django.db import models
 # Create your models here.
 
 STATUS = (
-    (0,"Draft"),
-    (1,"Publish")
+    (0, "Draft"),
+    (1, "Publish")
 )
+
 
 class Mission(models.Model):
     """

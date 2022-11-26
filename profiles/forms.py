@@ -7,7 +7,6 @@ class UserProfileForm(forms.ModelForm):
         model = UserProfile
         exclude = ('user',)
 
-
     def __init__(self, *args, **kwargs):
         """
         add placeholders and classes, remove auto generated

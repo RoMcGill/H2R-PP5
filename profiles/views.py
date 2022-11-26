@@ -36,7 +36,7 @@ def profile(request):
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
-    messages.info(request,(
+    messages.info(request, (
         f'this is a past conformation for {order_number}. '
         'A confirmation email was sent on the order date'
     ))
@@ -49,4 +49,3 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
-
