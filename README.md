@@ -133,7 +133,7 @@ As a site owner I want to Make it simple for big retail stores to find small bra
 - [#13](https://github.com/RoMcGill/H2R-PP5/issues/13)User Story:find new goods from brands I like as soon as they are available #13
 As a customer I want to *find new goods from brands I like as soon as they are available * So that I can Get them stocked in my store as soon as possible
 
-- [#14](https://github.com/RoMcGill/H2R-PP5/issues/14)User Story:upload my latest products with ease and have them show instantly #14
+- [#14](https://github.com/RoMcGill/H2R-PP5/issues/14)User Story:upload my latest products with ease and have them show instantly
 As a seller I want to upload my latest ptoducts with ease and have them show instantly So that I can show retailers my new stock
 
 - [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)User Story: add and remove Items from cart #15
@@ -200,6 +200,8 @@ As a user I want to be able to see the sites mission statement So that I can con
 
 - [#8](https://github.com/RoMcGill/H2R-PP5/issues/8)As a customer I want to have an account So that I can save time when checking out and keep track of purchases
 - [#9](https://github.com/RoMcGill/H2R-PP5/issues/9)As a Seller I want to have an account So that I can upload products and keep track of purchases
+- [#23](https://github.com/RoMcGill/H2R-PP5/issues/23)User Story: login/logout #23
+As a user I want to be able to log in and logout of my accountSo that I do not run the risk of any fraudulent activities taking place if i was to loose my device.
 
 ### Keeping Track of Information
 
@@ -215,11 +217,37 @@ As a user I want to be able to see the sites mission statement So that I can con
 
 - [#21](https://github.com/RoMcGill/H2R-PP5/issues/21)User Story: Checkout #21
 As a user I want to be able to use a secure checkout system So that I can be sure that my card details are safe.
+- [#26](https://github.com/RoMcGill/H2R-PP5/issues/26)User Story: Subscribe to a newsletter #26
+As a customer I want to be able to subscribe to a newletter so that I can stay informed of any changes or sales So that I can save money and stay informed.
+- [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)User Story: add and remove Items from cart #15
+As a customer I want to be able to add and remove items from my cart So that I can edit the quantity of items i will buy.
+- [#16](https://github.com/RoMcGill/H2R-PP5/issues/16) User Story:confirmation email #16
+As a user I want to receive a confirmation email once I place an order. So that I can have peace of mind my records are on file
+- [#17](https://github.com/RoMcGill/H2R-PP5/issues/17)User Story: Success and error messages #17
+As a user I want to Know if my actions are achieving the expected result So that I can be sure my actions are successful.
+- [#4](https://github.com/RoMcGill/H2R-PP5/issues/4)User Story:detailed specifications of products #4
+As a customer I want to see detailed specifications of products So that I can figure out if the product is a good fit for my store and customers
+- [#10](https://github.com/RoMcGill/H2R-PP5/issues/10) User Story:buy goods in bulk #10
+As a customer I want to buy goods in bulk So that I can * take advantage of economies of scale and sell them in my store for a profit
+- [#8](https://github.com/RoMcGill/H2R-PP5/issues/8)User Story:have an account #8
+As a customer I want to have an account So that I can save time when checking out and keep track of purchases
 
 ### Seller
 
 - [#9](https://github.com/RoMcGill/H2R-PP5/issues/9)User Story:have an account #9
 As a Seller I want to have an account So that I can upload products and keep track of purchases
+- [#28](https://github.com/RoMcGill/H2R-PP5/issues/28) User Story:CRUD #28
+As an admin I want to have the ability to create edit and delete items from the admin page So that I can keep the site running effectively and efficiently.
+- [#25](https://github.com/RoMcGill/H2R-PP5/issues/25) User Story: maximum quantity #25
+As a seller I want to be able to set the maximum quantity of my products that are available to order So that I can manage supply
+- [#24](https://github.com/RoMcGill/H2R-PP5/issues/24)User Story: edit and delete products #24
+As a seller I want to be able to delete or edit products that I upload So that I can manage demand. and update product information
+- [#20](https://github.com/RoMcGill/H2R-PP5/issues/20)User Story: Contact #20
+As a user I want to be able to contact the site owner So that I can inform them about an issues I may be having or ask any questions.
+- [#14](https://github.com/RoMcGill/H2R-PP5/issues/14)User Story:upload my latest products with ease and have them show instantly
+- [#11](https://github.com/RoMcGill/H2R-PP5/issues/11)User Story:sell in bulk to retail stores #11
+As a seller I want to sell in bulk to retail stores So that I can increase revenue through more exposure and sales
+
 
 #### Back to [top](#table-of-contents)
 
@@ -228,7 +256,8 @@ As a Seller I want to have an account So that I can upload products and keep tra
 ## Design
 
 ### Colours
-<img src="">
+<img src="static/images/colour.png">
+
 The colour and Design of this website was heavily influenced by the controvertial UX/UI design of the Gumroad website, I personally think that this is a great Colour scheme to stand out. the UX is also good as the user scrolls through the alternating rows and coloums Informatioon is displayed clearly and effectively, In this day and age of shopify stores built on templates I belive the end user will welcome this Unique UI as it is fresh new and exciting.
 
 ### Fonts
@@ -510,107 +539,114 @@ stripe
 ## Features
 
 ### Landing page
-
-
 <details><summary>See feature screenshot</summary>
-<img src="#">
+<img src="static/images/f-home.png">
 </details>
-
 
 ### Logo and Navigation Bar
-
-
 <details><summary>See feature screenshots</summary>
-<img src="#">
-<img src="#">
-<img src="#">
-<img src="#">
+<img src="static/images/f-nav-small.png">
+<img src="static/images/f-nav-expand.png">
 </details>
-
 
 ### Footer
-
-
 <details><summary>See feature screenshot</summary>
-<img src="#">
+<img src="static/images/f-footer.png">
 </details>
-
 
 ### Sign up form
-
-
 <details><summary>See feature screenshots</summary>
-<img src="#">
-<img src="#">
+<img src="static/images/f-register.png">
 </details>
-
 
 ### Login form
-
-
-<details><summary>See feature screenshot</summary>
-<img src="#">
-</details>
-
-
-### newsletter page
-
-
 <details><summary>See feature screenshots</summary>
-<img src="#">
+<img src="static/images/f-sign-in.png">
 </details>
 
+### newsletter
+<details><summary>See feature screenshots</summary>
+<img src="static/images/f-newsletter.png">
+</details>
 
-### edit product page
+### send newsletter
+<details><summary>See feature screenshots</summary>
+<img src="static/images/f-send-newsletter.png">
+</details>
 
-
+### edit product
 <details><summary>See feature screenshot</summary>
-<img src="#">
+<img src="static/images/f-edit-product.png">
 </details>
 
-
-### brand page
-
-
+### brand
 <details><summary>See feature screenshot</summary>
-<img src="#">
+<img src="static/images/f-brands.png">
 </details>
-
 
 ### brand detail
-
-
 <details><summary>See feature screenshot</summary>
-<img src="#">
+<img src="static/images/f-brand-page.png">
 </details>
 
-
-### Profile page
-
+### Profile
 <details><summary>See feature screenshot</summary>
-<img src="#">
+<img src="static/images/f-profile.png">
 </details>
 
+### cart
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-cart.png">
+<img src="static/images/f-checkout-cart.png">
+</details>
 
-### cart page
-
-
-### checkout page
-
-
-### send newsletter page
-
+### checkout
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-checkout.png">
+</details>
 
 ### Contact page
-
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-checkout.png">
+</details>
 
 ### Our Mission
-
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-mission.png">
+</details>
 
 ### Upload a product
-
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-add-product.png">
+</details>
 
 ### Start a Brand
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-create-brand.png">
+</details>
+
+### Follow Us
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-follow.png">
+</details>
+
+### Previous orders
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-previous-order.png">
+</details>
+
+### Order Confirmation
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-order-confirm.png">
+</details>
+
+### confirmation email
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-email.png">
+</details>
+
+
+
 
 -----------------
 
@@ -646,7 +682,6 @@ the send vendor email feature, is something that I will add in future versions, 
 
 
 ##### Back to [top](#table-of-contents)
-
 
 ------------------
 
