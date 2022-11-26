@@ -549,110 +549,135 @@ fields=
 ## Features
 
 ### Landing page
-the landing page provides some motivational text to any user thinking of using our service, there is also an action button to lead any user to the create a brand page. further down the landing page there is more information on the sites features and goals along with links to our "partners" at the bottom.
+- the landing page provides some motivational text to any user thinking of using our service, there is also an action button to lead any user to the create a brand page. further down the landing page there is more information on the sites features and goals along with links to our "partners" at the bottom.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-home.png">
 </details>
 
 ### Logo and Navigation Bar
+- At the top of the landing page there is a collapsable nav bar that provides links to all of the pages available on the site.
 <details><summary>See feature screenshots</summary>
- At the top of the landing page there is a collapsable nav bar that provides links to all of the pages available on the site.
 <img src="static/images/f-nav-small.png">
 <img src="static/images/f-nav-expand.png">
 </details>
 
 ### Footer
+- The Footer provides links to all of our social media accounts and has our copyright details.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-footer.png">
 </details>
 
 ### Sign up form
+- the signup/register form is a simple form that asks users for their email address, username and password.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-register.png">
 </details>
 
 ### Login form
+- the login form is a form with 2 inputs for username and password, and also has a remember me radio button that will save the users username and password for the next time they visit the site.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-sign-in.png">
 </details>
 
 ### newsletter
+- the newsletter sign up form is a single input form for a users email address, all the users that submit their email to the form will be saved in the database.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-newsletter.png">
 </details>
 
 ### send newsletter
+- the send newsletter feature can only be accesed by a superuser, It consists of an input for a subject field and a textarea for the email content. When a superuser fills out these inputs with relevant content and submits the form the content will be sent to all of the email addresses that have been been submitted using the newsletter feature.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-send-newsletter.png">
 </details>
 
 ### edit product
+- this feature allows brand owners to edit or delete their products.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-edit-product.png">
 </details>
 
-### brand
+### brands
+- this feature shows a list of all the brands that have been created on our site
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-brands.png">
 </details>
 
 ### brand detail
+- this feature shows the details of a brand, to access this a user just has to click on a brand, they will be shown a the brands image, description and a list of their products
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-brand-page.png">
 </details>
 
+### product
+- this feature shows the brands product image and discription, it gives the user the ability to add the product to the cart and select the quantity they want.
+<details><summary>See feature screenshot</summary>
+<img src="static/images/f-product.png">
+</details>
+
 ### Profile
+this feature allows the user to update their personal information that will be saved and used at checkout, users can also review their past order information here.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-profile.png">
 </details>
 
 ### cart
+the cart feature will store the products and allow the users to change the quantity and remove products from the cart, the shipping cost, free shipping threshold and total cost will also be displayed here
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-cart.png">
 <img src="static/images/f-checkout-cart.png">
 </details>
 
 ### checkout
+the checkout feature will ask for a users information if not already saved in the profile, there is also a stripe credit/debit card field and a checkout button, all transactions are handled by stripe.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-checkout.png">
 </details>
 
 ### Contact page
 <details><summary>See feature screenshot</summary>
+this feature allows users to contact the admins/site owners and provides the user with more contact information for the site.
 <img src="static/images/f-checkout.png">
 </details>
 
 ### Our Mission
+our mission feature shows the How and Why of the Business, this feature allows admins to update this information through the admin page.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-mission.png">
 </details>
 
 ### Upload a product
+this feature allows users to upload products to their brand page by filling out short input fields.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-add-product.png">
 </details>
 
 ### Start a Brand
+this feature allows users to create their brand page by filling out a simple form with relevant information that will be then be displayed as a brand.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-create-brand.png">
 </details>
 
 ### Follow Us
+this feature provides links to our social media sites.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-follow.png">
 </details>
 
 ### Previous orders
+this feature is accessed through the profile page by clicking on a specific recent order, it allows users to see all of the details of their recent order.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-previous-order.png">
 </details>
 
 ### Order Confirmation
+this feature shows the order information and alerts the user that a confirmation has been sent to their email address
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-order-confirm.png">
 </details>
 
 ### confirmation email
+this feature will email the user the information about their order.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-email.png">
 </details>
