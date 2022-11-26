@@ -400,6 +400,7 @@ This is a visualized interpritation of the database models and how they Interact
 #### Brands
 has a class called Brands
 fields =
+
    - brand_email with a EmailField
    - brand_name with a CharField
    - description with a TextField
@@ -409,6 +410,7 @@ fields =
 #### Brand_products
 has a class called Brand_Products
 fields =
+
    - brand with a ForeignKey to Brands to link the brands and the product by the brand.
    - brand_name with a CharField
    - sku with a CharField
@@ -421,6 +423,7 @@ fields =
 #### Order
 has a class called Order
 fields =
+
    - order_number with a CharField
    - user_profile with a ForeignKey to UserProfile.
    - full_name with a CharField
@@ -443,6 +446,7 @@ fields =
 #### OrderLineItem
 has a class called OrderLineItem
 fields=
+
    - order with a ForeignKey to Order
    - product with a ForeignKey to Brand_products
    - quantity with a IntegerField
@@ -451,6 +455,7 @@ fields=
 #### Contact
 has a class called Contact
 fields=
+
    - name with a CharField
    - email with a EmailField
    - subject with a TextField
@@ -459,18 +464,21 @@ fields=
 #### Subscribers
 a class of Subscribers
 fields=
+
    - email with a EmailField
    - date with a DateTimeField
 
 #### SendNews
 a class of SendNews
 fields=
+
    - title with a CharField
    - message with a TextField
 
 #### UserProfile
 a class of UserProfile
 fields=
+
    - user with a OneToOneField to the User
    - default_phone_number with a CharField
    - default_street_address1 with a CharField
@@ -483,6 +491,7 @@ fields=
 #### Blog
 has a class called post
 fields =
+
    - title with a CharField
    - slug with a SlugField
    - author with a ForeignKey to User
@@ -493,6 +502,7 @@ fields =
 #### Mission
 A class of Mission
 fields=
+
    - Why with a TextField
    - How with a TextField
    - status with a IntegerField with choces sset to Status and the default set to 0, this = draft
@@ -507,44 +517,46 @@ fields=
 - HTML
 - CSS
 - Javascript
+- Python
 
 ### Libraries, frameworks and dependencies
 
-asgiref ASGI
-boto3
-Django
-Django
-Django allauth
-Django countries
-Django crispy forms
-Django libraries
-Django pandas
-gunicorn
-JMESPath query language for JSON.
-NumPy library
-oauth library
-Pandas
-Pillow
-psycopg2
-openid
-pytz timezones
-oauth library
-Amazon S3
-sqlparse
-stripe
-
+- asgiref ASGI
+- boto3
+- Django
+- Django
+- Django allauth
+- Django countries
+- Django crispy forms
+- Django libraries
+- Django pandas
+- gunicorn
+- JMESPath query language for JSON.
+- NumPy library
+- oauth library
+- Pandas
+- Pillow
+- psycopg2
+- openid
+- pytz timezones
+- oauth library
+- Amazon S3
+- sqlparse
+- stripe
 
 -------------
 
 ## Features
 
 ### Landing page
+the landing page provides some motivational text to any user thinking of using our service, there is also an action button to lead any user to the create a brand page. further down the landing page there is more information on the sites features and goals along with links to our "partners" at the bottom.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-home.png">
 </details>
 
 ### Logo and Navigation Bar
 <details><summary>See feature screenshots</summary>
+ At the top of the landing page there is a collapsable nav bar that provides links to all of the pages available on the site.
 <img src="static/images/f-nav-small.png">
 <img src="static/images/f-nav-expand.png">
 </details>
