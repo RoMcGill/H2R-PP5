@@ -51,11 +51,11 @@
 <div class="topnav outline-div" style="padding-right: 25px;">
   <a href="{% url 'home' %}">Home</a>
   {% if request.user.is_authenticated %}
-  <a class="nav-item2 " href="{% url 'profile' %}">My Profile</a>
-  <a class="nav-item2" href="{% url 'account_logout' %}" >Logout</a>
+  <a href="{% url 'profile' %}" class="nav-item2 ">My Profile</a>
+  <a href="{% url 'account_logout' %}" class="nav-item2">Logout</a>
    {% else %}
-   <a class="nav-item2 " href="{% url 'account_signup' %}">Register</a>
-     <a class="nav-item2 " href="{% url 'account_login' %}">Login</a>
+   <a href="{% url 'account_signup' %}" class="nav-item2">Register</a>
+     <a href="{% url 'account_login' %}" class="nav-item2">Login</a>
    {% endif %}
    <a href="{% url 'view_cart' %}" style="padding-right:50px;">Cart
     {% if grand_total %}
@@ -70,19 +70,19 @@
        <a href="{% url 'brands' %}">Brands</a>
        <a href="{% url 'contact' %}">Contact-Us</a>
        <a href="{% url 'mission' %}">Our Mission</a>
-       <a class="nav-item2" href="{% url 'view_socials' %}">Follow US!</a>
-       <a class="nav-item2" href="{% url 'newsletter' %}">Newsletter</a>
+       <a href="{% url 'view_socials' %}" class="nav-item2">Follow US!</a>
+       <a href="{% url 'newsletter' %}" class="nav-item2">Newsletter</a>
        {% if user.is_superuser%}
        <a class="nav-item2" href="{% url 'send-newsletter' %}">Send A Newsletter</a>
        {% endif %}
-        <a class="nav-item2" href="{% url 'brand-upload' %}">Create A Brand Page</a>
-        <a class="nav-item2" href="{% url 'product-upload' %}">Upload A Product</a>
-        <a class="nav-item2" href="{% url 'blog' %}">Blog</a>
+        <a href="{% url 'brand-upload' %}" class="nav-item2">Create A Brand Page</a>
+        <a href="{% url 'product-upload' %}" class="nav-item2">Upload A Product</a>
+        <a href="{% url 'blog' %}" class="nav-item2">Blog</a>
       {% if request.user.is_authenticated %}
-      <a class="nav-item2" href="{% url 'account_logout' %}">Logout</a>
+      <a href="{% url 'account_logout' %}" class="nav-item2">Logout</a>
        {% else %}
-       <a class="nav-item2 " href="{% url 'account_signup' %}">Register</a>
-         <a class="nav-item2" href="{% url 'account_login' %}">Login</a>
+       <a href="{% url 'account_signup' %}" class="nav-item2">Register</a>
+       <a href="{% url 'account_login' %}" class="nav-item2">Login</a>
        {% endif %}
 
       </div>

@@ -657,17 +657,11 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/blog.png">
 </details>
 
-
-- #### PY
-- #### CSS
-- #### WAVE
-
 ### brands
 <details><summary>html</summary>
 <img src="validation-screenshots/brands.png">
 </details>
 
-- #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -678,7 +672,6 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/cart.png">
 </details>
 
-- #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -689,7 +682,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/checkout.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -700,7 +693,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/contact.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -711,7 +704,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/follow.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -722,7 +715,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/home.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -733,7 +726,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/newsletter.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -744,7 +737,6 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/sendnews.png">
 </details>
 
-- #### PY
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -756,7 +748,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/mission.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -767,7 +759,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/profile.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -778,7 +770,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/upload.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -789,7 +781,7 @@ the send vendor email feature, is something that I will add in future versions, 
 <img src="validation-screenshots/upload2.png">
 </details>
 
-- #### PY
+
 <details><summary>css</summary>
 <img src="validation-screenshots/css.png">
 </details>
@@ -805,6 +797,13 @@ some functions through an error in js hint as undefined variable, i belive thius
 </details>
 <details><summary>js</summary>
 <img src="validation-screenshots/emailjs.png">
+</details>
+
+### Python
+As pep8online is currently offline I used a gitpod built in extension linter called pycodestyle,
+every page was checked in and showed no errors.
+<details><summary>Py</summary>
+<img src="validation-screenshots/py.png">
 </details>
 
 
