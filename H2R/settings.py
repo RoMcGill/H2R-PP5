@@ -30,7 +30,7 @@ SECRET_KEY = '!g@9phuj3y@^(&aw45%$25()mjfd-)tzgz8p9h)0)+r#)6l5o9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['h2r-pp5.herokuapp.com', 'localhost', ]
 
