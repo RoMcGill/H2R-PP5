@@ -46,7 +46,7 @@ We have solved these issues Firstly by making it easyer than ever to set up your
 
 --------
 
-# E-commerce
+## E-commerce
 
 ### Home 2 Retail
 
@@ -289,9 +289,9 @@ Ease of use was the main goal for this site. and a clear path for both Buyers an
 ### Email verification page
 - This is where users information is shown. this will be where users are redirected from their conformation email
 
-<!--
+
 ### the blog page
-This page is a site owner run blog to promote businesses and provide users with information. -->
+This page is a site owner run blog to promote businesses and provide users with information.
 
 ### Contact page
 - This page displays a contact form which allows users to send an message to the site owner and provide their feedback or questions, these messages will be stored in the admin page.
@@ -882,11 +882,40 @@ every page was checked in and showed no errors.
 
 ## Testing
 
-### Manual testing of user stories
+### Manual testing of User Storys
+#### seller
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-1 Navigate to https://ci-pp5-snapfood.herokuapp.com/ | Landing page loads with application description | Works as expected |
+1. Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
+2. Register as a new user| fill out form and verify email address | Works as expected |
+3. Login| fill out form, login and have access to all relevant site features | Works as expected |
+3. click on get started action button| be redirected to a page to start creating a brand | Works as expected |
+4. fill out create a brand form| be redirected to brands page and see the brand I created among the other brands | Works as expected |
+5. Navagate to the add products page| be redirected to a form page to add a product | Works as expected |
+5. fill out add a product form|be redirected to the brands page where i can access and view the product I just created | Works as expected |
+6. edit my product|be redirected to to a form with my cuurent product information where i can edit the information| Works as expected |
+7. delete my product|product gets removed from my brand page| Works as expected |
+
+#### Buyer
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+1. Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
+2. Register as a new user| fill out form and verify email address | Works as expected |
+3. Login| fill out form, login and have access to all relevant site features | Works as expected |
+4. Navigate to brands page| browse brands | Works as expected |
+5. select a brand i am intrested in| see more information about the brand I have seleted | Works as expected |
+6. browse the brands products| be able to see a list of all the brand has to offer | Works as expected |
+7. select quantity | be able to select the quantity of the product i want to purchase | Works as expected |
+8. add to cart | be able to add selected products to my cart | Works as expected |
+9. edit product in cart | be able to increase and decrease the quantity of my selected products| Works as expected |
+10. checkout | be brought to a page where I can purchase the products in my cart| Works as expected |
+11. navigate to the profile page| be shown my personal details and be able to view my order history| Works as expected |
+
+
+
+
 
 <details><summary>Screenshot</summary>
 <img src="#">
