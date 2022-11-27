@@ -4,6 +4,8 @@
 
 💻 [Visit live website](https://h2r-pp5.herokuapp.com/)
 
+link to project/Kanban board: https://github.com/users/RoMcGill/projects/3
+
 <img src="static/images/responsive.png">
 
 ## Test Account Information
@@ -955,6 +957,169 @@ tested on Google, Firefox, and samsung Internet
 ----------------------------
 
 ## Deployment
+## Heroku Deployment
+
+This Django application has been deployed from GitHub to Heroku by following the steps:
+
+Installing Django and deploying to heroku
+
+- 1. In the Terminal: Install Django and gunicorn: pip3 install 'django<4' gunicorn
+- 2. In the Terminal: Install supporting libraries: pip3 install dj_database_url psycopg2
+- 3. In the Terminal: Install Cloudinary Libraries pip3 install dj3-cloudinary-storage
+- 3. In the Terminal: Create requirements file pip3 freeze --local > requirements.txt
+- 4. In the Terminal: Create Project (H2R): django-admin startproject H2R.
+- 5. In the Terminal: Create App (blog) python3 manage.py startapp Post
+- 6. Settings.py: Add to installed appsINSTALLED_APPS = ['H2R',] *Save file*
+- 7. In the Terminal: Migrate Changes: python3 manage.py migrate
+- 8. In the Terminal: Run Server to Test python3 manage.py runserver
+
+Step 2: Deploying an app to Heroku
+
+- 2.1 Create the Heroku app In heroku.com: create account/ login
+- 2.2 Create new Heroku App H2R-PP5, Location = Europe
+- 2.3 Add Database to App Resources Located in the Resources Tab, Add-ons, search and add e.g. ‘Heroku Postgres’
+- 2.4Copy DATABASE_URL value: Located in the Settings Tab, click reveal Config Vars, Copy Text
+- 2.5 Attach the Database: In gitpod, Create new env.py file on top level directory
+- 2.6 In env.py Import os library, import os
+- 2.7 Set environment variables os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"
+- 2.8. Add in secret key os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+- 2.9 In heroku.com: Add Secret Key to Config Vars SECRET_KEY, “randomSecretKey”
+
+step 3: Prepare environment and settings.py file
+- 3.1 In settings.py: Reference env.py from pathlib import Path, import os, import dj_database_url
+```
+if os.path.isfile("env.py"):
+   import env
+```
+- 3.2 Remove the insecure secret key and replace - links to the SECRET_KEY variable on HerokuSECRET_KEY = os.environ.get('SECRET_KEY')
+- 3.2 Comment out the old DataBases Section
+- 3.3 Add new DATABASES Section
+```
+DATABASES = {
+   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+```
+3.4 In the Terminal: Save all files and Make Migrations
+```
+$python3 manage.py migrate
+```
+- 3.5 Get  static and media files stored on AWS
+```
+if 'USE_AWS' in os.environ:
+
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000'
+    }
+
+    AWS_STORAGE_BUCKET_NAME = 'h2r-pp5'
+    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+```
+
+- 3.6 Link file to the templates directory in Heroku Place under the BASE_DIR line
+```
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+```
+- 3.7 Change the templates directory to TEMPLATES_DIR, Place within the TEMPLATES array
+- 3.8 Add Heroku Hostname to ALLOWED_HOSTS
+```
+ALLOWED_HOSTS = ["H2R-PP5.herokuapp.com", "localhost"]
+```
+- 3.9 In Gitpod: Create 3 new folders on top level directory media, static, templates
+- 4.0 Create procfile on the top level directory
+- 4.1 In Procfile: Add code web: gunicorn H2R-PP5.wsgi
+- 4.2 In the Terminal: Add, Commit and Push
+- 4.3 In Heroku: Deploy Content manually through heroku
+- 4.5 in heroku: setup and configure automatic deployments linked to Github account
+
+### migrating to ElephantSQL
+### Create account
+- Navigate to ElephantSQL.com and click “Get a managed database today”
+- elephantsql landing page with a large green button, in the lower middle of the screen, reading "get a managed database today"
+- Select “Try now for FREE” in the TINY TURTLE database plan
+- a variety of options with the free tiny turtle plan on the left
+- Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
+- a GitHub authorization screen with a green authorize button
+- In the Create new team form:
+- - Add a team name (your own name is fine)
+- - Read and agree to the Terms of Service
+- - Select Yes for GDPR
+- - Provide your email address
+- - Click “Create Team”
+- create new team form with inputs
+- Your account is successfully created!
+### Create new database
+- Log in to ElephantSQL.com to access your dashboard
+- elephantSQL dashboard
+- Click “Create New Instance”
+- Set up your plan
+- Give your plan a Name (this is commonly the name of the project)
+Select the Tiny Turtle (Free) plan
+- leave the Tags field blank
+- Select your region
+- Select a data center near you
+- Then click “Review”
+- Check your details are correct and then click “Create instance”
+- Return to the ElephantSQL dashboard and click on the database instance H2R-PP5
+### Migrating the data
+- Navigate to the Postgres Migration Tool repo on github in a new browser tab
+- Click the Gitpod button to open a new workspace
+- Run the script with the following command in the terminal
+- python3 reel2reel.py
+- In a different browser tab, go to your app in Heroku and select the Settings tab
+- Click the “Reveal Config Vars” button
+- Copy the value in the DATABASE_URL Config Var. It will start with postgres://
+- Return to Gitpod and paste in the URL you just copied into the terminal where prompted to provide your DATABASE_URL and click enter
+- In your original browser tab, get your ElephantSQL database URL. Again, it will start with postgres://
+- Return to Gitpod and paste in the URL where prompted
+- The data will now be downloaded from Heroku and uploaded to your ElephantSQL database
+- To test that your database has been moved successfully, return to ElephantSQL and select BROWSER
+- Go to the browser tab highlighted as the third menu item on the left in an elephantSQL database details page
+- Click the “Table queries” button. If you see any options in the dropdown, your tables have been created
+- Select a table name you recognise, and then click “Execute”
+- You should see your data displayed relating to the table you selected
+### Connecting the ElephantSQL database to Heroku
+- In the Heroku Dashboard for your project, open the Resources tab
+- In the Resources tab, remove the existing Postgres add-on:
+- Open the dropdown with the up-down arrows and select Delete Add-on
+- (warning)Removing this add-on will completely remove the old database, so make sure you only do this after your data has been migrated.
+- Confirm by typing in the name of your H2R-PP5 when prompted.
+- Navigate to the Settings tab
+- Reveal your existing Config Vars. The original DATABASE_URL should have been deleted when the add-on was removed.
+- Add a new config var called DATABASE_URL and paste in the value for your ElephantSQL database, and click Add to save it.
+- Add your new DATABASE_URL
+- Click the Open App button and test your project. It should still work the same as before and have all your data. You should thoroughly test to check that all the CRUD functionality is working as expected on the new database.
+
+-----
+
+### Forking the GitHub Repository
+1. Go to the GitHub repository
+2. Click on Fork button in top right corner
+3. You will then have a copy of the repository in your own GitHub account.
+
+### Making a Local Clone
+1. Go to the GitHub repository
+2. Locate the Code button above the list of files and click it
+3. Highlight the "HTTPS" button to clone with HTTPS and copy the link
+4. Open commandline interface on your computer
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard
+7. Press Enter to create your local clone
+
+-----
+
 
 ##### Back to [top](#table-of-contents)
 
