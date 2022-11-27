@@ -1057,16 +1057,17 @@ $python3 manage.py migrate
 32. Swap to the JSON tab and import managed policy
 33. search for S3 and select "AmazonS3FullAccess"
 34. Replace the value of the "Resource" key with the ARN from your S3 Bucket
-35. go back to your Bucket Tab
-36. get the ARN (Step 19). create an array for the Resource key and paste in your ARN twice but for the second value in the array put a /* like before this will give us access to all bucket contents
-37.
-
-
-
-
-</details>
-
-- 3.5 Get  static and media files stored on AWS
+35. Go back to your Bucket Tab
+36. Get the ARN (Step 19). create an array for the Resource key and paste in your ARN twice (separated by a comma) for the second value in the array add /* at the end of the ARN like before, this will give us access to all bucket contents
+37. Click next, (skip Tag section)
+38. In the Create policy/Review policy window add a name and a description to your policy
+39. Navigate back to Access management/ User groups
+40. Click your group and go to the permissions tab
+41. attach the policy you created
+42. navigate to Access management/ Users
+43. Add User/ Create User, check the Access key -Programmatic access radio button
+44. Click Create User
+45. Copy Access key Id ans Secret access Key and add them to your project directory
 ```
 if 'USE_AWS' in os.environ:
 
@@ -1090,6 +1091,29 @@ if 'USE_AWS' in os.environ:
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 ```
+46. create a file named custom_storage.py
+```
+"""
+imports:
+"""
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+
+```
+
+
+
+</details>
+
+- 3.5 Get  static and media files stored on AWS
 
 - 3.6 Link file to the templates directory in Heroku Place under the BASE_DIR line
 ```
