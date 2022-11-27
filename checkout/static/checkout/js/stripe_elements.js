@@ -17,18 +17,6 @@ var card = elements.create("card", { style: style });
 card.mount("#card-element");
 
 
-// handle errors
-
-// card.addEventListener('change', function (event){
-//   var errorDiv = document.getElementById('card-errors');
-//   if (event.error){
-//     var html =
-//       <span>${event.error.message}</span>
-//     $(errorDiv).html(html);
-//   } else{
-//     errorDiv.textContent = '';
-//   }
-// });
 
 
 // handle submit

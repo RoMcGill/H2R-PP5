@@ -949,8 +949,73 @@ Tested on Google, Firefox, and samsung Internet
 
 ## Bugs
 
-| **Bug** | **Fix** |
-| ------- | ------- |
+**Bug**
+
+Any superuser had full CRUD functionality over users stores in the front end.
+
+**Fix**
+
+View:
+``` def edit_product(request, product_id):
+    """
+    edit product view
+    """
+    if not request.user.is_staff:
+        messages.error(request, 'Only Store owners can edit products')
+        return redirect(reverse('home'))
+```
+Template:
+```
+   <!-- crud for brand owner only -->
+                {% if request.user.email == brand.brand_email %}
+                <small>
+                    <a href="{% url 'edit_product' product.id %}">Edit Product</a>
+                </small>
+                <small>
+                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete Product</a>
+                </small>
+                {% endif %}
+```
+**Bug**
+
+Integration Error: invalid value for stripe.confirmCardPayment intent Secret:
+
+**Fix**
+
+This bug was caused by a syntax error in my implementation of the stripe client secret key, and was resolved once the syntax error was corrected.
+
+**Bug**
+
+Unable to change quantity of products in cart.
+
+**Fix**
+
+This bug was caused by an error in my cart templates and my qty-input-script file.
+as the JS for this feature was learnd from the Boutique ado project and usses VarclosestInput and my template for the cart was not laid out the same as boutique ado the function could not find my quantity selector box. To fix this the most time effeciant way I chose to change the template instead of the JS file as I am more familliar with HTML than JS. In hindsight I belive an easy solution would have been to give my quantity selectors IDs and getElementbyId instead of .closestInput, I belive this would have had the same outcome.
+
+```
+  // increment quantity
+    $('.increment-qty').click(function(e) {
+       e.preventDefault();
+       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+       var currentValue = parseInt($(closestInput).val());
+       $(closestInput).val(currentValue + 1);
+       var itemId = $(this).data('item_id');
+       handleEnableDisable(itemId);
+    });
+
+    // decrement quantity
+    $('.decrement-qty').click(function(e) {
+       e.preventDefault();
+       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+       var currentValue = parseInt($(closestInput).val());
+       $(closestInput).val(currentValue - 1);
+       var itemId = $(this).data('item_id');
+       handleEnableDisable(itemId);
+
+```
+
+------------
 
 ##### Back to [top](#table-of-contents)
 
