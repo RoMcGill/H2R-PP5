@@ -1,3 +1,6 @@
+"""
+imports:
+"""
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .forms import Brand_form, Product_form
@@ -5,9 +8,11 @@ from brands.models import Brand_products
 from django.contrib import messages
 
 
-# Create your views here.
 @login_required
 def brand_upload(request):
+    """
+    brand upload view
+    """
     if request.method == 'POST':  # this means the form has data
         form = Brand_form(
             request.POST, request.FILES
@@ -36,6 +41,9 @@ def brand_upload(request):
 
 @login_required
 def product_upload(request):
+    """
+    product upload view
+    """
     if not request.user.is_staff:
         messages.error(request, 'Only Store owners can add products,\
              Please wait to be Accepted by our Team, usual wait time: 24hrs')
@@ -74,6 +82,9 @@ def product_upload(request):
 
 @login_required
 def edit_product(request, product_id):
+    """
+    edit product view
+    """
     if not request.user.is_staff:
         messages.error(request, 'Only Store owners can edit products')
         return redirect(reverse('home'))
@@ -104,6 +115,9 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
+    """
+    delete product view
+    """
     if not request.user.is_staff:
         messages.error(request, 'Only Store owners can delete products')
         return redirect(reverse('home'))

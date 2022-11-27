@@ -1,9 +1,16 @@
+"""
+imports:
+"""
 from django import forms
 from brands.models import Brands, Brand_products
+
 brands = Brands.objects.all()
 
 
 class Brand_form(forms.ModelForm):
+    """
+    form to retrive user input about brand
+    """
     brand_email = forms.EmailField(max_length=254, required=True)
     brand_name = forms.CharField(max_length=254, required=False)
     description = forms.CharField(required=False)
@@ -15,6 +22,9 @@ class Brand_form(forms.ModelForm):
 
 
 class Product_form(forms.ModelForm):
+    """
+    form to retrive user input about product
+    """
     brand_name = forms.CharField(max_length=254, required=False)
     brand = forms.ModelChoiceField(
         queryset=Brands.objects.all(),

@@ -23,7 +23,8 @@ class StripeWH_Handler:
         """
         stripe confirmation email
         """
-        # get this working see if email sends to me and recipient then chnage to brand.email?
+        # get this working see if email sends to me and
+        #  recipient then chnage to brand.email?
         cust_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
@@ -41,7 +42,6 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
             )
-
 
     def handle_event(self, event):
         """
@@ -78,8 +78,10 @@ class StripeWH_Handler:
                 profile.default_country = shipping_details.address.country
                 profile.default_postcode = shipping_details.address.postal_code
                 profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address1 = shipping_details.address.line1
-                profile.default_street_address2 = shipping_details.address.line2
+                profile.default_street_address1 = \
+                    shipping_details.address.line1
+                profile.default_street_address2 = \
+                    shipping_details.address.line2
                 profile.default_county = shipping_details.address.state
                 profile.save()
         order_exists = False

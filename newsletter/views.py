@@ -1,3 +1,6 @@
+"""
+imports:
+"""
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import SubscribersForm, SendNewsForm
@@ -7,6 +10,9 @@ from django_pandas.io import read_frame
 
 
 def Newsletter(request):
+    """
+    view for newsletter page
+    """
     if request.method == 'POST':
         form = SubscribersForm(request.POST)
         if form.is_valid():
@@ -31,6 +37,9 @@ def Newsletter(request):
 
 
 def send_newsletter(request):
+    """
+    view for send newsletter page
+    """
     emails = Subscribers.objects.all()
     data_frame = read_frame(emails, fieldnames=['email'])
     email_list = data_frame['email'].values.tolist()

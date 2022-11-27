@@ -4,13 +4,12 @@
 {% load crispy_forms_tags %}
 
 <div class="container contact-head">
-<h2 >Add Product</h2>
-<form enctype="multipart/form-data" method="post">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <button type="submit" class="button-32">Add</button>
-</form>
-
+    <h2>Add Product</h2>
+    <form enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="button-32">Add</button>
+    </form>
 </div>
 
 {% endblock %}

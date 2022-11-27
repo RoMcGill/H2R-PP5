@@ -1,32 +1,24 @@
 {% extends 'base.html'%}
 {% load static %}
 {% block content%}
-
 <section>
-
-    <div class="container-fluid outline-div">
-        <div class="row outline-div" style="background-color: red;">
-          <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ff90e8; padding-bottom: 400px;">
-            <h2>Why?</h2>
-            {% for mission in mission_list %}
-            <p>{{ mission.Why }}</p>
-          </div>
-          {% endfor %}
-
-
-          <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ffc900;">
-            <h2>How?</h2>
-            {% for mission in mission_list %}
-            <p>{{ mission.How }}</p>
-            </div>
-            {% endfor %}
-          <div class="w-100 outline-div" style="background-color: rgb(30, 138, 174);"></div>
-
+  <div class="container-fluid outline-div">
+    <div class="row outline-div" style="background-color: red;">
+      <div class="col col-sm-6 col-md-6 text-center outline-div"
+        style="background-color: #ff90e8; padding-bottom: 400px;">
+        <h2>Why?</h2>
+        {% for mission in mission_list %}
+        <p>{{ mission.Why }}</p>
       </div>
+      {% endfor %}
+      <div class="col col-sm-6 col-md-6 text-center outline-div" style="background-color: #ffc900;">
+        <h2>How?</h2>
+        {% for mission in mission_list %}
+        <p>{{ mission.How }}</p>
+      </div>
+      {% endfor %}
+      <div class="w-100 outline-div" style="background-color: rgb(30, 138, 174);"></div>
     </div>
+  </div>
 </section>
-
-
-
-
 {% endblock content %}

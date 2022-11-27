@@ -1,9 +1,13 @@
+"""
+imports:
+"""
 from django.db import models
-
-# Create your models here.
 
 
 class Subscribers(models.Model):
+    """
+    subscriber model for newletter submission
+    """
     email = models.EmailField(null=True)
     date = models.DateTimeField(auto_now_add=True)
 
@@ -12,7 +16,9 @@ class Subscribers(models.Model):
 
 
 class SendNews(models.Model):
-
+    """
+    send news model for sending a newsletter
+    """
     title = models.CharField(max_length=100, null=True)
     message = models.TextField(null=True)
 

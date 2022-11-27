@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
 
 STATUS = (
     (0, "Draft"),
@@ -10,6 +9,9 @@ STATUS = (
 
 
 class Post(models.Model):
+    """
+    models for blog post
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -21,7 +23,13 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
+        """
+        display most recent createed first
+        """
         ordering = ['-created_on']
 
     def __str__(self):
+        """
+        return title of blog in admin
+        """
         return self.title

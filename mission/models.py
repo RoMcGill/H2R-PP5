@@ -1,6 +1,8 @@
+"""
+imports:
+"""
 from django.db import models
 
-# Create your models here.
 
 STATUS = (
     (0, "Draft"),

@@ -23,7 +23,7 @@ def add_to_cart(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
-# max quantity
+    # max quantity
     if quantity > product.max_quant:
         print('max quantity reached')
         messages.error(request, f'max quantity exceeded for \
