@@ -957,7 +957,7 @@ tested on Google, Firefox, and samsung Internet
 ----------------------------
 
 ## Deployment
-## Heroku Deployment
+### Heroku Deployment
 
 This Django application has been deployed from GitHub to Heroku by following the steps:
 
@@ -1126,11 +1126,34 @@ Select the Tiny Turtle (Free) plan
 ----------------------------
 
 ## Credits
+Websites that i relied on during the creation of this site.
+
+- https://stackoverflow.com/
+- https://coolors.co/
+- https://www.geeksforgeeks.org/
+- https://djangocentral.com/
+- https://dev.to/
+- https://balsamiq.com/
+- https://www.xml-sitemaps.com/
+- https://sitebulb.com/
+- https://dequeuniversity.com/
 
 ### Images
+stock images gathered from various diffrent sources
+- www.kindpng.com
+- www.cleanpng.com
+- pngimg.com
+- pngtree.com
+- www.freepngs.com
 
 ### Code
+Code for this site was written by me, with help from the Code Institue course material, youtube Tutorials and code pen snipits for inspiration and Guidance.
 
 ### Acknowledgements
+I would Like to Thank
+Code Institute for providing in depth and easy to follow course material,
+Kasia my cohort facilitator for all of her Tips, Guidence and encouragement,
+My Mentor Mo for providing priceless information, motivation and Knowledge throughout the development of this project.
+
 
 
