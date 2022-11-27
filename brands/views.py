@@ -4,8 +4,6 @@ imports
 from django.shortcuts import render, get_object_or_404
 from .models import Brands, Brand_products
 
-# Create your views here.
-
 
 def brands(request):
     """
