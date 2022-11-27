@@ -912,6 +912,11 @@ every page was checked in and showed no errors.
 9. edit product in cart | be able to increase and decrease the quantity of my selected products| Works as expected |
 10. checkout | be brought to a page where I can purchase the products in my cart| Works as expected |
 11. navigate to the profile page| be shown my personal details and be able to view my order history| Works as expected |
+12. navigate to the blog page| be shown blog posts made by the site owner/admins| Works as expected |
+13. navigate to newsletter page and sign up| be able to subscribe to a mailing list and recieve updates and promotional informations| Works as expected |
+14. view contact information| be able to view the sites contact information and send direct messages to the admins| Works as expected |
+15. navigate to the mission page| be able to view the sites mission statement| Works as expected |
+16. navigate to the follow us page | be able to view the sites social media links| Works as expected |
 
 
 
