@@ -4,7 +4,7 @@
 
 💻 [Visit live website](https://h2r-pp5.herokuapp.com/)
 
-link to project/Kanban board: https://github.com/users/RoMcGill/projects/3
+Link to project/Kanban board: https://github.com/users/RoMcGill/projects/3
 
 <img src="static/images/responsive.png">
 
@@ -74,12 +74,12 @@ To market Home 2 Retail we have set up a facebook and instagram page, where we w
 We will be focusing our efforts on boosting our search engine optimisation on Google as it holds 92.42% market share over all search engines.
 To Optimise our SEO on google
 
-1. we have Published Relevant content that is highly relevant to our sites purpose.
+1. We have Published Relevant content that is highly relevant to our sites purpose.
 2. We are also a niche business so the competition for Authoritative Content will not be strong
 3. We have a blog so that any site admin can Update our Content Regularly, our mission statement can also be editable in the admin panel if our asperations change as we scale.
-4. we have researched and carried out a keyword plan, to find what Keywords will rank us highest
+4. We have researched and carried out a keyword plan, to find what Keywords will rank us highest
 5. We have linked our future partners websites at the bottom of the page, these sites gather thousands of clicks a day and are a well known amnd trusted brand
-6. we have added alt tags to all  nessicary atributes.
+6. We have added alt tags to all  nessicary atributes.
 
 ---------------
 
@@ -89,8 +89,8 @@ My Goal for this project is to create a scaleable E-Commerce site that benifits 
 
 ## key functionality of H2R:
 
-- effortless online store building
-- effortless buying of unique and bespoke products
+- Effortless online store building
+- Effortless buying of unique and bespoke products
 
 --------------
 
@@ -293,7 +293,7 @@ Ease of use was the main goal for this site. and a clear path for both Buyers an
 
 
 ### the blog page
-This page is a site owner run blog to promote businesses and provide users with information.
+- This page is a site owner run blog to promote businesses and provide users with information.
 
 ### Contact page
 - This page displays a contact form which allows users to send an message to the site owner and provide their feedback or questions, these messages will be stored in the admin page.
@@ -310,29 +310,29 @@ This page is a site owner run blog to promote businesses and provide users with 
 
 
 ### Create a brand
-- this page will Promt loged in users with a simple form alowing them to create their brand/ storefront on our site when the, user is Goven staff status by an admin they will be able to add products.
+- This page will Promt loged in users with a simple form alowing them to create their brand/ storefront on our site when the, user is Goven staff status by an admin they will be able to add products.
 
 ### Upload a product
-- this page  willl prompt an approved user with staff status to create products to add to their brand page, it is alos a simple form that when filled out the data provided will be displayed as a product available for purchase.
+- This page  willl prompt an approved user with staff status to create products to add to their brand page, it is alos a simple form that when filled out the data provided will be displayed as a product available for purchase.
 
 ### checkout page
-- this page is for customers to checkout their order using Stripe
+- This page is for customers to checkout their order using Stripe
 
 ### checkout success page
-- this page shows the users order number, and order history along with a message to tell the user that they have been sent an email to confirm their order.
+- This page shows the users order number, and order history along with a message to tell the user that they have been sent an email to confirm their order.
 
 
 ### Newsletter page
-- this page will ask for users to input their email address in order to recieve updates from home2retail.
+- This page will ask for users to input their email address in order to recieve updates from home2retail.
 
 ### Send a newsletter
-- this page will only show for users with superusser status and allows the superuser to create email content to send to everyone who subscribes to the newsletter.
+- This page will only show for users with superusser status and allows the superuser to create email content to send to everyone who subscribes to the newsletter.
 
 ### My Profile
-- this page will allow users to update their Delivery information and also show previous orders made by the user.
+- This page will allow users to update their Delivery information and also show previous orders made by the user.
 
 ### Order History
-- this page will show when a ordernumber is clicked in the profile page, this page will provide all of the details about the selected order.
+- This page will show when a ordernumber is clicked in the profile page, this page will provide all of the details about the selected order.
 
 ### 404 error page
 - This page is used in place of a standard 404 page. It will be shown in the event of an error where the page is not found.
@@ -400,7 +400,7 @@ This is a visualized interpritation of the database models and how they Interact
 ### Models
 
 #### Brands
-has a class called Brands
+Has a class called Brands
 fields =
 
    - brand_email with a EmailField
@@ -410,7 +410,7 @@ fields =
    - image with a ImageField
 
 #### Brand_products
-has a class called Brand_Products
+Has a class called Brand_Products
 fields =
 
    - brand with a ForeignKey to Brands to link the brands and the product by the brand.
@@ -423,7 +423,7 @@ fields =
    - max_quant with a IntegerField
 
 #### Order
-has a class called Order
+Has a class called Order
 fields =
 
    - order_number with a CharField
@@ -446,7 +446,7 @@ fields =
 
 
 #### OrderLineItem
-has a class called OrderLineItem
+Has a class called OrderLineItem
 fields=
 
    - order with a ForeignKey to Order
@@ -455,7 +455,7 @@ fields=
    - lineitem_total with a DecimalField
 
 #### Contact
-has a class called Contact
+Has a class called Contact
 fields=
 
    - name with a CharField
@@ -464,21 +464,21 @@ fields=
    - message with a TextField
 
 #### Subscribers
-a class of Subscribers
+Has a class of Subscribers
 fields=
 
    - email with a EmailField
    - date with a DateTimeField
 
 #### SendNews
-a class of SendNews
+Has a class of SendNews
 fields=
 
    - title with a CharField
    - message with a TextField
 
 #### UserProfile
-a class of UserProfile
+Has a class of UserProfile
 fields=
 
    - user with a OneToOneField to the User
@@ -491,7 +491,7 @@ fields=
    - default_postcode with a CharField
 
 #### Blog
-has a class called post
+Has a class called post
 fields =
 
    - title with a CharField
@@ -502,7 +502,7 @@ fields =
    - created_on with a DateTimeField
    - status with a IntegerField and a default status of 0
 #### Mission
-A class of Mission
+Has a  class of Mission
 fields=
 
    - Why with a TextField
@@ -551,7 +551,7 @@ fields=
 ## Features
 
 ### Landing page
-- [#12](https://github.com/RoMcGill/H2R-PP5/issues/12)the landing page provides some motivational text to any user thinking of using our service, there is also an action button to lead any user to the create a brand page. further down the landing page there is more information on the sites features and goals along with links to our "partners" at the bottom.
+- [#12](https://github.com/RoMcGill/H2R-PP5/issues/12)The landing page provides some motivational text to any user thinking of using our service, there is also an action button to lead any user to the create a brand page. further down the landing page there is more information on the sites features and goals along with links to our "partners" at the bottom.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-home.png">
 </details>
@@ -570,116 +570,116 @@ fields=
 </details>
 
 ### Sign up form
-- [#19](https://github.com/RoMcGill/H2R-PP5/issues/19)[#18](https://github.com/RoMcGill/H2R-PP5/issues/18)the signup/register form is a simple form that asks users for their email address, username and password.
+- [#19](https://github.com/RoMcGill/H2R-PP5/issues/19)[#18](https://github.com/RoMcGill/H2R-PP5/issues/18)The signup/register form is a simple form that asks users for their email address, username and password.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-register.png">
 </details>
 
 ### Login form
-- [#23](https://github.com/RoMcGill/H2R-PP5/issues/23)the login form is a form with 2 inputs for username and password, and also has a remember me radio button that will save the users username and password for the next time they visit the site.
+- [#23](https://github.com/RoMcGill/H2R-PP5/issues/23)The login form is a form with 2 inputs for username and password, and also has a remember me radio button that will save the users username and password for the next time they visit the site.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-sign-in.png">
 </details>
 
 ### newsletter
-- [#26](https://github.com/RoMcGill/H2R-PP5/issues/26)the newsletter sign up form is a single input form for a users email address, all the users that submit their email to the form will be saved in the database.
+- [#26](https://github.com/RoMcGill/H2R-PP5/issues/26)The newsletter sign up form is a single input form for a users email address, all the users that submit their email to the form will be saved in the database.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-newsletter.png">
 </details>
 
 ### send newsletter
-- [#27](https://github.com/RoMcGill/H2R-PP5/issues/27)the send newsletter feature can only be accesed by a superuser, It consists of an input for a subject field and a textarea for the email content. When a superuser fills out these inputs with relevant content and submits the form the content will be sent to all of the email addresses that have been been submitted using the newsletter feature.
+- [#27](https://github.com/RoMcGill/H2R-PP5/issues/27)The send newsletter feature can only be accesed by a superuser, It consists of an input for a subject field and a textarea for the email content. When a superuser fills out these inputs with relevant content and submits the form the content will be sent to all of the email addresses that have been been submitted using the newsletter feature.
 <details><summary>See feature screenshots</summary>
 <img src="static/images/f-send-newsletter.png">
 </details>
 
 ### edit product
-- [#28](https://github.com/RoMcGill/H2R-PP5/issues/28)this feature allows brand owners to edit or delete their products.
+- [#28](https://github.com/RoMcGill/H2R-PP5/issues/28)This feature allows brand owners to edit or delete their products.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-edit-product.png">
 </details>
 
 ### brands
-- [#2](https://github.com/RoMcGill/H2R-PP5/issues/2)this feature shows a list of all the brands that have been created on our site
+- [#2](https://github.com/RoMcGill/H2R-PP5/issues/2)This feature shows a list of all the brands that have been created on our site
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-brands.png">
 </details>
 
 ### brand detail
-- [#13](https://github.com/RoMcGill/H2R-PP5/issues/13)[#5](https://github.com/RoMcGill/H2R-PP5/issues/5)this feature shows the details of a brand, to access this a user just has to click on a brand, they will be shown a the brands image, description and a list of their products
+- [#13](https://github.com/RoMcGill/H2R-PP5/issues/13)[#5](https://github.com/RoMcGill/H2R-PP5/issues/5)This feature shows the details of a brand, to access this a user just has to click on a brand, they will be shown a the brands image, description and a list of their products
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-brand-page.png">
 </details>
 
 ### product
-- [#5](https://github.com/RoMcGill/H2R-PP5/issues/5)[#4](https://github.com/RoMcGill/H2R-PP5/issues/4)this feature shows the brands product image and discription, it gives the user the ability to add the product to the cart and select the quantity they want.
+- [#5](https://github.com/RoMcGill/H2R-PP5/issues/5)[#4](https://github.com/RoMcGill/H2R-PP5/issues/4)This feature shows the brands product image and discription, it gives the user the ability to add the product to the cart and select the quantity they want.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-product.png">
 </details>
 
 ### Profile
-- [#9](https://github.com/RoMcGill/H2R-PP5/issues/9)[#22](https://github.com/RoMcGill/H2R-PP5/issues/22)this feature allows the user to update their personal information that will be saved and used at checkout, users can also review their past order information here.
+- [#9](https://github.com/RoMcGill/H2R-PP5/issues/9)[#22](https://github.com/RoMcGill/H2R-PP5/issues/22)This feature allows the user to update their personal information that will be saved and used at checkout, users can also review their past order information here.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-profile.png">
 </details>
 
 ### cart
-- [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)the cart feature will store the products and allow the users to change the quantity and remove products from the cart, the shipping cost, free shipping threshold and total cost will also be displayed here
+- [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)The cart feature will store the products and allow the users to change the quantity and remove products from the cart, the shipping cost, free shipping threshold and total cost will also be displayed here
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-cart.png">
 <img src="static/images/f-checkout-cart.png">
 </details>
 
 ### checkout
-- [#21](https://github.com/RoMcGill/H2R-PP5/issues/21)the checkout feature will ask for a users information if not already saved in the profile, there is also a stripe credit/debit card field and a checkout button, all transactions are handled by stripe.
+- [#21](https://github.com/RoMcGill/H2R-PP5/issues/21)The checkout feature will ask for a users information if not already saved in the profile, there is also a stripe credit/debit card field and a checkout button, all transactions are handled by stripe.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-checkout.png">
 </details>
 
 ### Contact page
-- [#20](https://github.com/RoMcGill/H2R-PP5/issues/20)this feature allows users to contact the admins/site owners and provides the user with more contact information for the site.
+- [#20](https://github.com/RoMcGill/H2R-PP5/issues/20)This feature allows users to contact the admins/site owners and provides the user with more contact information for the site.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-checkout.png">
 </details>
 
 ### Our Mission
-- [#30](https://github.com/RoMcGill/H2R-PP5/issues/30)our mission feature shows the How and Why of the Business, this feature allows admins to update this information through the admin page.
+- [#30](https://github.com/RoMcGill/H2R-PP5/issues/30)Our mission feature shows the How and Why of the Business, this feature allows admins to update this information through the admin page.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-mission.png">
 </details>
 
 ### Upload a product
-- [#6](https://github.com/RoMcGill/H2R-PP5/issues/6)this feature allows users to upload products to their brand page by filling out short input fields.
+- [#6](https://github.com/RoMcGill/H2R-PP5/issues/6)This feature allows users to upload products to their brand page by filling out short input fields.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-add-product.png">
 </details>
 
 ### Start a Brand
-- [#31](https://github.com/RoMcGill/H2R-PP5/issues/31)this feature allows users to create their brand page by filling out a simple form with relevant information that will be then be displayed as a brand.
+- [#31](https://github.com/RoMcGill/H2R-PP5/issues/31)This feature allows users to create their brand page by filling out a simple form with relevant information that will be then be displayed as a brand.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-create-brand.png">
 </details>
 
 ### Follow Us
-- [#29](https://github.com/RoMcGill/H2R-PP5/issues/29)this feature provides links to our social media sites.
+- [#29](https://github.com/RoMcGill/H2R-PP5/issues/29)This feature provides links to our social media sites.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-follow.png">
 </details>
 
 ### Previous orders
--[#18](https://github.com/RoMcGill/H2R-PP5/issues/18)[#3](https://github.com/RoMcGill/H2R-PP5/issues/3) this feature is accessed through the profile page by clicking on a specific recent order, it allows users to see all of the details of their recent order.
+-[#18](https://github.com/RoMcGill/H2R-PP5/issues/18)[#3](https://github.com/RoMcGill/H2R-PP5/issues/3) This feature is accessed through the profile page by clicking on a specific recent order, it allows users to see all of the details of their recent order.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-previous-order.png">
 </details>
 
 ### Order Confirmation
-- [#16](https://github.com/RoMcGill/H2R-PP5/issues/16)this feature shows the order information and alerts the user that a confirmation has been sent to their email address
+- [#16](https://github.com/RoMcGill/H2R-PP5/issues/16)This feature shows the order information and alerts the user that a confirmation has been sent to their email address
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-order-confirm.png">
 </details>
 
 ### confirmation email
-- [#16](https://github.com/RoMcGill/H2R-PP5/issues/16)this feature will email the user the information about their order.
+- [#16](https://github.com/RoMcGill/H2R-PP5/issues/16)This feature will email the user the information about their order.
 <details><summary>See feature screenshot</summary>
 <img src="static/images/f-email.png">
 </details>
@@ -691,7 +691,7 @@ fields=
 
 ## Future features / improvements
 
-the send vendor email feature, is something that I will add in future versions, this feature will send a confirmation email to the seller as well as the customer. I would do this by implementing a function like below.
+The send vendor email feature, is something that I will add in future versions, this feature will send a confirmation email to the seller as well as the customer. I would do this by implementing a function like below.
 ```
     # def _send_vendor_email(self, order):
     #     """
@@ -725,118 +725,118 @@ the send vendor email feature, is something that I will add in future versions, 
 ------------------
 
 ## Validation
-during the validation testing proceedure there were no errors found.
+During the validation testing proceedure there were no errors found in the codebase.
 
 ### blog
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/blog.png">
 </details>
 
 ### brands
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/brands.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### cart
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/cart.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### checkout
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/checkout.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### contact
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/contact.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### follow
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/follow.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### home
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/home.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### newsletter
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/newsletter.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### send newsletter
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/sendnews.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### mission
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/mission.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### profiles
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/profile.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### upload brand
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/upload.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### upload product
-<details><summary>html</summary>
+<details><summary>HTML</summary>
 <img src="validation-screenshots/upload2.png">
 </details>
-<details><summary>css</summary>
+<details><summary>CSS</summary>
 <img src="validation-screenshots/css.png">
 </details>
 
 ### JS
-- some functions through an error in js hint as undefined variable, i belive thius is because they were defined outside the scope of the function.
-<details><summary>js</summary>
+- Some functions through an error in js hint as undefined variable, i belive thius is because they were defined outside the scope of the function.
+<details><summary>JS</summary>
 <img src="validation-screenshots/stripejs.png">
 </details>
-<details><summary>js</summary>
+<details><summary>JS</summary>
 <img src="validation-screenshots/quantjs.png">
 </details>
-<details><summary>js</summary>
+<details><summary>JS</summary>
 <img src="validation-screenshots/emailjs.png">
 </details>
 
@@ -897,13 +897,13 @@ usability, responsiveness and data management of the site I went through every s
 Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
 Register as a new user[#19](https://github.com/RoMcGill/H2R-PP5/issues/19)| fill out form and verify email address | Works as expected |
 Login[#9](https://github.com/RoMcGill/H2R-PP5/issues/9)| fill out form, login and have access to all relevant site features | Works as expected |
-click on get started action button[#14](https://github.com/RoMcGill/H2R-PP5/issues/14)| be redirected to a page to start creating a brand | Works as expected |
-fill out create a brand form[#31](https://github.com/RoMcGill/H2R-PP5/issues/31)| be redirected to brands page and see the brand I created among the other brands | Works as expected |
-Navagate to the add products page[#6](https://github.com/RoMcGill/H2R-PP5/issues/6), [#25](https://github.com/RoMcGill/H2R-PP5/issues/25)| be redirected to a form page to add a product | Works as expected |
-fill out add a product form[#6](https://github.com/RoMcGill/H2R-PP5/issues/6)|be redirected to the brands page where i can access and view the product I just created | Works as expected |
-edit my product[#24](https://github.com/RoMcGill/H2R-PP5/issues/24)|be redirected to to a form with my cuurent product information where i can edit the information| Works as expected |
-delete my product[#24](https://github.com/RoMcGill/H2R-PP5/issues/24)|product gets removed from my brand page| Works as expected |
-sell my product[#11](https://github.com/RoMcGill/H2R-PP5/issues/11)|product in cart can be orderd using stripe| Works as expected |
+Click on get started action button[#14](https://github.com/RoMcGill/H2R-PP5/issues/14)| be redirected to a page to start creating a brand | Works as expected |
+Fill out create a brand form[#31](https://github.com/RoMcGill/H2R-PP5/issues/31)| be redirected to brands page and see the brand I created among the other brands | Works as expected |
+Navagate to the add products page[#6](https://github.com/RoMcGill/H2R-PP5/issues/6), [#25](https://github.com/RoMcGill/H2R-PP5/issues/25)| be redirected to a form age to add a product | Works as expected |
+Fill out add a product form[#6](https://github.com/RoMcGill/H2R-PP5/issues/6)|be redirected to the brands page where i can access and view the product I just created | Works as expected |
+Edit my product[#24](https://github.com/RoMcGill/H2R-PP5/issues/24)|be redirected to to a form with my cuurent product information where i can edit the information| Works as expected |
+Delete my product[#24](https://github.com/RoMcGill/H2R-PP5/issues/24)|product gets removed from my brand page| Works as expected |
+Sell my product[#11](https://github.com/RoMcGill/H2R-PP5/issues/11)|product in cart can be orderd using stripe| Works as expected |
 
 #### Buyer
 
@@ -913,18 +913,18 @@ Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | W
 Register as a new user[#8](https://github.com/RoMcGill/H2R-PP5/issues/8)| fill out form and verify email address | Works as expected |
 Login[#8](https://github.com/RoMcGill/H2R-PP5/issues/8)| fill out form, login and have access to all relevant site features | Works as expected |
 Navigate to brands page[#13](https://github.com/RoMcGill/H2R-PP5/issues/13)| browse brands | Works as expected |
-select a brand i am intrested in[#2](https://github.com/RoMcGill/H2R-PP5/issues/2)| see more information about the brand I have seleted | Works as expected |
-browse the brands products[#1](https://github.com/RoMcGill/H2R-PP5/issues/1)| be able to see a list of all the brand has to offer | Works as expected |
-select quantity[#4](https://github.com/RoMcGill/H2R-PP5/issues/4) | be able to select the quantity of the product i want to purchase | Works as expected |
-add to cart [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)| be able to add selected products to my cart | Works as expected |
-edit product in cart [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)| be able to increase and decrease the quantity of my selected products| Works as expected |
-checkout [#21](https://github.com/RoMcGill/H2R-PP5/issues/21)| be brought to a page where I can purchase the products in my cart| Works as expected |
-navigate to the profile page[#22](https://github.com/RoMcGill/H2R-PP5/issues/22), [#3](https://github.com/RoMcGill/H2R-PP5/issues/3)| be shown my personal details and be able to view my order history| Works as expected |
+Select a brand i am intrested in[#2](https://github.com/RoMcGill/H2R-PP5/issues/2)| see more information about the brand I have seleted | Works as expected |
+Browse the brands products[#1](https://github.com/RoMcGill/H2R-PP5/issues/1)| be able to see a list of all the brand has to offer | Works as expected |
+Select quantity[#4](https://github.com/RoMcGill/H2R-PP5/issues/4) | be able to select the quantity of the product i want to purchase | Works as expected |
+Add to cart [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)| be able to add selected products to my cart | Works as expected |
+Edit product in cart [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)| be able to increase and decrease the quantity of my selected products| Works as expected |
+Checkout [#21](https://github.com/RoMcGill/H2R-PP5/issues/21)| be brought to a page where I can purchase the products in my cart| Works as expected |
+Navigate to the profile page[#22](https://github.com/RoMcGill/H2R-PP5/issues/22), [#3](https://github.com/RoMcGill/H2R-PP5/issues/3)| be shown my personal details and be able to view my order history| Works as expected |
 navigate to the blog page| be shown blog posts made by the site owner/admins| Works as expected |
-navigate to newsletter page and sign up[#26](https://github.com/RoMcGill/H2R-PP5/issues/26)| be able to subscribe to a mailing list and recieve updates and promotional informations| Works as expected |
-view contact information[#20](https://github.com/RoMcGill/H2R-PP5/issues/20)| be able to view the sites contact information and send direct messages to the admins| Works as expected |
-navigate to the mission page[#30](https://github.com/RoMcGill/H2R-PP5/issues/30)| be able to view the sites mission statement| Works as expected |
-navigate to the follow us page[#29](https://github.com/RoMcGill/H2R-PP5/issues/29) | be able to view the sites social media links| Works as expected |
+Navigate to newsletter page and sign up[#26](https://github.com/RoMcGill/H2R-PP5/issues/26)| be able to subscribe to a mailing list and recieve updates and promotional informations| Works as expected |
+View contact information[#20](https://github.com/RoMcGill/H2R-PP5/issues/20)| be able to view the sites contact information and send direct messages to the admins| Works as expected |
+Navigate to the mission page[#30](https://github.com/RoMcGill/H2R-PP5/issues/30)| be able to view the sites mission statement| Works as expected |
+Navigate to the follow us page[#29](https://github.com/RoMcGill/H2R-PP5/issues/29) | be able to view the sites social media links| Works as expected |
 
 #### site owner/admin
 
@@ -932,16 +932,16 @@ navigate to the follow us page[#29](https://github.com/RoMcGill/H2R-PP5/issues/2
 ------------ | ------------ | ------------ |
 Navigate to https://h2r-pp5.herokuapp.com/[#12](https://github.com/RoMcGill/H2R-PP5/issues/12)| Landing page loads in good time. | Works as expected |
 Login[#8](https://github.com/RoMcGill/H2R-PP5/issues/8)| fill out form, login and have access to all relevant site features | Works as expected |
-send a newsletter to customer[#27](https://github.com/RoMcGill/H2R-PP5/issues/27)| fill out the title and message form and send an newletter to all of the email addresses that are subscribed to the mailing list. | Works as expected |
-edit the mission page content[#32](https://github.com/RoMcGill/H2R-PP5/issues/32)| from the admin page be able to update the content on the mission page| Works as expected |
-make a blog entry[#33](https://github.com/RoMcGill/H2R-PP5/issues/33)| from the admin page be able to create, draft and publish blog posts to be displayed on the blog post page| Works as expected |
+Send a newsletter to customer[#27](https://github.com/RoMcGill/H2R-PP5/issues/27)| fill out the title and message form and send an newletter to all of the email Addresses that are subscribed to the mailing list. | Works as expected |
+Edit the mission page content[#32](https://github.com/RoMcGill/H2R-PP5/issues/32)| from the admin page be able to update the content on the mission page| Works as expected |
+Make a blog entry[#33](https://github.com/RoMcGill/H2R-PP5/issues/33)| from the admin page be able to create, draft and publish blog posts to be displayed on the blog post page| Works as expected |
 
 
 ### Performing tests on various devices
-the site has been tested on all simulated devices available on google dev tools. I have also tested the site on an iphone 12 and samsung galaxy s21 ultra, all features worked as expected.
+The site has been tested on all simulated devices available on google dev tools. I have also tested the site on an iphone 12 and samsung galaxy s21 ultra, all features worked as expected.
 
 ### Browser compatibility
-tested on Google, Firefox, and samsung Internet
+Tested on Google, Firefox, and samsung Internet
 
 ##### Back to [top](#table-of-contents)
 
@@ -1226,7 +1226,7 @@ Websites that i relied on during the creation of this site.
 - https://dequeuniversity.com/
 
 ### Images
-stock images gathered from various diffrent sources
+Stock images gathered from various diffrent sources
 - www.kindpng.com
 - www.cleanpng.com
 - pngimg.com
