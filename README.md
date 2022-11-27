@@ -930,16 +930,15 @@ every page was checked in and showed no errors.
 6. make a blog entry| from the admin page be able to create, draft and publish blog posts to be displayed on the blog post page| Works as expected |
 
 
-
-
-
 <details><summary>Screenshot</summary>
 <img src="#">
 </details>
 
 ### Performing tests on various devices
+the site has been tested on all simulated devices available on google dev tools. I have also tested the site on an iphone 12 and samsung galaxy s21 ultra, all features worked as expected.
 
 ### Browser compatibility
+tested on Google, Firefox, and samsung Internet
 
 ##### Back to [top](#table-of-contents)
 
