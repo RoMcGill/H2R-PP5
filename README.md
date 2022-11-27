@@ -1003,6 +1003,69 @@ DATABASES = {
 ```
 $python3 manage.py migrate
 ```
+
+<details><summary>Click to see AWS setup</summary>
+
+1. create an AWS account
+2. navigate to the top left corner to the AWS services
+3. In the search bar type in S3 and select it
+4. This will bring you to the dashboard for AWS and S3
+5. Click the button to create a bucket on the right hand side of the screen
+6. Enter bucket name
+7. Choose your location
+8. Allow Access
+9. Create Bucket
+10. Select the bucket you have created
+11. Go to properties/static hosting/edit
+12. Enable static hosting and add index.html and error.html then click save changes
+13. From the dashboard navigate to permissions
+14. Click add bucket policy
+15. Click policy generator
+16. In the new tab slect type of policy = S3 Bucket policy
+17. Set the principal to a * symbol granting access everything in our bucket
+18. perform 'GetObject' action
+19. Get the ARN form the previous tab
+20. Click add statement/Generate Policy
+21. Copy the generated Policy
+22. Paste the generated policy into the text are within the edit bucket page on the previous tab
+23. In the "Resource" key add /* to the end of the value to Gain access to the entire bucket contents
+24. Save Changes
+25. In Bucket/Permissions/Access Control List (ACL) click edit
+26. Change "Everyone (public access)" from "Read" to "List"
+27. Save Changes
+28. Navigate to Cross-origin resource sharing(CORS) and edit with the following code block
+```
+[
+    {
+    "AllowedHeaders": [
+    "Authorization"
+    ],
+    "AllowedMethods": [
+    "GET"
+    ],
+    "AllowedOrigins": [
+    "*"
+    ],
+    "ExposeHeaders": []
+    }
+]
+```
+
+29. Return to AWS dashboard and search IAM, select the first result
+30. Click Access management/User groups/create new user group
+31. From the user group dashboard Click "your user group name"/permissions/add permissions/attach policies
+32. Swap to the JSON tab and import managed policy
+33. search for S3 and select "AmazonS3FullAccess"
+34. Replace the value of the "Resource" key with the ARN from your S3 Bucket
+35. go back to your Bucket Tab
+36. get the ARN (Step 19). create an array for the Resource key and paste in your ARN twice but for the second value in the array put a /* like before this will give us access to all bucket contents
+37.
+
+
+
+
+</details>
+
 - 3.5 Get  static and media files stored on AWS
 ```
 if 'USE_AWS' in os.environ:
