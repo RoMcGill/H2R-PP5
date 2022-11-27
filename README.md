@@ -918,6 +918,17 @@ every page was checked in and showed no errors.
 15. navigate to the mission page| be able to view the sites mission statement| Works as expected |
 16. navigate to the follow us page | be able to view the sites social media links| Works as expected |
 
+#### site owner/admin
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+1. Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
+2. Register as a new user| fill out form and verify email address | Works as expected |
+3. Login| fill out form, login and have access to all relevant site features | Works as expected |
+4. send a newsletter to customer| fill out the title and message form and send an newletter to all of the email addresses that are subscribed to the mailing list. | Works as expected |
+5. edit the mission page content| from the admin page be able to update the content on the mission page| Works as expected |
+6. make a blog entry| from the admin page be able to create, draft and publish blog posts to be displayed on the blog post page| Works as expected |
+
 
 
 
