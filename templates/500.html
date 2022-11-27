@@ -1,3 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
 
 <!DOCTYPE html>
 <html>
@@ -7,7 +13,8 @@
 <h1>Ooops!</h1>
 
 <h2>There has been an issue with the servers</h2>
+<p>Return <a href = "{% url 'home' %}">HOME</p>
 
 </body>
 </html>
-
+{% endblock %}
