@@ -1030,7 +1030,6 @@ Installing Django and deploying to heroku
 
 - 1. In the Terminal: Install Django and gunicorn: pip3 install 'django<4' gunicorn
 - 2. In the Terminal: Install supporting libraries: pip3 install dj_database_url psycopg2
-- 3. In the Terminal: Install Cloudinary Libraries pip3 install dj3-cloudinary-storage
 - 3. In the Terminal: Create requirements file pip3 freeze --local > requirements.txt
 - 4. In the Terminal: Create Project (H2R): django-admin startproject H2R.
 - 5. In the Terminal: Create App (blog) python3 manage.py startapp Post
@@ -1294,8 +1293,8 @@ Websites that i relied on during the creation of this site.
 Stock images gathered from various diffrent sources
 - www.kindpng.com
 - www.cleanpng.com
-- pngimg.com
-- pngtree.com
+- www.pngimg.com
+- www.pngtree.com
 - www.freepngs.com
 
 ### Code
