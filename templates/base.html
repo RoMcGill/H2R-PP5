@@ -2,159 +2,179 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="b2b online store builder tool and helper for small businesses to connect with big retailers">
-        <meta name="keywords" content="Business, product, SASS, DIY, Crafty, Sell, online, stock, wholesale, bulk, buy in bulk ">
-    {% endblock %}
+<head>
 
-    {% block extra_meta %}
-    {% endblock %}
+  {% block meta %}
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="description"
+    content="b2b online store builder tool and helper for small businesses to connect with big retailers">
+  <meta name="keywords"
+    content="Business, product, SASS, DIY, Crafty, Sell, online, stock, wholesale, bulk, buy in bulk ">
+  {% endblock %}
 
-    {% block corecss %}
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <script src="https://kit.fontawesome.com/87cf410ac6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    {% endblock %}
+  {% block extra_meta %}
+  {% endblock %}
 
-    {% block extra_css %}
-    {% endblock %}
+  {% block corecss %}
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <script src="https://kit.fontawesome.com/87cf410ac6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  {% endblock %}
 
-    {% block corejs %}
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://js.stripe.com/v3/"></script>
-        {% endblock %}
+  {% block extra_css %}
+  {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+  {% block corejs %}
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://js.stripe.com/v3/"></script>
+  {% endblock %}
 
-    <title>Home2Retail {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
+  {% block extra_js %}
+  {% endblock %}
+
+  <title>Home2Retail {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body>
 
 
-          <img class="heading" src="{% static 'images/header.png'%}" alt="Header image that says home 2 retail">
+  <img class="heading" src="{% static 'images/header.png'%}" alt="Header image that says home 2 retail">
 
 
 
 
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Top Navigation Menu -->
-<div class="topnav outline-div" style="padding-right: 25px;">
-  <a href="{% url 'home' %}">Home</a>
-  {% if request.user.is_authenticated %}
-  <a href="{% url 'profile' %}" class="nav-item2 ">My Profile</a>
-  <a href="{% url 'account_logout' %}" class="nav-item2">Logout</a>
-   {% else %}
-   <a href="{% url 'account_signup' %}" class="nav-item2">Register</a>
-     <a href="{% url 'account_login' %}" class="nav-item2">Login</a>
-   {% endif %}
-   <a href="{% url 'view_cart' %}" style="padding-right:50px;">Cart
-    {% if grand_total %}
-        ${{ grand_total|floatformat:2 }}
+  <!-- Top Navigation Menu -->
+  <div class="topnav outline-div" style="padding-right: 25px;">
+    <a href="{% url 'home' %}">Home</a>
+    {% if request.user.is_authenticated %}
+    <a href="{% url 'profile' %}" class="nav-item2 ">My Profile</a>
+    <a href="{% url 'account_logout' %}" class="nav-item2">Logout</a>
     {% else %}
-        $0.00
+    <a href="{% url 'account_signup' %}" class="nav-item2">Register</a>
+    <a href="{% url 'account_login' %}" class="nav-item2">Login</a>
     {% endif %}
-   </a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
+    <a href="{% url 'view_cart' %}" style="padding-right:50px;">Cart
+      {% if grand_total %}
+      ${{ grand_total|floatformat:2 }}
+      {% else %}
+      $0.00
+      {% endif %}
+    </a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
 
-       <a href="{% url 'brands' %}">Brands</a>
-       <a href="{% url 'contact' %}">Contact-Us</a>
-       <a href="{% url 'mission' %}">Our Mission</a>
-       <a href="{% url 'view_socials' %}" class="nav-item2">Follow US!</a>
-       <a href="{% url 'newsletter' %}" class="nav-item2">Newsletter</a>
-       {% if user.is_superuser%}
-       <a class="nav-item2" href="{% url 'send-newsletter' %}">Send A Newsletter</a>
-       {% endif %}
-        <a href="{% url 'brand-upload' %}" class="nav-item2">Create A Brand Page</a>
-        <a href="{% url 'product-upload' %}" class="nav-item2">Upload A Product</a>
-        <a href="{% url 'blog' %}" class="nav-item2">Blog</a>
+      <a href="{% url 'brands' %}">Brands</a>
+      <a href="{% url 'contact' %}">Contact-Us</a>
+      <a href="{% url 'mission' %}">Our Mission</a>
+      <a href="{% url 'view_socials' %}" class="nav-item2">Follow US!</a>
+      <a href="{% url 'newsletter' %}" class="nav-item2">Newsletter</a>
+      {% if user.is_superuser%}
+      <a class="nav-item2" href="{% url 'send-newsletter' %}">Send A Newsletter</a>
+      {% endif %}
+      <a href="{% url 'brand-upload' %}" class="nav-item2">Create A Brand Page</a>
+      <a href="{% url 'product-upload' %}" class="nav-item2">Upload A Product</a>
+      <a href="{% url 'blog' %}" class="nav-item2">Blog</a>
       {% if request.user.is_authenticated %}
       <a href="{% url 'account_logout' %}" class="nav-item2">Logout</a>
-       {% else %}
-       <a href="{% url 'account_signup' %}" class="nav-item2">Register</a>
-       <a href="{% url 'account_login' %}" class="nav-item2">Login</a>
-       {% endif %}
+      {% else %}
+      <a href="{% url 'account_signup' %}" class="nav-item2">Register</a>
+      <a href="{% url 'account_login' %}" class="nav-item2">Login</a>
+      {% endif %}
 
-      </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" style="padding-left: 10px;" class="icon" onclick="navFunc()">
-        <i class="fa fa-bars" style="padding-left: 10px;"></i>
-      </a>
     </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" style="padding-left: 10px;" class="icon" onclick="navFunc()">
+      <i class="fa fa-bars" style="padding-left: 10px;"></i>
+    </a>
+  </div>
 
-       <script>
-        function navFunc() {
-  var nav = document.getElementById("myLinks");
-  if (nav.style.display === "block") {
-    nav.style.display = "none";
-  } else {
-    nav.style.display = "block";
-  }
-}
-       </script>
+  <script>
+    function navFunc() {
+      var nav = document.getElementById("myLinks");
+      if (nav.style.display === "block") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "block";
+      }
+    }
+  </script>
 
 
-    {% if messages %}
-        <div class="message-container">
-          {% for message in messages %}
-            {% with message.level as level %}
-              {% if level == 40 %}
-                {% include 'includes/toasts/toast-error.html' %}
-              {% elif level == 30 %}
-                {% include 'includes/toasts/toast-warning.html' %}
-              {% elif level == 25 %}
-                {% include 'includes/toasts/toast-success.html' %}
-              {% else %}
-                {% include 'includes/toasts/toast-info.html' %}
-                {% endif %}
-            {% endwith %}
-          {% endfor %}
-        </div>
+  {% if messages %}
+  <div class="message-container">
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast-error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast-warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast-success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast-info.html' %}
     {% endif %}
+    {% endwith %}
+    {% endfor %}
+  </div>
+  {% endif %}
 
 
 
-    {% block page_header %}
-    {% endblock %}
+  {% block page_header %}
+  {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
-    {% block postloadjs %}
-    <script>
-      $('.toast').toast('show');
+  {% block postloadjs %}
+  <script>
+    $('.toast').toast('show');
+  </script>
 
-    </script>
-
-    <footer>
-      <div class="container">
-          <div class="row vcenter">
-              <div class="pull-left col-lg-4 col-xs-6">
-                  <p>Copyright &copy; 2022 Ronan Mcgill</p>
-              </div>
-              <div class="col-lg-4 col-lg-offset-4 col-xs-6">
-                  <div class="pull-right">
-                      <a href="https://www.linkedin.com/in/ronan-mcgill-512b7a22a/" target="_blank" aria-label="linkedin"><i class="fa fa-linkedin-square fa-icon" aria-label="linkedin"></i></a>
-                      <a href="https://www.twitter.com/" target="_blank"  aria-label="Twitter"><i class="fa fa-twitter-square fa-icon" aria-label="Twitter"></i></a>
-                      <a href="https://www.skype.com/" target="_blank" aria-label="Skype"><i class="fa fa-skype fa-icon" aria-label="Skype"></i></a>
-                      <a href="https://www.facebook.com/profile.php?id=100087569125142" target="_blank" aria-label="facebook"><i class="fa fa-facebook-square fa-icon" aria-label="facebook"></i></a>
-                      <a href="https://www.instagram.com/home2retail/" target="_blank"  aria-label="instagram"><i class="fa fa-instagram-square fa-icon" aria-label="instagram"></i></a>
-                      <a href="https://github.com/RoMcGill/" target="_blank" aria-label="github"><i class="fa fa-github-square fa-icon" aria-label="github"></i></a>
-                  </div>
-              </div>
+  <footer>
+    <div class="container">
+      <div class="row vcenter">
+        <div class="pull-left col-lg-4 col-xs-6">
+          <p>Copyright &copy; 2022 Ronan Mcgill</p>
+        </div>
+        <div class="col-lg-4 col-lg-offset-4 col-xs-6">
+          <div class="pull-right">
+            <a href="https://www.linkedin.com/in/ronan-mcgill-512b7a22a/" target="_blank" aria-label="linkedin"><i
+                class="fa fa-linkedin-square fa-icon" aria-label="linkedin"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
+                class="fa fa-twitter-square fa-icon" aria-label="Twitter"></i></a>
+            <a href="https://www.skype.com/" target="_blank" aria-label="Skype"><i class="fa fa-skype fa-icon"
+                aria-label="Skype"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100087569125142" target="_blank" aria-label="facebook"><i
+                class="fa fa-facebook-square fa-icon" aria-label="facebook"></i></a>
+            <a href="https://www.instagram.com/home2retail/" target="_blank" aria-label="instagram"><i
+                class="fa fa-instagram-square fa-icon" aria-label="instagram"></i></a>
+            <a href="https://github.com/RoMcGill/" target="_blank" aria-label="github"><i
+                class="fa fa-github-square fa-icon" aria-label="github"></i></a>
           </div>
+        </div>
       </div>
+    </div>
   </footer>
   {% endblock %}
-  </body>
+</body>
+
 </html>
