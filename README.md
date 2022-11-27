@@ -883,56 +883,55 @@ every page was checked in and showed no errors.
 ## Testing
 
 ### Manual testing of User Storys
+To manualy test the user storys, functionality,
+usability, responsiveness and data management of the site I went through every step each one of our user groups would to insure there are no errors and everything works as expected, Below are my findings.
+
 #### seller
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-1. Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
-2. Register as a new user| fill out form and verify email address | Works as expected |
-3. Login| fill out form, login and have access to all relevant site features | Works as expected |
-3. click on get started action button| be redirected to a page to start creating a brand | Works as expected |
-4. fill out create a brand form| be redirected to brands page and see the brand I created among the other brands | Works as expected |
-5. Navagate to the add products page| be redirected to a form page to add a product | Works as expected |
-5. fill out add a product form|be redirected to the brands page where i can access and view the product I just created | Works as expected |
-6. edit my product|be redirected to to a form with my cuurent product information where i can edit the information| Works as expected |
-7. delete my product|product gets removed from my brand page| Works as expected |
+Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
+Register as a new user[#19](https://github.com/RoMcGill/H2R-PP5/issues/19)| fill out form and verify email address | Works as expected |
+Login[#9](https://github.com/RoMcGill/H2R-PP5/issues/9)| fill out form, login and have access to all relevant site features | Works as expected |
+click on get started action button[#14](https://github.com/RoMcGill/H2R-PP5/issues/14)| be redirected to a page to start creating a brand | Works as expected |
+fill out create a brand form[#31](https://github.com/RoMcGill/H2R-PP5/issues/31)| be redirected to brands page and see the brand I created among the other brands | Works as expected |
+Navagate to the add products page[#6](https://github.com/RoMcGill/H2R-PP5/issues/6), [#25](https://github.com/RoMcGill/H2R-PP5/issues/25)| be redirected to a form page to add a product | Works as expected |
+fill out add a product form[#6](https://github.com/RoMcGill/H2R-PP5/issues/6)|be redirected to the brands page where i can access and view the product I just created | Works as expected |
+edit my product[#24](https://github.com/RoMcGill/H2R-PP5/issues/24)|be redirected to to a form with my cuurent product information where i can edit the information| Works as expected |
+delete my product[#24](https://github.com/RoMcGill/H2R-PP5/issues/24)|product gets removed from my brand page| Works as expected |
+sell my product[#11](https://github.com/RoMcGill/H2R-PP5/issues/11)|product in cart can be orderd using stripe| Works as expected |
 
 #### Buyer
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-1. Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
-2. Register as a new user| fill out form and verify email address | Works as expected |
-3. Login| fill out form, login and have access to all relevant site features | Works as expected |
-4. Navigate to brands page| browse brands | Works as expected |
-5. select a brand i am intrested in| see more information about the brand I have seleted | Works as expected |
-6. browse the brands products| be able to see a list of all the brand has to offer | Works as expected |
-7. select quantity | be able to select the quantity of the product i want to purchase | Works as expected |
-8. add to cart | be able to add selected products to my cart | Works as expected |
-9. edit product in cart | be able to increase and decrease the quantity of my selected products| Works as expected |
-10. checkout | be brought to a page where I can purchase the products in my cart| Works as expected |
-11. navigate to the profile page| be shown my personal details and be able to view my order history| Works as expected |
-12. navigate to the blog page| be shown blog posts made by the site owner/admins| Works as expected |
-13. navigate to newsletter page and sign up| be able to subscribe to a mailing list and recieve updates and promotional informations| Works as expected |
-14. view contact information| be able to view the sites contact information and send direct messages to the admins| Works as expected |
-15. navigate to the mission page| be able to view the sites mission statement| Works as expected |
-16. navigate to the follow us page | be able to view the sites social media links| Works as expected |
+Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
+Register as a new user[#8](https://github.com/RoMcGill/H2R-PP5/issues/8)| fill out form and verify email address | Works as expected |
+Login[#8](https://github.com/RoMcGill/H2R-PP5/issues/8)| fill out form, login and have access to all relevant site features | Works as expected |
+Navigate to brands page[#13](https://github.com/RoMcGill/H2R-PP5/issues/13)| browse brands | Works as expected |
+select a brand i am intrested in[#2](https://github.com/RoMcGill/H2R-PP5/issues/2)| see more information about the brand I have seleted | Works as expected |
+browse the brands products[#1](https://github.com/RoMcGill/H2R-PP5/issues/1)| be able to see a list of all the brand has to offer | Works as expected |
+select quantity[#4](https://github.com/RoMcGill/H2R-PP5/issues/4) | be able to select the quantity of the product i want to purchase | Works as expected |
+add to cart [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)| be able to add selected products to my cart | Works as expected |
+edit product in cart [#15](https://github.com/RoMcGill/H2R-PP5/issues/15)| be able to increase and decrease the quantity of my selected products| Works as expected |
+checkout [#21](https://github.com/RoMcGill/H2R-PP5/issues/21)| be brought to a page where I can purchase the products in my cart| Works as expected |
+navigate to the profile page[#22](https://github.com/RoMcGill/H2R-PP5/issues/22), [#3](https://github.com/RoMcGill/H2R-PP5/issues/3)| be shown my personal details and be able to view my order history| Works as expected |
+navigate to the blog page| be shown blog posts made by the site owner/admins| Works as expected |
+navigate to newsletter page and sign up[#26](https://github.com/RoMcGill/H2R-PP5/issues/26)| be able to subscribe to a mailing list and recieve updates and promotional informations| Works as expected |
+view contact information[#20](https://github.com/RoMcGill/H2R-PP5/issues/20)| be able to view the sites contact information and send direct messages to the admins| Works as expected |
+navigate to the mission page[#30](https://github.com/RoMcGill/H2R-PP5/issues/30)| be able to view the sites mission statement| Works as expected |
+navigate to the follow us page[#29](https://github.com/RoMcGill/H2R-PP5/issues/29) | be able to view the sites social media links| Works as expected |
 
 #### site owner/admin
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-1. Navigate to https://h2r-pp5.herokuapp.com/| Landing page loads in good time. | Works as expected |
-2. Register as a new user| fill out form and verify email address | Works as expected |
-3. Login| fill out form, login and have access to all relevant site features | Works as expected |
-4. send a newsletter to customer| fill out the title and message form and send an newletter to all of the email addresses that are subscribed to the mailing list. | Works as expected |
-5. edit the mission page content| from the admin page be able to update the content on the mission page| Works as expected |
-6. make a blog entry| from the admin page be able to create, draft and publish blog posts to be displayed on the blog post page| Works as expected |
+Navigate to https://h2r-pp5.herokuapp.com/[#12](https://github.com/RoMcGill/H2R-PP5/issues/12)| Landing page loads in good time. | Works as expected |
+Login[#8](https://github.com/RoMcGill/H2R-PP5/issues/8)| fill out form, login and have access to all relevant site features | Works as expected |
+send a newsletter to customer[#27](https://github.com/RoMcGill/H2R-PP5/issues/27)| fill out the title and message form and send an newletter to all of the email addresses that are subscribed to the mailing list. | Works as expected |
+edit the mission page content[#32](https://github.com/RoMcGill/H2R-PP5/issues/32)| from the admin page be able to update the content on the mission page| Works as expected |
+make a blog entry[#33](https://github.com/RoMcGill/H2R-PP5/issues/33)| from the admin page be able to create, draft and publish blog posts to be displayed on the blog post page| Works as expected |
 
-
-<details><summary>Screenshot</summary>
-<img src="#">
-</details>
 
 ### Performing tests on various devices
 the site has been tested on all simulated devices available on google dev tools. I have also tested the site on an iphone 12 and samsung galaxy s21 ultra, all features worked as expected.
