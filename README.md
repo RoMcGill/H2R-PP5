@@ -1015,6 +1015,15 @@ as the JS for this feature was learnd from the Boutique ado project and usses Va
 
 ```
 
+**Bug**
+
+While checking if my code was pep8 compliany I restructured some strings in my seetings which cased an error on registration
+
+**Fix**
+
+Simple fix was to retructure the strings back to their original format
+
+
 ------------
 
 ##### Back to [top](#table-of-contents)
