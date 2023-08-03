@@ -8,10 +8,6 @@ Link to project/Kanban board: https://github.com/users/RoMcGill/projects/3
 
 <img src="static/images/responsive.png">
 
-## Test Account Information
-**username**:ronan
-
-**password**:ronan
 
 
 ## Table of Contents
